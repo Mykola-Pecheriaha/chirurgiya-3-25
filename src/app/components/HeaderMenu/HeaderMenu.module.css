@@ -1,0 +1,204 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  height: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.logoImage {
+  margin-right: 0.5rem;
+  width: 40px;
+  height: 40px;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.navLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navLink:hover {
+  color: var(--primary-color);
+}
+
+.menuItem {
+  position: relative;
+}
+
+.subMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  min-width: 300px;
+  max-width: 500px;
+  z-index: 1010;
+  max-height: calc(100vh - var(--total-header-height));
+  overflow-y: auto;
+}
+
+.subMenuSection {
+  margin-right: 0;
+}
+
+.subMenuSection p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.columnSubMenu {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.columnSubMenu a {
+  padding: 5px 0;
+}
+
+.subMenuColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.subMenuColumn a {
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  text-decoration: none;
+  color: inherit;
+}
+
+.subMenuColumn a:hover {
+  color: var(--primary-color);
+}
+
+.consultationButtonWrapper {
+  margin-left: 1rem;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.burgerMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  z-index: 1010;
+  min-width: 200px;
+}
+
+.burgerMenuItem {
+  margin-bottom: 0.5rem;
+}
+
+.burgerMenuItem > span {
+  cursor: pointer;
+  display: block;
+  padding: 0.5rem 0;
+}
+
+.burgerMenuItem > span:hover {
+  color: var(--primary-color);
+}
+
+.burgerSubMenu {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+
+.burgerSubMenu a {
+  padding: 0.25rem 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.burgerSubMenu a:hover {
+  color: var(--primary-color);
+}
+
+.burgerLink {
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.burgerLink:hover {
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .burgerMenu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subMenu {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    min-width: auto;
+    max-width: none;
+    box-shadow: none;
+    padding: 0.5rem 0 0.5rem 1rem;
+  }
+
+  .subMenuSection {
+    margin-bottom: 0.5rem;
+  }
+
+  .subMenuColumn {
+    margin-bottom: 0.5rem;
+  }
+
+  .burgerSubMenu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .consultationButtonWrapper {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,108 @@
+@import './reset.css';
+@import './variables.css';
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Визначення змінних для висоти */
+:root {
+  --contacts-height: 40px;
+  --header-height: 60px;
+  --breadcrumb-height: 30px;
+  --total-header-height: calc(
+    var(--contacts-height) + var(--header-height) + var(--breadcrumb-height)
+  );
+}
+
+/* Головний контейнер */
+.layout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Фіксований верхній блок */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Контакти */
+.contacts-bar {
+  background: #f8f9fa;
+  height: var(--contacts-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  z-index: 1003;
+}
+
+/* Головне меню */
+.header-menu {
+  height: var(--header-height);
+  background: white;
+  z-index: 1002;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  background: #eee;
+  height: var(--breadcrumb-height);
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  font-size: 14px;
+  z-index: 1001;
+}
+
+/* Відступ для основного контенту */
+.main {
+  margin-top: var(--total-header-height);
+  flex-grow: 1;
+  padding-top: 20px; /* Додатковий відступ для кращого вигляду */
+}
+
+/* Контейнер */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+/* Стилі для футера */
+.footer {
+  background: var(--footer-background);
+  padding: 20px 0;
+  text-align: center;
+}

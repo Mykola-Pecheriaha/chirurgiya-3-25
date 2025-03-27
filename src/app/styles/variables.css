@@ -1,0 +1,37 @@
+:root {
+  /* Кольори (світла тема) */
+  --primary-color: #0070f3;
+  --primary-color-dark: #0950a1ff;
+  --secondary-color: #ff4081;
+  --background: #ffffff;
+  --foreground: #171717;
+  --text-color: #333;
+
+  /* Шрифти */
+  --font-sans: 'Geist', sans-serif;
+  --font-mono: 'Geist Mono', monospace;
+
+  /* Відступи */
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 32px;
+
+  /* Розміри шрифтів */
+  --font-size-small: 12px;
+  --font-size-medium: 16px;
+  --font-size-large: 24px;
+}
+
+/* Темна тема */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --primary-color: #0096ff;
+    --primary-color-dark: #0066cc;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+}

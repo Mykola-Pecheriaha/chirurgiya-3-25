@@ -1,0 +1,30 @@
+.breadcrumb {
+  background-color: #f0f0f0;
+  padding: 0.5rem 0;
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.separator {
+  margin: 0 0.5rem;
+  color: #666;
+}
+
+.link {
+  color: var(--primary-color);
+}
+
+.current {
+  color: #666;
+}
