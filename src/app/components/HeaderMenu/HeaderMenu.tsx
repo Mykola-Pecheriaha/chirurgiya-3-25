@@ -66,45 +66,55 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({
 
           <div
             className={styles.menuItem}
-            onMouseEnter={() => handleSubMenuToggle('results')}
+            onMouseEnter={() => handleSubMenuToggle('specialists')}
             onMouseLeave={() => handleSubMenuToggle(null)}
           >
-            <Link href="/results" className={styles.navLink}>
-              Результати ↓
+            <Link href="/specialists" className={styles.navLink}>
+              Наші фахівці ↓
             </Link>
-            {activeSubMenu === 'results' && (
+            {activeSubMenu === 'specialists' && (
               <div className={styles.subMenu}>
                 <div className={styles.subMenuSection}>
                   <div className={styles.subMenuColumn}>
                     <Link
-                      href="/results/face-plastic"
+                      href="/specialists/chirurg"
                       className={styles.navLink}
                     >
-                      Пластика обличчя
+                      хірургія
                     </Link>
                     <Link
-                      href="/results/otto-plastic"
+                      href="/specialists/plasticsurgery"
                       className={styles.navLink}
                     >
-                      Пластика вушних раковин
+                      Пластична хірургія
+                    </Link>
+
+                    <Link href="/specialists/urolog" className={styles.navLink}>
+                      Урологи
                     </Link>
                     <Link
-                      href="/results/breast-plastic"
+                      href="/specialists/oncodermatology"
                       className={styles.navLink}
                     >
-                      Пластика грудей
+                      Oнко-дерматологія
                     </Link>
                     <Link
-                      href="/results/body-plastic"
+                      href="/specialists/vascularsurgery"
                       className={styles.navLink}
                     >
-                      Пластика тіла
+                      Судинна хірургія
                     </Link>
                     <Link
-                      href="/results/tumors-skin"
+                      href="/specialists/tumorsskin"
                       className={styles.navLink}
                     >
                       Пухлини шкіри
+                    </Link>
+                    <Link
+                      href="/specialists/bariatriya"
+                      className={styles.navLink}
+                    >
+                      Баріатрична хірургія
                     </Link>
                     <Link href="/albums/" className={styles.navLink}>
                       Альбоми
@@ -231,45 +241,52 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({
 
             {/* Мобільне меню залишається без змін */}
             <div className={styles.burgerMenuItem}>
-              <span onClick={() => handleSubMenuToggle('results')}>
-                Результати ↓
+              <span onClick={() => handleSubMenuToggle('specialists')}>
+                Наші фахівці↓
               </span>
-              {activeSubMenu === 'results' && (
+              {activeSubMenu === 'specialists' && (
                 <div className={styles.burgerSubMenu}>
                   <Link
-                    href="/results/face-plastic"
+                    href="/specialists/chirurgus"
                     onClick={handleMenuItemClick}
                     className={styles.navLink}
                   >
-                    Пластика обличчя
+                    Хірургія
                   </Link>
                   <Link
-                    href="/results/otto-plastic"
+                    href="/specialists/plastic-surgery"
                     onClick={handleMenuItemClick}
                     className={styles.navLink}
                   >
-                    Пластика вушних раковин
+                    Пластична хірургія
                   </Link>
                   <Link
-                    href="/results/breast-plastic"
+                    href="/specialists/urolog"
                     onClick={handleMenuItemClick}
                     className={styles.navLink}
                   >
-                    Пластика грудей
+                    Урологи
                   </Link>
                   <Link
-                    href="/results/body-plastic"
+                    href="/specialists/onco-dermatology"
                     onClick={handleMenuItemClick}
                     className={styles.navLink}
                   >
-                    Пластика тіла
+                    Онко-дерматологія
                   </Link>
                   <Link
-                    href="/results/tumors-skin"
+                    href="/specialists/vascular-surgery"
                     onClick={handleMenuItemClick}
                     className={styles.navLink}
                   >
-                    Пухлини шкіри
+                    Судинна хірургія
+                  </Link>
+                  <Link
+                    href="/specialists/bariatriya"
+                    onClick={handleMenuItemClick}
+                    className={styles.navLink}
+                  >
+                    Баріатрична хірургія
                   </Link>
                 </div>
               )}

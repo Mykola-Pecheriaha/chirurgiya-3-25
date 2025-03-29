@@ -1,0 +1,162 @@
+.wrapper {
+  width: 100%;
+  padding: 70px 0;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.topText {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--primary-color, #1eaaf1);
+  margin-bottom: 1rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--foreground);
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary-color, #1eaaf1);
+}
+
+.description {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.description p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--foreground);
+}
+
+.specialistsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.specialistCard {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.specialistCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.imageContainer {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.specialistImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.specialistCard:hover .specialistImage {
+  transform: scale(1.05);
+}
+
+.specialistInfo {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.specialistName {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: var(--foreground);
+}
+
+.specialistPosition {
+  font-size: 1rem;
+  color: var(--primary-color, #1eaaf1);
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.specialistDescription {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--foreground-muted, #666);
+}
+
+.profileButton {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary-color, #1eaaf1);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  border: none;
+  transition: opacity 0.3s ease;
+  margin-top: auto;
+}
+
+.profileButton:hover {
+  opacity: 0.9;
+}
+
+/* Адаптивність */
+@media (max-width: 1024px) {
+  .specialistsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .description p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .specialistsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .wrapper {
+    padding: 50px 0;
+  }
+}
