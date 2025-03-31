@@ -137,13 +137,12 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({
             {activeSubMenu === 'services' && (
               <div className={styles.subMenu}>
                 <div className={styles.subMenuSection}>
-                  <p>Пластика обличчя</p>
                   <div className={styles.subMenuColumn}>
                     <Link
-                      href="/services/face-surgery/face-lift"
+                      href="/services/emergencysurgery"
                       className={styles.navLink}
                     >
-                      Підтяжка обличчя та шиї
+                      Невідкладна хірургія
                     </Link>
                     <Link
                       href="/services/face-surgery/flap-correction"

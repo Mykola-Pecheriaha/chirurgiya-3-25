@@ -30,7 +30,7 @@ const defaultSpecialists: Specialist[] = [
     position: 'Хірург',
     description:
       'Хірург вищої категорії, Заступник медичного директора по хірургії Стаж роботи 22 роки. В 1997 році',
-    imageUrl: '/images/ourSpecialists/placeholder.svg?height=300&width=300',
+    imageUrl: '/images/ourSpecialists/gorbatenko.jpg',
     profileUrl: '/specialists/gorbatenko',
     buttonColor: '#1eaaf1',
     objectFit: 'contain', // Змінює спосіб відображення зображення

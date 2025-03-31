@@ -1,0 +1,215 @@
+.wrapper {
+  width: 100%;
+  padding: 70px 0;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.topText {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--primary-color, #1eaaf1);
+  margin-bottom: 1rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--foreground);
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary-color, #1eaaf1);
+}
+
+.description {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.description p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--foreground);
+}
+
+/* Стилі для вступної картки (по центру) */
+.introCard {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 0 auto 50px;
+  max-width: 800px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  border-top: 4px solid var(--primary-color, #1eaaf1);
+}
+
+.introTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--foreground);
+}
+
+.introDescription {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--foreground-muted, #666);
+}
+
+/* Стилі для контейнера умов */
+.conditionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Стилі для карток умов з зображеннями */
+.conditionCard {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.conditionCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Чергування розташування тексту та зображення */
+.conditionCard:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.conditionContent {
+  flex: 2;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.conditionImageContainer {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.conditionImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.conditionCard:hover .conditionImage {
+  transform: scale(1.05);
+}
+
+.conditionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--foreground);
+  position: relative;
+}
+
+.conditionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color, #1eaaf1);
+}
+
+.conditionDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--foreground-muted, #666);
+}
+
+/* Виділення важливого тексту */
+.conditionDescription strong {
+  color: var(--primary-color, #1eaaf1);
+  font-weight: 600;
+}
+
+/* Адаптивність */
+@media (max-width: 1024px) {
+  .conditionContent {
+    padding: 25px;
+  }
+
+  .introCard {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .description p {
+    font-size: 1rem;
+  }
+
+  .introTitle {
+    font-size: 1.5rem;
+  }
+
+  .introDescription {
+    font-size: 1rem;
+  }
+
+  .conditionCard {
+    flex-direction: column !important;
+  }
+
+  .conditionImageContainer {
+    height: 250px;
+  }
+}
+
+@media (max-width: 640px) {
+  .wrapper {
+    padding: 50px 0;
+  }
+
+  .conditionTitle {
+    font-size: 1.25rem;
+  }
+
+  .conditionContent {
+    padding: 20px;
+  }
+
+  .introCard {
+    padding: 20px;
+  }
+}

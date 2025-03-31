@@ -52,8 +52,10 @@
 
 .specialistsGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .specialistCard {
@@ -66,7 +68,7 @@
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
-  height: 100%; /* Додаємо висоту для картки */
+  height: 100%;
 }
 
 .specialistCard:hover {
@@ -76,7 +78,6 @@
 
 .imageContainer {
   width: 100%;
-  height: 300px;
   position: relative;
   overflow: hidden;
 }
@@ -84,7 +85,6 @@
 .specialistImage {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   transition: transform 0.5s ease;
 }
 
@@ -136,12 +136,6 @@
 }
 
 /* Адаптивність */
-@media (max-width: 1024px) {
-  .specialistsGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media (max-width: 768px) {
   .title {
     font-size: 2rem;
@@ -149,12 +143,6 @@
 
   .description p {
     font-size: 1rem;
-  }
-}
-
-@media (max-width: 640px) {
-  .specialistsGrid {
-    grid-template-columns: 1fr;
   }
 
   .wrapper {
