@@ -145,21 +145,46 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({
                       Невідкладна хірургія
                     </Link>
                     <Link
-                      href="/services/face-surgery/flap-correction"
+                      href="/services/traditional-surgery"
                       className={styles.navLink}
                     >
-                      Пластика дольки вуха
+                      Традиційна хірургія
                     </Link>
-                  </div>
-                </div>
-                <div className={styles.subMenuSection}>
-                  <p>Загальна хірургія</p>
-                  <div className={styles.subMenuColumn}>
                     <Link
-                      href="/services/general-surgery/gerniotomiya"
+                      href="/services/plasticsurgery"
                       className={styles.navLink}
                     >
-                      Видалення гриж
+                      Пластична хірургія
+                    </Link>
+                    <Link
+                      href="/services/minimallyinvasivesurgery"
+                      className={styles.navLink}
+                    >
+                      Млоінвазивна хірургія
+                    </Link>
+                    <Link
+                      href="/services/vascularsurgery"
+                      className={styles.navLink}
+                    >
+                      Судинна хірургія
+                    </Link>
+                    <Link
+                      href="/services/bariatricsurgery"
+                      className={styles.navLink}
+                    >
+                      Баріатрична хірургія
+                    </Link>
+                    <Link
+                      href="/services/proctology"
+                      className={styles.navLink}
+                    >
+                      Проктологія
+                    </Link>
+                    <Link href="/services/urology" className={styles.navLink}>
+                      Урологія
+                    </Link>
+                    <Link href="/services/oncology" className={styles.navLink}>
+                      Онкохірургія
                     </Link>
                   </div>
                 </div>

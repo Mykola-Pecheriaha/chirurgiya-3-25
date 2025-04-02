@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import type React from 'react';
 import Image from 'next/image';
 import styles from './UrgentSurgery.module.css';
 
@@ -108,6 +108,15 @@ const UrgentSurgery: React.FC<UrgentSurgeryProps> = ({
   const introCondition = conditions[0];
   const detailedConditions = conditions.slice(1);
 
+  // Функція для перевірки, чи є текст попередженням
+  const isWarningText = (text: string) => {
+    return (
+      text.includes('Треба негайно звернутися до лікаря') ||
+      text.includes('Терміново зверніться до лікаря') ||
+      text.includes('⚠')
+    );
+  };
+
   return (
     <div className={styles.wrapper} style={{ backgroundColor }}>
       <div className={styles.container}>
@@ -139,22 +148,25 @@ const UrgentSurgery: React.FC<UrgentSurgeryProps> = ({
             <div key={condition.id} className={styles.conditionCard}>
               <div className={styles.conditionContent}>
                 <h3 className={styles.conditionTitle}>{condition.title}</h3>
-                <p className={styles.conditionDescription}>
+                <div className={styles.conditionDescription}>
                   {condition.description.split('\n').map((paragraph, idx) => (
-                    <React.Fragment key={idx}>
+                    <p
+                      key={idx}
+                      className={
+                        isWarningText(paragraph) ? styles.warningText : ''
+                      }
+                    >
                       {paragraph}
-                      {idx < condition.description.split('\n').length - 1 && (
-                        <br />
-                      )}
-                    </React.Fragment>
+                    </p>
                   ))}
-                </p>
+                </div>
               </div>
               <div className={styles.conditionImageContainer}>
                 <Image
                   src={
                     condition.imageUrl ||
-                    '/placeholder.svg?height=300&width=400'
+                    '/placeholder.svg?height=300&width=400' ||
+                    '/placeholder.svg'
                   }
                   alt={condition.imageAlt || condition.title}
                   width={400}

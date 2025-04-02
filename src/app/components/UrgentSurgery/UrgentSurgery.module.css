@@ -153,6 +153,21 @@
   color: var(--foreground-muted, #666);
 }
 
+.conditionDescription p {
+  margin-bottom: 0.75rem;
+}
+
+.conditionDescription p:last-child {
+  margin-bottom: 0;
+}
+
+/* Стиль для попереджувального тексту */
+.warningText {
+  color: #e53e3e !important;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
 /* Виділення важливого тексту */
 .conditionDescription strong {
   color: var(--primary-color, #1eaaf1);
