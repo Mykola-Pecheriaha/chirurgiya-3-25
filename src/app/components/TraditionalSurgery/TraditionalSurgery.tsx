@@ -24,44 +24,42 @@ const defaultSurgeryTypes: SurgeryCard[] = [
   {
     id: 'liver',
     title: 'Захворювання печінки',
-    imageUrl: '/placeholder.svg?height=200&width=200&text=Захворювання+печінки',
+    imageUrl: '/images/traditionalSurgery/dpksurgery4.jpg',
     imageAlt: 'Захворювання печінки',
     link: '/services/traditional-surgery/liver', // Переконайтеся, що шлях правильний
   },
   {
     id: 'gallbladder',
     title: 'Захворювання жовчевого міхура і жовчевих протоків',
-    imageUrl:
-      '/placeholder.svg?height=200&width=200&text=Захворювання+жовчевого+міхура',
+    imageUrl: '/images/traditionalSurgery/chole1.jpg',
     imageAlt: 'Захворювання жовчевого міхура і жовчевих протоків',
-    link: '/traditional-surgery/gallbladder',
+    link: '/services/traditional-surgery/gallbladder',
   },
   {
     id: 'stomach',
     title: 'Захворювання шлунка і ДПК',
-    imageUrl: '/placeholder.svg?height=200&width=200&text=Захворювання+шлунка',
+    imageUrl: '/images/traditionalSurgery/gastro.jpg',
     imageAlt: 'Захворювання шлунка і ДПК',
-    link: '/traditional-surgery/stomach',
+    link: '/services/traditional-surgery/gastro-duodeno',
   },
   {
     id: 'spleen',
     title: 'Хвороби селезінки',
-    imageUrl: '/placeholder.svg?height=200&width=200&text=Хвороби+селезінки',
+    imageUrl: '/images/traditionalSurgery/spleen1.jpg',
     imageAlt: 'Хвороби селезінки',
-    link: '/traditional-surgery/spleen',
+    link: '/services/traditional-surgery/spleen-surgery',
   },
   {
     id: 'intestine',
     title: 'Хвороби кишкивника',
-    imageUrl: '/placeholder.svg?height=200&width=200&text=Хвороби+кишкивника',
+    imageUrl: '/images/traditionalSurgery/intestine2.jpg',
     imageAlt: 'Хвороби кишкивника',
     link: '/traditional-surgery/intestine',
   },
   {
     id: 'soft-tissue',
     title: "Хвороби м'ягких тканей тулуба та кінцівок",
-    imageUrl:
-      "/placeholder.svg?height=200&width=200&text=Хвороби+м'ягких+тканей",
+    imageUrl: '/images/traditionalSurgery/derma.jpg',
     imageAlt: "Хвороби м'ягких тканей тулуба та кінцівок",
     link: '/traditional-surgery/soft-tissue',
   },
@@ -75,7 +73,7 @@ const TraditionalSurgery: React.FC<TraditionalSurgeryProps> = ({
   return (
     <div className={styles.wrapper} style={{ backgroundColor }}>
       <div className={styles.container}>
-        <h2 className={styles.title}>Традиційна хірургія</h2>
+        <h2 className={styles.title}>Хірургічні хвороби</h2>
         <div className={styles.topText}>
           Оперативні втручання на органах черевної порожнини та заочеревинного
           простору, які виконуються через лапаротомний чи заочеревинний доступ.

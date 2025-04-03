@@ -1,0 +1,156 @@
+.wrapper {
+  width: 100%;
+  padding: 70px 0;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.topText {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--primary-color, #1eaaf1);
+  margin-bottom: 1rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary-color, #1eaaf1);
+}
+
+.introText {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.contentSection {
+  display: flex;
+  gap: 40px;
+}
+
+.textColumn {
+  flex: 2; /* 2/3 ширини */
+}
+
+.imageColumn {
+  flex: 1; /* 1/3 ширини */
+}
+
+.stickyImagesContainer {
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Проміжок між зображеннями */
+}
+
+.imageWrapper {
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+.bulletList {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.bulletList li {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.bulletList li::before {
+  content: '•';
+  color: var(--primary-color, #1eaaf1);
+  font-weight: bold;
+  position: absolute;
+  left: -15px;
+}
+
+.emphasis {
+  color: #e53e3e;
+  font-weight: 700;
+}
+
+/* Додаємо відстань після заголовків та параграфів */
+.textColumn h3 {
+  margin-bottom: 25px;
+}
+
+.textColumn h4 {
+  margin-bottom: 20px;
+}
+
+.textColumn p {
+  margin-bottom: 15px;
+}
+
+/* Останній параграф у блоці не повинен мати нижній відступ перед наступним заголовком */
+.textColumn p:last-of-type {
+  margin-bottom: 30px;
+}
+
+/* Адаптивність */
+@media (max-width: 1024px) {
+  .contentSection {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .contentSection {
+    flex-direction: column;
+  }
+
+  .textColumn,
+  .imageColumn {
+    flex: 1;
+    width: 100%;
+  }
+
+  .stickyImagesContainer {
+    position: static;
+    margin-bottom: 30px;
+  }
+
+  .image {
+    max-height: 300px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 640px) {
+  .wrapper {
+    padding: 50px 0;
+  }
+}

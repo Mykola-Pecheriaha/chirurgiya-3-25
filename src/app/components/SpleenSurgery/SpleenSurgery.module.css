@@ -1,0 +1,174 @@
+.wrapper {
+  width: 100%;
+  padding: 70px 0;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #1e3a8a;
+}
+
+.introText {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.introText p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.contentSection {
+  display: flex;
+  gap: 40px;
+}
+
+.textColumn {
+  flex: 2; /* 2/3 ширини */
+}
+
+.textColumn p {
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  color: #1e3a8a;
+  font-weight: 700;
+}
+
+.bulletList {
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.bulletList li {
+  margin-bottom: 12px;
+  position: relative;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.bulletList li::before {
+  content: '•';
+  color: #1e3a8a;
+  font-weight: bold;
+  position: absolute;
+  left: -15px;
+}
+
+.imageColumn {
+  flex: 1; /* 1/3 ширини */
+}
+
+.stickyImagesContainer {
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Проміжок між зображеннями */
+}
+
+.imageWrapper {
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: contain; /* Зображення відображається повністю без обрізання */
+  background-color: #f5f5f5;
+}
+
+.imageCaption {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.link {
+  color: #2563eb;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #1e40af;
+}
+
+/* Адаптивність */
+@media (max-width: 1024px) {
+  .contentSection {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .contentSection {
+    flex-direction: column;
+  }
+
+  .textColumn,
+  .imageColumn {
+    flex: 1;
+    width: 100%;
+  }
+
+  .stickyImagesContainer {
+    position: static;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .wrapper {
+    padding: 50px 0;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+}

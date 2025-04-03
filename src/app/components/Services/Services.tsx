@@ -23,9 +23,9 @@ interface ServicesProps {
 const defaultServices: ServiceCard[] = [
   {
     id: 'generalsurgery',
-    title: 'Традиційна хірургія',
+    title: 'Хірургічні хвороби',
     imageUrl: '/images/services/general.jpg',
-    imageAlt: 'Традиційна хірургія',
+    imageAlt: 'Хірургічні хвороби',
     link: '/services/traditional-surgery',
   },
   {

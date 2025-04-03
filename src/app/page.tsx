@@ -4,6 +4,7 @@ import ModernEquipment from './components/ModernEquipment/ModernEquipment';
 import ComfortableRooms from './components/ComfortableRooms/ComfortableRooms';
 import FullMedicationSupply from './components/FullMedicationSupply/FullMedicationSupply';
 import AnesthesiaCare from './components/AnesthesiaCare/AnesthesiaCare';
+import SurgeryDepartmentInfo from './components/SurgeryDepartmentInfo/SurgeryDepartmentInfo';
 
 const Home: React.FC = () => {
   return (
@@ -33,6 +34,12 @@ const Home: React.FC = () => {
         backgroundColor="#f9f9f9"
         imageUrl="/images/modernEquipment/medicfmtnt2.bmp"
         imageAlt="Наркозне забезпечення"
+      />
+      <SurgeryDepartmentInfo
+        backgroundColor="#f0f7ff"
+        textColor="#333333"
+        headingColor="#1eaaf1"
+        accentColor="#7b68ee"
       />
     </div>
   );
