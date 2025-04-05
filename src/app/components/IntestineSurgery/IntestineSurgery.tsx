@@ -14,16 +14,24 @@ const IntestineSurgery: React.FC<IntestineSurgeryProps> = ({
   // Масив зображень для правої колонки
   const images = [
     {
-      url: '/placeholder.svg?height=300&width=400&text=Кишківник',
+      url: '/images/intestine-surgery/enter-benign-tumors4.jpg',
       alt: 'Кишківник',
     },
     {
-      url: '/placeholder.svg?height=300&width=400&text=Хірургічне+втручання',
+      url: '/images/intestine-surgery/cron.jpg',
+      alt: 'Хвороба крона',
+    },
+    {
+      url: '/images/intestine-surgery/interstin4.jpg',
       alt: 'Хірургічне втручання',
     },
     {
-      url: '/placeholder.svg?height=300&width=400&text=Реабілітація',
-      alt: 'Реабілітація',
+      url: '/images/intestine-surgery/enterjfnfstamosi.jpg',
+      alt: 'Анастомоз',
+    },
+    {
+      url: '/images/intestine-surgery/interstin3.jpg',
+      alt: 'Анастомоз',
     },
   ];
 

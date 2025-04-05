@@ -14,16 +14,24 @@ const ColonSurgery: React.FC<ColonSurgeryProps> = ({
   // Масив зображень для правої колонки
   const images = [
     {
-      url: '/placeholder.svg?height=300&width=400&text=Товстий+кишечник',
+      url: '/images/intestine-surgery/colo3.jpg',
       alt: 'Товстий кишечник',
     },
     {
-      url: '/placeholder.svg?height=300&width=400&text=Колоректальний+рак',
-      alt: 'Колоректальний рак',
+      url: '/images/intestine-surgery/colon4.jpg',
+      alt: 'Товстий кишечник',
     },
     {
-      url: '/placeholder.svg?height=300&width=400&text=Лапароскопічна+операція',
-      alt: 'Лапароскопічна операція',
+      url: '/images/intestine-surgery/colonkaparo.jpg',
+      alt: 'Товстий кишечник',
+    },
+    {
+      url: '/images/intestine-surgery/colo2.jpg',
+      alt: 'Товстий кишечник',
+    },
+    {
+      url: '/images/intestine-surgery/colo1.jpg',
+      alt: 'Товстий кишечник',
     },
   ];
 
