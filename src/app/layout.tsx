@@ -4,7 +4,7 @@ import './styles/global.css';
 import ContactsBar from './components/ContactsBar/ContactsBar';
 import HeaderMenu from './components/HeaderMenu/HeaderMenu';
 import Breadcrumb from './components/Breadcrumb/Breadcrumb';
-// import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -48,7 +48,7 @@ export default function RootLayout({
         <main className="main">{children}</main>
 
         {/* Футер */}
-        {/* <Footer /> */}
+        <Footer backgroundColor="#1e3a8a" />
       </body>
     </html>
   );

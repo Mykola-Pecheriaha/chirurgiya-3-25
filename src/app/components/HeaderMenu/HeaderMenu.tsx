@@ -151,7 +151,7 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({
                       Традиційна хірургія
                     </Link>
                     <Link
-                      href="/services/plasticsurgery"
+                      href="/services/plastic-surgery"
                       className={styles.navLink}
                     >
                       Пластична хірургія

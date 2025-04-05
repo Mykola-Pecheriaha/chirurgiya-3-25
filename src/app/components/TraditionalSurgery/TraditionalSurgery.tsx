@@ -54,14 +54,14 @@ const defaultSurgeryTypes: SurgeryCard[] = [
     title: 'Хвороби кишкивника',
     imageUrl: '/images/traditionalSurgery/intestine2.jpg',
     imageAlt: 'Хвороби кишкивника',
-    link: '/traditional-surgery/intestine',
+    link: '/services/traditional-surgery/intestine-surgery',
   },
   {
     id: 'soft-tissue',
     title: "Хвороби м'ягких тканей тулуба та кінцівок",
     imageUrl: '/images/traditionalSurgery/derma.jpg',
     imageAlt: "Хвороби м'ягких тканей тулуба та кінцівок",
-    link: '/traditional-surgery/soft-tissue',
+    link: '/services/traditional-surgery/soft-tissue',
   },
 ];
 
