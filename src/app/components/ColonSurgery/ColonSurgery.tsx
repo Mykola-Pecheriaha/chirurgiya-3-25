@@ -19,19 +19,19 @@ const ColonSurgery: React.FC<ColonSurgeryProps> = ({
     },
     {
       url: '/images/intestine-surgery/colon4.jpg',
-      alt: 'Товстий кишечник',
+      alt: '<Брижа товстого кишкивника>',
     },
     {
       url: '/images/intestine-surgery/colonkaparo.jpg',
-      alt: 'Товстий кишечник',
+      alt: 'Дисекція товстого кишкивника',
     },
     {
       url: '/images/intestine-surgery/colo2.jpg',
-      alt: 'Товстий кишечник',
+      alt: 'Пухлина і операція Гартмана',
     },
     {
       url: '/images/intestine-surgery/colo1.jpg',
-      alt: 'Товстий кишечник',
+      alt: 'Колоностома',
     },
   ];
 

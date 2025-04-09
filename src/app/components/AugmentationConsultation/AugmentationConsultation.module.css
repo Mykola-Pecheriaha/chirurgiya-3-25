@@ -1,0 +1,184 @@
+.wrapper {
+  width: 100%;
+  padding: 70px 0;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.mainTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2a4365;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.mainTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #3182ce;
+}
+
+.accordionContainer {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.accordionItem {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accordionHeader:hover {
+  background-color: #f0f7ff;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sectionIcon {
+  font-size: 1.5rem;
+}
+
+.accordionTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2a4365;
+  margin: 0;
+}
+
+.accordionArrow {
+  font-size: 1.5rem;
+  color: #3182ce;
+  transition: transform 0.3s ease;
+}
+
+.arrowUp {
+  transform: rotate(180deg);
+}
+
+.accordionContent {
+  display: flex;
+  padding: 25px;
+  background-color: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+}
+
+.textColumn {
+  flex: 2;
+  padding-right: 30px;
+}
+
+.contentParagraph {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #334155;
+  margin-bottom: 15px;
+}
+
+.contentParagraph:last-child {
+  margin-bottom: 0;
+}
+
+.imageColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.imageWrapper {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
+}
+
+.imageCaption {
+  font-size: 0.85rem;
+  color: #64748b;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 2rem;
+  }
+
+  .accordionContent {
+    flex-direction: column;
+  }
+
+  .textColumn {
+    flex: none;
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .imageColumn {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 40px 0;
+  }
+
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+
+  .accordionTitle {
+    font-size: 1.1rem;
+  }
+
+  .accordionHeader {
+    padding: 15px;
+  }
+
+  .accordionContent {
+    padding: 15px;
+  }
+
+  .sectionIcon {
+    font-size: 1.2rem;
+  }
+}

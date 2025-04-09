@@ -1,0 +1,180 @@
+.wrapper {
+  width: 100%;
+  padding: 60px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mainTitle {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.mainTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #1e3a8a;
+}
+
+.questionContainer {
+  margin-bottom: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.questionTitle {
+  background-color: #f8fafc;
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #1e3a8a;
+  transition: all 0.3s ease;
+}
+
+.questionTitle:hover {
+  background-color: #f1f5f9;
+}
+
+.questionTitle.open {
+  background-color: #e0e7ff;
+}
+
+.icon {
+  color: #1e3a8a;
+  transition: transform 0.3s ease;
+}
+
+.questionContent {
+  display: flex;
+  padding: 25px;
+  background-color: #ffffff;
+  gap: 30px;
+}
+
+.textContent {
+  flex: 2;
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #334155;
+  margin-bottom: 15px;
+  white-space: pre-line;
+}
+
+.textContent p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #334155;
+  margin-bottom: 15px;
+}
+
+.textContent h4 {
+  font-size: 1.2rem;
+  color: #1e3a8a;
+  margin: 20px 0 15px;
+  font-weight: 600;
+}
+
+.imageContent {
+  flex: 1;
+}
+
+.imageWrapper {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.contraindicationsList {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 15px 0;
+}
+
+.contraindicationsList li {
+  margin-bottom: 12px;
+  padding-left: 25px;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #334155;
+}
+
+.contraindicationsList li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #1e3a8a;
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .questionContent {
+    flex-direction: column;
+  }
+
+  .textContent {
+    order: 2;
+  }
+
+  .imageContent {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .mainTitle {
+    font-size: 2rem;
+  }
+
+  .questionTitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 40px 0;
+  }
+
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+
+  .questionTitle {
+    padding: 15px;
+  }
+
+  .questionContent {
+    padding: 15px;
+  }
+}

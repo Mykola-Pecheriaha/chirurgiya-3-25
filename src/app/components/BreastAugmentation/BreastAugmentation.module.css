@@ -1,0 +1,131 @@
+.wrapper {
+  width: 100%;
+  padding: 70px 0;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.topSection {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.textColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imageColumn {
+  flex: 1;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #1e3a8a;
+}
+
+.imageContainer {
+  width: 100%;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Стилі для списку переваг */
+.benefitsList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.benefitsItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.bulletPoint {
+  color: #1e3a8a;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  line-height: 1;
+}
+
+.benefitsText {
+  color: #333;
+  font-weight: 500;
+}
+
+/* Стилі для секції з текстом на всю ширину */
+.fullWidthSection {
+  width: 100%;
+}
+
+.fullWidthText {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .topSection {
+    flex-direction: column-reverse;
+  }
+
+  .textColumn,
+  .imageColumn {
+    flex: none;
+    width: 100%;
+  }
+
+  .benefitsList {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 40px 0;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .benefitsItem {
+    font-size: 1.1rem;
+  }
+}
