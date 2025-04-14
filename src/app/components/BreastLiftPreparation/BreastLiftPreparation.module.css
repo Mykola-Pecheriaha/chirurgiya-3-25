@@ -1,0 +1,167 @@
+.wrapper {
+  width: 100%;
+  padding: 70px 0;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.mainTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.mainTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #a5d93b;
+}
+
+.contentSection {
+  display: flex;
+  gap: 40px;
+}
+
+.textColumn {
+  flex: 2; /* 2/3 ширини */
+}
+
+.galleryColumn {
+  flex: 1; /* 1/3 ширини */
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.subTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.examList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.examItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.bulletPoint {
+  color: #4a90e2;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.examText {
+  color: #444;
+}
+
+.noteBox {
+  display: flex;
+  background-color: #f5f5f5;
+  border-left: 4px solid #e74c3c;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 4px;
+}
+
+.noteIcon {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  color: #e74c3c;
+}
+
+.noteText {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+  margin: 0;
+}
+
+/* Адаптивність */
+@media (max-width: 1024px) {
+  .contentSection {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentSection {
+    flex-direction: column;
+  }
+
+  .textColumn,
+  .galleryColumn {
+    flex: none;
+    width: 100%;
+  }
+
+  .mainTitle {
+    font-size: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.6rem;
+  }
+
+  .subTitle {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 40px 0;
+  }
+
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.4rem;
+  }
+
+  .subTitle {
+    font-size: 1.2rem;
+  }
+
+  .paragraph,
+  .examItem,
+  .noteText {
+    font-size: 1rem;
+  }
+}

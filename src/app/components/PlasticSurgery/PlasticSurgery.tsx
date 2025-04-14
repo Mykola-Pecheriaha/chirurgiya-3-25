@@ -29,17 +29,17 @@ const plasticSurgeryServices: ServiceCard[] = [
   },
   {
     id: 'breast-lift',
-    title: 'Підтяжка грудей',
+    title: 'Підтяжку грудей і корекцію сосків та ареоли',
     imageUrl: '/images/plastic-list/plastic-lift2.jpg',
-    imageAlt: 'Підтяжка грудей',
-    link: '/services/plastic-surgery/breast-lift',
+    imageAlt: 'Підтяжку грудей і корекцію сосків та ареоли',
+    link: '/services/plastic-surgery/mastopexy-with-nipple-correction',
   },
   {
     id: 'papila-correction',
     title: 'Корекція соска та ареоли',
     imageUrl: '/images/plastic-list/plastic-lift3.jpg',
     imageAlt: 'Корекція соска та ареоли',
-    link: '/services/plastic-surgery/papila-correction',
+    link: '/services/plastic-surgery/mastopexy-with-nipple-correction',
   },
   {
     id: 'implant-removal',

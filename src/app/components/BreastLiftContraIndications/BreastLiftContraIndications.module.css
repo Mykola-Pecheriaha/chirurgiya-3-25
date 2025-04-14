@@ -1,0 +1,115 @@
+.wrapper {
+  width: 100%;
+  padding: 70px 0;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.mainTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.mainTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #a5d93b;
+}
+
+.contentSection {
+  display: flex;
+  gap: 40px;
+}
+
+.textColumn {
+  flex: 2; /* 2/3 ширини */
+}
+
+.galleryColumn {
+  flex: 1; /* 1/3 ширини */
+}
+
+.paragraph {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.contraindicationsList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.contraindicationItem {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.contraindicationItem::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #a5d93b;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+/* Адаптивність */
+@media (max-width: 1024px) {
+  .contentSection {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentSection {
+    flex-direction: column;
+  }
+
+  .textColumn,
+  .galleryColumn {
+    flex: none;
+    width: 100%;
+  }
+
+  .mainTitle {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 40px 0;
+  }
+
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+
+  .paragraph,
+  .contraindicationItem {
+    font-size: 1rem;
+  }
+}

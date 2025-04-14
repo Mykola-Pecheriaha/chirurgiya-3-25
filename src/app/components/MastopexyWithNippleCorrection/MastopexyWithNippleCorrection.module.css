@@ -1,0 +1,143 @@
+.wrapper {
+  width: 100%;
+  padding: 70px 0;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.mainTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.mainTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #a5d93b; /* Трохи темніший відтінок від #d6f58e */
+}
+
+.contentSection {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.textColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imageColumn {
+  flex: 1;
+}
+
+.imageContainer {
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Зображення відображається повністю без обрізання */
+  display: block;
+}
+
+/* Стилі для списку переваг */
+.benefitsList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.benefitItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.bulletPoint {
+  color: #a5d93b; /* Трохи темніший відтінок від #d6f58e */
+  font-size: 1.5rem;
+  margin-right: 10px;
+  line-height: 1;
+}
+
+.benefitText {
+  color: #333;
+  font-weight: 500;
+}
+
+/* Стилі для секції з текстом на всю ширину */
+.fullWidthText {
+  width: 100%;
+}
+
+.paragraph {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .contentSection {
+    flex-direction: column-reverse;
+  }
+
+  .textColumn,
+  .imageColumn {
+    flex: none;
+    width: 100%;
+  }
+
+  .benefitsList {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+
+  .mainTitle {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 40px 0;
+  }
+
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+
+  .benefitItem {
+    font-size: 1.1rem;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+  }
+}
