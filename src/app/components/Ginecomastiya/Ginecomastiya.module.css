@@ -1,0 +1,107 @@
+.wrapper {
+  width: 100%;
+  padding: 60px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.heroContent {
+  flex: 1;
+}
+
+.heroImage {
+  flex: 1;
+}
+
+.title {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.benefits {
+  list-style-type: none;
+  padding: 0;
+}
+
+.benefits li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.benefits li svg {
+  margin-right: 10px;
+  color: #0070f3;
+}
+
+.description {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #363636;
+  margin: 40px 0;
+}
+
+.examples {
+  display: flex;
+  gap: 40px;
+}
+
+.examplesContent {
+  flex: 1;
+}
+
+.examplesTitle {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.examplesGallery {
+  flex: 1;
+}
+
+.galleryTitle {
+  display: inline-block;
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .hero,
+  .examples {
+    flex-direction: column;
+  }
+
+  .heroImage,
+  .examplesGallery {
+    margin-top: 30px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .benefits li,
+  .description {
+    font-size: 1rem;
+  }
+
+  .examplesTitle {
+    font-size: 1.5rem;
+  }
+}

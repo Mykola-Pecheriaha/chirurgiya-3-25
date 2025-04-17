@@ -1,0 +1,122 @@
+.container {
+  width: 100%;
+  padding: 40px 0;
+  transition: background-color 0.3s ease;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin: 40px 0 30px;
+}
+
+.twoColumns {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.textColumn {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.paragraph {
+  margin-bottom: 20px;
+}
+
+.indication {
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.bullet {
+  color: #3498db;
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.galleryColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fullWidthText {
+  width: 100%;
+  margin: 30px 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  text-align: justify;
+}
+
+.indicationsList {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.indicationsList li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.indicationsList li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #3498db;
+  font-weight: bold;
+}
+
+/* Адаптивність для планшетів */
+@media (max-width: 992px) {
+  .twoColumns {
+    flex-direction: column;
+  }
+
+  .galleryColumn {
+    margin-top: 30px;
+  }
+}
+
+/* Адаптивність для мобільних */
+@media (max-width: 576px) {
+  .title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .subtitle {
+    font-size: 22px;
+    margin: 30px 0 20px;
+  }
+
+  .fullWidthText {
+    margin: 20px 0;
+  }
+}
