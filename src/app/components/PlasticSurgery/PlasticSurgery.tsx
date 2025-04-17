@@ -46,14 +46,14 @@ const plasticSurgeryServices: ServiceCard[] = [
     title: 'Видалення імплантів',
     imageUrl: '/images/plastic-list/plastic-lift4.jpg',
     imageAlt: 'Видалення імплантів',
-    link: '/services/plastic-surgery/implant-removal',
+    link: '/services/plastic-surgery/implant-revision',
   },
   {
     id: 'implant-replacement',
     title: 'Заміна імплантів',
     imageUrl: '/images/plastic-list/plastic-lift6.jpg',
     imageAlt: 'Заміна імплантів',
-    link: '/services/plastic-surgery/implant-replacement',
+    link: '/services/plastic-surgery/implant-revision',
   },
   {
     id: 'gynecomastia',

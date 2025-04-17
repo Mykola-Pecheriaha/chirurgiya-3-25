@@ -1,0 +1,101 @@
+.container {
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.mainContent {
+  display: flex;
+  gap: 40px;
+}
+
+.textContent {
+  flex: 0.6;
+}
+
+.galleryContent {
+  flex: 0.4;
+}
+
+.introText {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  color: #444;
+}
+
+.diamond {
+  color: #0070f3;
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.procedureSteps {
+  padding-left: 20px;
+  margin-bottom: 24px;
+}
+
+.procedureSteps li {
+  margin-bottom: 16px;
+}
+
+.procedureSteps strong {
+  color: #0070f3;
+  font-weight: 600;
+}
+
+.procedureSteps p {
+  margin-top: 8px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.anesthesiaInfo {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  padding: 16px;
+  background-color: rgba(0, 112, 243, 0.05);
+  border-radius: 8px;
+  border-left: 4px solid #0070f3;
+}
+
+.anesthesiaInfo strong {
+  color: #0070f3;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    flex-direction: column;
+  }
+
+  .textContent,
+  .galleryContent {
+    flex: 1;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .introText {
+    font-size: 16px;
+  }
+}

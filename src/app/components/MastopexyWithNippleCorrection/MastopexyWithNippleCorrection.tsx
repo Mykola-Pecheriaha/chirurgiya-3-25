@@ -43,7 +43,7 @@ const MastopexyWithNippleCorrection: React.FC<
           <div className={styles.imageColumn}>
             <div className={styles.imageContainer}>
               <Image
-                src="/images/mastopexy-with-nipple-correction/plastychna-khirurhiy2.jpg"
+                src="/images/mastopexy-with-nipple-correction/plastychna-khirurhiy2-removebg-preview.png"
                 alt="Підтяжка грудей і корекція сосків"
                 width={600}
                 height={450}

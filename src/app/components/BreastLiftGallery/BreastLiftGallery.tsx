@@ -130,8 +130,8 @@ const BreastLiftGallery: React.FC<BreastLiftGalleryProps> = ({
                 <Image
                   src={images[currentImageIndex] || '/placeholder.svg'}
                   alt={`Зображення галереї ${currentImageIndex + 1}`}
-                  width={400}
-                  height={400}
+                  width={500}
+                  height={600}
                   className={styles.galleryImage}
                   priority={true}
                   onError={(e) => {
