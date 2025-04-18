@@ -14,10 +14,10 @@
   width: 100%;
   height: 400px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background-color: #f9f9f9;
 }
 
 .mainImage {
@@ -29,14 +29,14 @@
   transition: transform 0.3s ease;
 }
 
-.controls {
+.navigation {
   position: absolute;
-  bottom: 20px;
   left: 0;
   right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 0 20px;
   z-index: 10;
 }
@@ -51,32 +51,13 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .navButton:hover {
   background-color: rgba(255, 255, 255, 1);
-}
-
-.indicators {
-  display: flex;
-  gap: 8px;
-}
-
-.indicator {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.activeIndicator {
-  background-color: #fff;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .zoomControls {
@@ -89,6 +70,7 @@
   border-radius: 20px;
   padding: 5px 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
 }
 
 .zoomButton {
@@ -115,6 +97,35 @@
   text-align: center;
 }
 
+.thumbnails {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  overflow-x: auto;
+  width: 100%;
+  background-color: #fff;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 60px;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+
+.thumbnail:hover {
+  opacity: 0.9;
+}
+
+.activeThumbnail {
+  border-color: #0070f3;
+  opacity: 1;
+}
+
 .loading {
   width: 100%;
   height: 200px;
@@ -123,6 +134,8 @@
   justify-content: center;
   color: #666;
   font-style: italic;
+  background-color: #f9f9f9;
+  border-radius: 8px;
 }
 
 @media (max-width: 768px) {
@@ -130,19 +143,18 @@
     height: 300px;
   }
 
-  .controls {
-    bottom: 10px;
-    padding: 0 10px;
-  }
-
   .navButton {
     width: 36px;
     height: 36px;
   }
 
-  .zoomControls {
-    top: 10px;
-    right: 10px;
+  .thumbnails {
+    padding: 10px;
+  }
+
+  .thumbnail {
+    width: 70px;
+    height: 50px;
   }
 }
 
@@ -156,13 +168,19 @@
     height: 32px;
   }
 
-  .indicator {
-    width: 8px;
-    height: 8px;
+  .zoomControls {
+    top: 10px;
+    right: 10px;
+    padding: 3px 8px;
   }
 
   .zoomLevel {
     font-size: 12px;
     min-width: 36px;
+  }
+
+  .thumbnail {
+    width: 60px;
+    height: 45px;
   }
 }
