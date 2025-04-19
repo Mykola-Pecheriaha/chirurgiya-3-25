@@ -63,11 +63,11 @@ const plasticSurgeryServices: ServiceCard[] = [
     link: '/services/plastic-surgery/gynecomastia',
   },
   {
-    id: 'face-lift',
-    title: 'Підтяжка обличчя',
+    id: 'facelift-section',
+    title: 'Підтяжка обличчя та шиї',
     imageUrl: '/images/plastic-list/plastic-lift8.jpg',
-    imageAlt: 'Підтяжка обличчя',
-    link: '/services/plastic-surgery/face-lift',
+    imageAlt: 'Підтяжка обличчя та шиї',
+    link: '/services/plastic-surgery/facelift-section',
   },
   {
     id: 'blepharoplasty',
