@@ -2,6 +2,7 @@ import React from 'react';
 import FaceliftSection from '../../../components/FaceliftSection';
 import FaceliftDetails from '../../../components/FaceliftDetails';
 import FaceLiftPreparation from '../../../components/FaceLiftPreparation/FaceLiftPreparation';
+import FaceliftFAQ from '../../../components/FaceliftFAQ';
 
 const FaceliftSectionPage: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const FaceliftSectionPage: React.FC = () => {
       <FaceliftSection backgroundColor="#E6DDF7FF" />
       <FaceliftDetails backgroundColor="#f8f4ff" />
       <FaceLiftPreparation backgroundColor="#f8f4ff" />
+      <FaceliftFAQ backgroundColor="#f8f4ff" />
     </div>
   );
 };

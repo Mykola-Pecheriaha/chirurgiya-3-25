@@ -71,16 +71,6 @@ const FaceLiftPreparation: React.FC<FaceLiftPreparationProps> = ({
 
   const recoveryImages: ImageItem[] = [
     {
-      src: '/images/FaceLiftPreparation/reabilit3.jpg',
-      width: 600,
-      height: 600,
-    },
-    {
-      src: '/images/FaceLiftPreparation/reabilit4.jpg',
-      width: 600,
-      height: 600,
-    },
-    {
       src: '/images/FaceLiftPreparation/reabilit5.jpg',
       width: 500,
       height: 600,
