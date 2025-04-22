@@ -1,0 +1,237 @@
+.galleryContainer {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.mainImageContainer {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 5;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.mainImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+.controlsContainer {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.navButton {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navButton:hover {
+  background-color: #2980b9;
+}
+
+.zoomControls {
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+}
+
+.zoomButton {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 1.2rem;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zoomButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.zoomLevel {
+  color: #333;
+  margin: 0 10px;
+  font-size: 0.9rem;
+  min-width: 45px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.thumbnailsContainer {
+  display: flex;
+  overflow-x: auto;
+  padding: 12px;
+  background-color: #f0f0f0;
+  scrollbar-width: thin;
+  justify-content: center;
+}
+
+.thumbnailsContainer::-webkit-scrollbar {
+  height: 6px;
+}
+
+.thumbnailsContainer::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.thumbnailsContainer::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+.thumbnail {
+  flex: 0 0 auto;
+  width: 80px;
+  height: 60px;
+  margin-right: 12px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.thumbnail:last-child {
+  margin-right: 0;
+}
+
+.activeThumbnail {
+  border-color: #3498db;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnailImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageTitle {
+  width: 100%;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 8px 15px;
+  font-size: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.noImages {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  color: #666;
+  font-size: 1.2rem;
+  border-radius: 8px;
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+  .mainImageContainer {
+    height: 300px;
+  }
+
+  .controls {
+    padding: 0 10px;
+  }
+
+  .navButton {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+  }
+
+  .zoomControls {
+    padding: 3px 8px;
+  }
+
+  .zoomButton {
+    width: 25px;
+    height: 25px;
+    font-size: 1rem;
+  }
+
+  .zoomLevel {
+    font-size: 0.8rem;
+    min-width: 40px;
+  }
+
+  .thumbnail {
+    width: 60px;
+    height: 45px;
+  }
+
+  .imageTitle {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+}

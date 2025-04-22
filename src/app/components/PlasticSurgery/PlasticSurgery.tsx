@@ -77,11 +77,11 @@ const plasticSurgeryServices: ServiceCard[] = [
     link: '/services/plastic-surgery/blepharoplasty',
   },
   {
-    id: 'flap-correction',
+    id: 'ottoplastic',
     title: 'Корекція клаповухості',
     imageUrl: '/images/plastic-list/plastic-lift11.jpg',
     imageAlt: 'Корекція клаповухості',
-    link: '/services/plastic-surgery/flap-correction',
+    link: '/services/plastic-surgery/ottoplastic',
   },
   {
     id: 'abdominoplasty',

@@ -1,0 +1,163 @@
+.accordionItem {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.accordionItem.open {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.questionContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.questionContainer:hover {
+  background-color: #f9f9f9;
+}
+
+.question {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+  color: #666;
+}
+
+.arrowUp {
+  transform: rotate(180deg);
+}
+
+.answerContainer {
+  display: flex;
+  padding: 0 20px 20px;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.textContent {
+  flex: 2;
+  padding-right: 20px;
+}
+
+.answer {
+  color: #555;
+  line-height: 1.6;
+}
+
+.answer p {
+  margin-bottom: 15px;
+}
+
+.answer ul,
+.additionalInfo ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.answer li,
+.additionalInfo li {
+  margin-bottom: 8px;
+  list-style-type: none;
+  position: relative;
+}
+
+.additionalInfo {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.additionalInfo h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.imagesContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.imageWrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.imageWrapper:hover .image {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .answerContainer {
+    flex-direction: column;
+  }
+
+  .textContent {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .imagesContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .imageWrapper {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .question {
+    font-size: 1.1rem;
+  }
+
+  .imageWrapper {
+    width: 100%;
+  }
+}
