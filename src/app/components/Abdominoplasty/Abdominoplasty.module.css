@@ -1,0 +1,113 @@
+.container {
+  width: 100%;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.innerContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.topSection {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+
+.textContent {
+  flex: 1;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #5a1846;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.benefitsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefitItem {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.emoji {
+  margin-right: 0.75rem;
+  font-size: 1.4rem;
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainImage {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.bottomSection {
+  width: 100%;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+}
+
+/* Адаптивність для планшетів */
+@media (max-width: 992px) {
+  .topSection {
+    flex-direction: column;
+  }
+
+  .textContent,
+  .imageContainer {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .imageContainer {
+    margin-top: 1.5rem;
+  }
+}
+
+/* Адаптивність для мобільних */
+@media (max-width: 576px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .benefitItem {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}

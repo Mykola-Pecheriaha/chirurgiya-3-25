@@ -1,0 +1,392 @@
+.gallery {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.imageContainer {
+  position: relative;
+  width: 550px;
+  height: 550px;
+  overflow: hidden;
+  flex-grow: 1;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  border-radius: 0;
+}
+
+.placeholderImage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0000001c;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* Стрілки навігації */
+.navButton {
+  position: absolute;
+  bottom: 60px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 5;
+  border-radius: 50%;
+}
+
+.navButton::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(134, 133, 133, 0.205);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.navButton:hover::before {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prevButton {
+  left: 10px;
+  transform: none;
+}
+
+.nextButton {
+  right: 10px;
+  transform: none;
+}
+
+/* Модальне вікно */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Зображення в модальному вікні */
+.modalImage {
+  max-width: 90%;
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+/* Стрілки в модальному вікні */
+.modalNavButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1001;
+  border-radius: 50%;
+}
+
+.modalNavButton::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.modalNavButton:hover::before {
+  opacity: 1;
+}
+
+.modalPrevButton {
+  left: -60px;
+}
+
+.modalNextButton {
+  right: -60px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: #f8f8f8;
+  border-top: 1px solid #eee;
+  flex-shrink: 0;
+  margin-top: 0;
+}
+
+.dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.activeDot {
+  background-color: #5a1846;
+}
+
+.zoomButton {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #5a1846;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.zoomButton:hover {
+  background-color: #7a2460;
+}
+
+.zoomControls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  z-index: 1002;
+}
+
+.closeButton,
+.thumbnailsButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.thumbnailsButton {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.closeButton:hover,
+.thumbnailsButton:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.thumbnailsContainer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  z-index: 1003;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 60px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  transition:
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.thumbnail:hover {
+  transform: translateY(-3px);
+}
+
+.activeThumbnail {
+  border-color: #5a1846;
+}
+
+.thumbnailImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageTitle {
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f8f8f8;
+  border-top: 1px solid #eee;
+  flex-shrink: 0;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .imageContainer {
+    height: 300px;
+  }
+
+  .navButton {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    bottom: 50px;
+  }
+
+  .modalNavButton {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .modalPrevButton {
+    left: -45px;
+  }
+
+  .modalNextButton {
+    right: -45px;
+  }
+
+  .thumbnailsContainer {
+    padding: 5px;
+  }
+
+  .thumbnail {
+    width: 60px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 576px) {
+  .imageContainer {
+    height: 250px;
+  }
+
+  .navButton {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    bottom: 40px;
+  }
+
+  .controls {
+    padding: 0.5rem;
+  }
+
+  .zoomButton,
+  .closeButton,
+  .thumbnailsButton {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+
+  .modalNavButton {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .modalPrevButton {
+    left: 10px;
+  }
+
+  .modalNextButton {
+    right: 10px;
+  }
+
+  .thumbnail {
+    width: 50px;
+    height: 40px;
+  }
+
+  .imageTitle {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
