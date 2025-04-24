@@ -91,11 +91,11 @@ const plasticSurgeryServices: ServiceCard[] = [
     link: '/services/plastic-surgery/abdominoplasty',
   },
   {
-    id: 'gernioplastica',
+    id: 'gerniotomiya',
     title: 'Герніопластика',
     imageUrl: '/images/plastic-list/plastic-lift13.jpg',
     imageAlt: 'Герніопластика',
-    link: '/services/plastic-surgery/gernioplastica',
+    link: '/services/plastic-surgery/gerniotomiya',
   },
   {
     id: 'liposuction',
