@@ -1,11 +1,11 @@
 'use client';
 
 import type React from 'react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
-import styles from './GernioGallery.module.css';
+import styles from './GernioGalleryFAQ.module.css';
 
-interface ImageType {
+interface GalleryImage {
   src: string;
   alt: string;
   width: number;
@@ -13,16 +13,24 @@ interface ImageType {
   title?: string;
 }
 
-interface GernioGalleryProps {
-  images: ImageType[];
+interface GernioGalleryFAQProps {
+  images: GalleryImage[];
 }
 
-const GernioGallery: React.FC<GernioGalleryProps> = ({ images }) => {
+export function GernioGalleryFAQ({ images }: GernioGalleryFAQProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [showThumbnails, setShowThumbnails] = useState(false);
+  const [imagesLoaded, setImagesLoaded] = useState<boolean[]>([]);
+  const galleryRef = useRef<HTMLDivElement>(null);
 
-  // Обробники подій
+  useEffect(() => {
+    // Просто ініціалізуємо масив для відстеження стану зображень
+    setImagesLoaded(new Array(images.length).fill(true));
+
+    // Не використовуємо new Image() для перевірки, оскільки це викликає помилки
+  }, [images]);
+
   const nextImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
@@ -35,9 +43,7 @@ const GernioGallery: React.FC<GernioGalleryProps> = ({ images }) => {
 
   const toggleFullscreen = () => {
     setIsFullscreen(!isFullscreen);
-    if (!isFullscreen) {
-      setShowThumbnails(false);
-    }
+    setShowThumbnails(false);
   };
 
   const toggleThumbnails = (e: React.MouseEvent) => {
@@ -49,22 +55,8 @@ const GernioGallery: React.FC<GernioGalleryProps> = ({ images }) => {
     setCurrentIndex(index);
   };
 
-  // Закриття повноекранного режиму при натисканні Escape
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && isFullscreen) {
-        setIsFullscreen(false);
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-    };
-  }, [isFullscreen]);
-
   return (
-    <div className={styles.galleryContainer}>
+    <div className={styles.galleryContainer} ref={galleryRef}>
       {/* Заголовок галереї */}
       <div className={styles.galleryHeader}>
         <h4 className={styles.galleryTitle}>
@@ -78,14 +70,12 @@ const GernioGallery: React.FC<GernioGalleryProps> = ({ images }) => {
         <button
           className={`${styles.navButton} ${styles.prevButton}`}
           onClick={prevImage}
-          aria-label="Попереднє зображення"
         >
           &#10094;
         </button>
         <button
           className={`${styles.navButton} ${styles.nextButton}`}
           onClick={nextImage}
-          aria-label="Наступне зображення"
         >
           &#10095;
         </button>
@@ -117,11 +107,7 @@ const GernioGallery: React.FC<GernioGalleryProps> = ({ images }) => {
         </div>
 
         {/* Кнопка збільшення */}
-        <button
-          className={styles.fullscreenButton}
-          onClick={toggleFullscreen}
-          aria-label="Повноекранний режим"
-        >
+        <button className={styles.fullscreenButton} onClick={toggleFullscreen}>
           +
         </button>
       </div>
@@ -133,6 +119,20 @@ const GernioGallery: React.FC<GernioGalleryProps> = ({ images }) => {
             className={styles.fullscreenContent}
             onClick={(e) => e.stopPropagation()}
           >
+            {/* Стрілки навігації в повноекранному режимі */}
+            <button
+              className={`${styles.navButton} ${styles.fullscreenPrevButton}`}
+              onClick={prevImage}
+            >
+              &#10094;
+            </button>
+            <button
+              className={`${styles.navButton} ${styles.fullscreenNextButton}`}
+              onClick={nextImage}
+            >
+              &#10095;
+            </button>
+
             {/* Зображення в повноекранному режимі */}
             <div className={styles.fullscreenImageContainer}>
               <Image
@@ -144,41 +144,18 @@ const GernioGallery: React.FC<GernioGalleryProps> = ({ images }) => {
               />
             </div>
 
-            {/* Стрілки навігації в повноекранному режимі */}
-            <button
-              className={`${styles.navButton} ${styles.fullscreenPrevButton}`}
-              onClick={prevImage}
-              aria-label="Попереднє зображення"
-            >
-              &#10094;
-            </button>
-            <button
-              className={`${styles.navButton} ${styles.fullscreenNextButton}`}
-              onClick={nextImage}
-              aria-label="Наступне зображення"
-            >
-              &#10095;
-            </button>
-
-            {/* Кнопка закриття - явно позиціонована у верхньому правому куті */}
-            <button
-              className={styles.closeButton}
-              onClick={toggleFullscreen}
-              aria-label="Закрити повноекранний режим"
-            >
-              ×
-            </button>
-
-            {/* Кнопка для відображення мініатюр - явно позиціонована поруч з кнопкою закриття */}
+            {/* Кнопки керування у верхньому правому куті */}
             <button
               className={styles.thumbnailsButton}
               onClick={toggleThumbnails}
-              aria-label="Показати мініатюри"
             >
               ⋮⋮
             </button>
+            <button className={styles.closeButton} onClick={toggleFullscreen}>
+              ×
+            </button>
 
-            {/* Мініатюри - відображаються внизу при активації */}
+            {/* Мініатюри */}
             {showThumbnails && (
               <div className={styles.thumbnailsContainer}>
                 {images.map((image, index) => (
@@ -203,6 +180,4 @@ const GernioGallery: React.FC<GernioGalleryProps> = ({ images }) => {
       )}
     </div>
   );
-};
-
-export default GernioGallery;
+}

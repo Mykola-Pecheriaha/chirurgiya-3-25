@@ -2,12 +2,12 @@
   width: 100%;
   border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .galleryHeader {
-  padding: 15px;
+  padding: 12px;
   background-color: #f8f9fa;
   border-bottom: 1px solid #eaeaea;
 }
@@ -40,7 +40,6 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
-  transition: transform 0.3s ease;
 }
 
 .navButton {
@@ -126,7 +125,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
-  z-index: 1000;
+  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,9 +133,9 @@
 
 .fullscreenContent {
   position: relative;
-  width: 90%;
-  height: 90%;
-  max-width: 1200px;
+  width: 80%; /* Зменшено з 90% до 80% */
+  height: 80%; /* Зменшено з 90% до 80% */
+  max-width: 1000px; /* Зменшено з 1200px до 1000px */
 }
 
 .fullscreenImageContainer {
@@ -159,6 +158,7 @@
   width: 50px;
   height: 50px;
   font-size: 24px;
+  z-index: 10000;
 }
 
 .fullscreenPrevButton {
@@ -169,37 +169,56 @@
   right: -60px;
 }
 
+/* Перенесено кнопки в нижню частину екрану і збільшено z-index */
 .closeButton {
-  position: absolute;
-  top: -40px;
-  right: 0;
-  background-color: transparent;
+  position: fixed; /* Змінено з absolute на fixed */
+  bottom: 20px; /* Змінено з -60px на 20px */
+  right: 60px;
+  background-color: rgba(255, 255, 255, 0.7);
   border: none;
-  color: white;
+  color: black;
   font-size: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  z-index: 10001; /* Збільшено з 10000 на 10001 */
 }
 
+/* Перенесено кнопку для мініатюр поруч з кнопкою закриття */
 .thumbnailsButton {
-  position: absolute;
-  top: -40px;
-  right: 40px;
-  background-color: transparent;
+  position: fixed; /* Змінено з absolute на fixed */
+  bottom: 20px; /* Змінено з -60px на 20px */
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
   border: none;
-  color: white;
-  font-size: 24px;
+  color: black;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  z-index: 10001; /* Збільшено з 10000 на 10001 */
 }
 
+/* Контейнер для мініатюр внизу екрану */
 .thumbnailsContainer {
-  position: absolute;
-  bottom: -100px;
+  position: fixed; /* Змінено з absolute на fixed */
+  bottom: 70px; /* Змінено з -120px на 70px, щоб розташувати над кнопками */
   left: 0;
   width: 100%;
   display: flex;
   gap: 10px;
   overflow-x: auto;
   padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 10000;
 }
 
 .thumbnail {
@@ -213,7 +232,7 @@
 }
 
 .activeThumbnail {
-  border-color: white;
+  border-color: #4a6fa5;
 }
 
 .thumbnailImage {
@@ -224,6 +243,11 @@
 
 /* Адаптивність для мобільних пристроїв */
 @media (max-width: 768px) {
+  .fullscreenContent {
+    width: 90%;
+    height: 70%; /* Зменшено висоту для мобільних пристроїв */
+  }
+
   .fullscreenPrevButton,
   .fullscreenNextButton {
     width: 40px;
@@ -232,15 +256,20 @@
   }
 
   .fullscreenPrevButton {
-    left: -45px;
+    left: 10px;
   }
 
   .fullscreenNextButton {
-    right: -45px;
+    right: 10px;
+  }
+
+  .closeButton,
+  .thumbnailsButton {
+    bottom: 20px; /* Фіксована позиція для мобільних пристроїв */
   }
 
   .thumbnailsContainer {
-    bottom: -80px;
+    bottom: 70px; /* Фіксована позиція для мобільних пристроїв */
   }
 
   .thumbnail {

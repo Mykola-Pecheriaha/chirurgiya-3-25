@@ -1,0 +1,71 @@
+.accordion {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordionItem {
+  margin-bottom: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
+
+.accordionHeader:hover {
+  background-color: #f0f0f0;
+}
+
+.accordionHeader.active {
+  background-color: #e8f4fd;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.accordionTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.accordionIcon {
+  font-size: 24px;
+  color: #666;
+  transition: transform 0.3s ease;
+}
+
+.accordionHeader.active .accordionIcon {
+  transform: rotate(180deg);
+}
+
+.accordionBody {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.accordionBody.open {
+  max-height: 2000px; /* Достатньо велике значення для відображення контенту */
+  transition: max-height 1s ease;
+}
+
+@media (max-width: 768px) {
+  .accordionHeader {
+    padding: 15px;
+  }
+
+  .accordionTitle {
+    font-size: 16px;
+  }
+}
