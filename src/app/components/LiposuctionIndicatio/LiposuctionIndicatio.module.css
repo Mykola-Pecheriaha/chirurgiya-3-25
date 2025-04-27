@@ -1,0 +1,195 @@
+.wrapper {
+  width: 100%;
+  padding: 40px 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mainTitle {
+  text-align: center;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.segment {
+  margin-bottom: 60px;
+}
+
+.fullWidthTitle {
+  font-size: 28px;
+  color: #e74c3c;
+  margin-bottom: 20px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.fullWidthText {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.contentSplit {
+  display: flex;
+  gap: 30px;
+}
+
+.textColumn {
+  flex: 1;
+}
+
+.galleryColumn {
+  flex: 1;
+}
+
+.textContent {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.bullet {
+  color: #3498db;
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.redBullet {
+  color: #e74c3c;
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.list {
+  list-style-type: none;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.list li {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.nestedList {
+  list-style-type: none;
+  padding-left: 20px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+
+.nestedList li {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+.importantItem {
+  font-weight: 600;
+  color: #333;
+}
+
+.note {
+  background-color: #f8f9fa;
+  border-left: 4px solid #3498db;
+  padding: 15px;
+  margin: 20px 0;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.noteBullet {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+/* Адаптивність для планшетів */
+@media (max-width: 992px) {
+  .contentSplit {
+    flex-direction: column;
+  }
+
+  .textColumn,
+  .galleryColumn {
+    width: 100%;
+  }
+
+  .mainTitle {
+    font-size: 28px;
+  }
+
+  .fullWidthTitle {
+    font-size: 24px;
+  }
+}
+
+/* Адаптивність для мобільних */
+@media (max-width: 576px) {
+  .wrapper {
+    padding: 20px 0;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .mainTitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .fullWidthTitle {
+    font-size: 22px;
+  }
+
+  .fullWidthText {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .text,
+  .list li,
+  .nestedList li,
+  .note {
+    font-size: 15px;
+  }
+
+  .textContent {
+    padding: 15px;
+  }
+}

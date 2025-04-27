@@ -110,7 +110,7 @@ export function GernioPreparation({
     <section className={styles.gernioPreparation} style={{ backgroundColor }}>
       <div className={styles.container}>
         <h2 className={styles.title}>
-          🧷 Абдомінопластика: підготовка до операції
+          🧷 Герніотомія : підготовка до операції
         </h2>
 
         <p className={styles.introText}>

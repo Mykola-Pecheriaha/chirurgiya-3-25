@@ -119,11 +119,11 @@ const plasticSurgeryServices: ServiceCard[] = [
     link: '/services/plastic-surgery/buttock-augmentation',
   },
   {
-    id: 'buttock-augmentation',
+    id: 'liposuction',
     title: 'Видалення шийного горба',
     imageUrl: '/images/plastic-list/plastic-lift17.jpg',
     imageAlt: 'Видалення шийного горба',
-    link: '/services/plastic-surgery/buttock-augmentation',
+    link: '/services/plastic-surgery/liposuction',
   },
 ];
 
