@@ -3,6 +3,7 @@ import Liposuction from '../../../components/Liposuction';
 import { LiposuctionDetails } from '../../../components/LiposuctionDetails';
 import { LiposuctionIndicatio } from '../../../components/LiposuctionIndicatio';
 import { LiposuctionPreparation } from '../../../components/LiposuctionPreparation';
+import { LiposuctionFAQ } from '../../../components/LiposuctionFAQ';
 
 const LiposuctionPage: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const LiposuctionPage: React.FC = () => {
       <LiposuctionDetails backgroundColor="#E2EEFDFF" />
       <LiposuctionIndicatio backgroundColor="#C4DFFCFF" />
       <LiposuctionPreparation backgroundColor="#f8f9fa" />
+      <LiposuctionFAQ backgroundColor="#f8f9fa" />
     </div>
   );
 };
