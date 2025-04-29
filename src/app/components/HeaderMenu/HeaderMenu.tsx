@@ -157,7 +157,7 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({
                       Пластична хірургія
                     </Link>
                     <Link
-                      href="/services/minimallyinvasivesurgery"
+                      href="/services/minimally-invasive"
                       className={styles.navLink}
                     >
                       Млоінвазивна хірургія

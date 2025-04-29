@@ -1,0 +1,215 @@
+.wrapper {
+  width: 100%;
+  padding: 70px 0;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.topSection {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.leftColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightColumn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background-color: #1eaaf1;
+}
+
+.benefitsList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefitItem {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-start;
+}
+.operationsList {
+  font-size: 1.4rem;
+}
+
+.diamond {
+  color: #1eaaf1;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.imageContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.surgeryImage {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  object-fit: contain;
+}
+
+.bottomSection {
+  width: 100%;
+}
+
+.subtitlePurple {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #6a3093;
+  margin-bottom: 25px;
+}
+
+.description {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: #444;
+  text-align: justify;
+}
+
+.sectionTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2a7cc7;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.operationsList,
+.advantagesList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.operationItem,
+.advantageItem {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.operationItem {
+  margin-bottom: 12px;
+}
+
+.advantageItem::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #1eaaf1;
+  font-size: 1.2rem;
+}
+
+/* Адаптивність для нових елементів */
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 1.3rem;
+  }
+
+  .operationItem,
+  .advantageItem {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionTitle {
+    font-size: 1.2rem;
+  }
+}
+
+/* Адаптивність */
+@media (max-width: 992px) {
+  .topSection {
+    flex-direction: column;
+  }
+
+  .leftColumn,
+  .rightColumn {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .subtitlePurple {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 50px 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitlePurple {
+    font-size: 1.6rem;
+  }
+
+  .benefitItem {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitlePurple {
+    font-size: 1.4rem;
+  }
+}
