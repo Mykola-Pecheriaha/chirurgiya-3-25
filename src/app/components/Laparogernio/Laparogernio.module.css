@@ -1,4 +1,4 @@
-.appendectomySection {
+.gernioSection {
   width: 100%;
   padding: 3rem 0;
 }
@@ -58,15 +58,33 @@
   color: #444;
 }
 
-.nestedList {
-  list-style-type: circle;
-  margin-top: 0.5rem;
-  margin-left: 2rem;
+.checkList {
+  list-style-type: none;
+  padding-left: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.nestedList li {
-  padding-left: 0;
-  margin-bottom: 0.5rem;
+.checkList li {
+  margin-bottom: 0.7rem;
+  position: relative;
+  padding-left: 2rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.infoList {
+  list-style-type: none;
+  padding-left: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.infoList li {
+  margin-bottom: 0.7rem;
+  position: relative;
+  padding-left: 2rem;
+  font-size: 1.1rem;
+  color: #444;
+  font-weight: 500;
 }
 
 .numberedList {
@@ -111,7 +129,7 @@
 }
 
 .galleryColumn {
-  flex: 1.5;
+  flex: 1;
 }
 
 @media (max-width: 992px) {
@@ -147,6 +165,8 @@
 
   .text,
   .bulletList li,
+  .checkList li,
+  .infoList li,
   .numberedList li {
     font-size: 1rem;
   }

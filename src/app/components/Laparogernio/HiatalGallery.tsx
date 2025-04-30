@@ -2,76 +2,55 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import styles from './AppendectGallery.module.css';
+import styles from './GernioGallery.module.css';
 
 // Визначаємо зображення безпосередньо в компоненті галереї
 const galleryImages = [
   {
-    src: '/images/appendectomyLaparo/appendectomyLaparo2.jpg',
-    alt: 'Лапароскопічна апендектомія процедура',
-    width: 600,
-    height: 700,
-    title: 'Лапароскопічна апендектомія',
-  },
-  {
-    src: '/images/appendectomyLaparo/appendectomyLaparo3.jpg',
-    alt: 'Лапароскопічне обладнання для апендектомії',
-    width: 600,
-    height: 700,
-    title: 'Апендицит',
-  },
-  {
-    src: '/images/appendectomyLaparo/appendectomyLaparo4.jpg',
-    alt: 'appendectomyLaparo3.jpg',
+    src: '/images/hiatal/laparogernio2.jpg',
+    alt: 'Грижа стравохідного отвору діафрагми',
     width: 800,
     height: 600,
-    title: 'Процес лапароскопічної апендектомії',
+    title: 'Грижа стравохідного отвору діафрагми',
   },
   {
-    src: '/images/appendectomyLaparo/appendectomyLaparo5.jpg',
-    alt: 'Процес лапароскопічної апендектомії',
+    src: '/images/hiatal/laparogernio1.jpg',
+    alt: 'Діагностика хіатальної грижі',
     width: 800,
     height: 600,
-    title: 'Процес лапароскопічної апендектомії',
+    title: 'Діагностика хіатальної грижі',
   },
   {
-    src: '/images/appendectomyLaparo/appendectomyLaparo6.jpg',
-    alt: 'Процес лапароскопічної апендектомії',
+    src: '/images/hiatal/laparogernio14.jpg',
+    alt: 'Лапароскопічна фундоплікація',
     width: 800,
     height: 600,
-    title: 'Процес лапароскопічної апендектомії',
+    title: 'Лапароскопічна фундоплікація',
   },
   {
-    src: '/images/appendectomyLaparo/appendectomyLaparo7.jpg',
-    alt: 'Процес лапароскопічної апендектомії',
+    src: '/images/hiatal/laparogernio3.jpg',
+    alt: 'Результати лікування хіатальної грижі',
     width: 800,
     height: 600,
-    title: 'Процес лапароскопічної апендектомії',
+    title: 'Результати лікування хіатальної грижі',
   },
   {
-    src: '/images/appendectomyLaparo/appendectomyLaparo8.jpg',
-    alt: 'Процес лапароскопічної апендектомії',
+    src: '/images/hiatal/laparogernio5.jpg',
+    alt: 'Результати лікування хіатальної грижі',
     width: 800,
     height: 600,
-    title: 'Процес лапароскопічної апендектомії',
+    title: 'Результати лікування хіатальної грижі',
   },
   {
-    src: '/images/appendectomyLaparo/appendectomyLaparo9.jpg',
-    alt: 'Процес лапароскопічної апендектомії',
+    src: '/images/hiatal/laparogernio4.jpg',
+    alt: 'Результати лікування хіатальної грижі',
     width: 800,
     height: 600,
-    title: 'Процес лапароскопічної апендектомії',
-  },
-  {
-    src: '/images/appendectomyLaparo/appendectomyLaparo10.jpg',
-    alt: 'Результати лапароскопічної апендектомії',
-    width: 800,
-    height: 600,
-    title: 'Результати лапароскопічної апендектомії',
+    title: 'Результати лікування хіатальної грижі',
   },
 ];
 
-export function AppendectGallery() {
+export function HiatalGallery() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fullscreen, setFullscreen] = useState(false);
   const [showThumbnails, setShowThumbnails] = useState(false);
@@ -151,7 +130,7 @@ export function AppendectGallery() {
           <Image
             src={
               currentImage.src ||
-              '/placeholder.svg?height=600&width=800&query=laparoscopic appendectomy'
+              '/placeholder.svg?height=600&width=800&query=hiatal hernia'
             }
             alt={currentImage.alt}
             width={currentImage.width}
@@ -195,7 +174,7 @@ export function AppendectGallery() {
             <button
               className={styles.closeButton}
               onClick={closeFullscreen}
-              aria-label="Закр��ти"
+              aria-label="Закрити"
             >
               &times;
             </button>
@@ -217,7 +196,7 @@ export function AppendectGallery() {
               <Image
                 src={
                   currentImage.src ||
-                  '/placeholder.svg?height=600&width=800&query=laparoscopic appendectomy'
+                  '/placeholder.svg?height=600&width=800&query=hiatal hernia'
                 }
                 alt={currentImage.alt}
                 width={currentImage.width}
@@ -248,7 +227,7 @@ export function AppendectGallery() {
                     <Image
                       src={
                         image.src ||
-                        '/placeholder.svg?height=75&width=100&query=laparoscopic appendectomy thumbnail'
+                        '/placeholder.svg?height=75&width=100&query=hiatal hernia thumbnail'
                       }
                       alt={image.alt}
                       width={100}
@@ -277,4 +256,4 @@ export function AppendectGallery() {
   );
 }
 
-export default AppendectGallery;
+export default HiatalGallery;
