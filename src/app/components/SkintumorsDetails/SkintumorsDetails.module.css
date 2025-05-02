@@ -1,0 +1,223 @@
+.skintumorsSection {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.sectionsContainer {
+  margin-bottom: 3rem;
+}
+
+.sectionItem {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.twoColumnSection {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.textColumn {
+  flex: 2; /* 2/3 ширини */
+}
+
+.imageColumn {
+  flex: 1; /* 1/3 ширини */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sectionTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.titleHighlight {
+  color: #8b0000; /* Темно-червоний колір */
+  font-weight: 700;
+}
+
+.expandButton {
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  padding: 0.25rem 0.75rem;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.expandButton:hover {
+  background-color: #e0e0e0;
+}
+
+.expandedContent {
+  margin-top: 1rem;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.expandedText {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.bulletList {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.bulletList li {
+  margin-bottom: 0.7rem;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.imageWrapper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sectionImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Зображення не обрізається */
+  transition: transform 0.3s ease;
+}
+
+.sectionImage:hover {
+  transform: scale(1.05);
+}
+
+/* Стилі для другої частини */
+.additionalInfoSection {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid rgba(139, 0, 0, 0.2);
+}
+
+.infoBlock {
+  margin-bottom: 2rem;
+  background-color: rgba(0, 0, 0, 0.02);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.infoTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.warningIcon {
+  color: #e74c3c;
+  margin-right: 0.5rem;
+}
+
+.checkIcon {
+  color: #2ecc71;
+  margin-right: 0.5rem;
+}
+
+.labIcon {
+  margin-right: 0.5rem;
+}
+
+.blueIcon {
+  color: #3498db;
+  margin-right: 0.5rem;
+}
+
+.galleryColumn {
+  flex: 1;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.galleryTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #8b0000;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .twoColumnSection {
+    flex-direction: column;
+  }
+
+  .textColumn,
+  .imageColumn,
+  .galleryColumn {
+    flex: 1;
+    width: 100%;
+  }
+
+  .imageColumn {
+    margin-top: 1rem;
+  }
+
+  .galleryColumn {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .sectionTitle,
+  .infoTitle {
+    font-size: 1.3rem;
+  }
+
+  .expandedText,
+  .bulletList li {
+    font-size: 1rem;
+  }
+
+  .expandButton {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}

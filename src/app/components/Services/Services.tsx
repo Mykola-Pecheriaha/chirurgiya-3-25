@@ -51,11 +51,11 @@ const defaultServices: ServiceCard[] = [
     link: '/services/vascular-surgery',
   },
   {
-    id: 'oncology-surgery',
-    title: 'Онкохірургія',
+    id: 'skintumors',
+    title: 'Пухлини шкіри',
     imageUrl: '/images/services/resultbreast5.jpg',
-    imageAlt: 'Онкохірургія',
-    link: '/services/oncology-surgery',
+    imageAlt: 'Пухлини шкіри',
+    link: '/services/skintumors',
   },
   {
     id: 'minimally-invasive',
@@ -65,11 +65,11 @@ const defaultServices: ServiceCard[] = [
     link: '/services/minimally-invasive',
   },
   {
-    id: 'bariatric-surgery',
+    id: 'bariatrics',
     title: 'Баріатрична хірургія',
     imageUrl: '/images/services/bariatriya.jpg',
     imageAlt: 'Баріатрична хірургія',
-    link: '/services/bariatric-surgery',
+    link: '/services/bariatrics',
   },
   {
     id: 'proctology',

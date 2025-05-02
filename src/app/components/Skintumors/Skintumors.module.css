@@ -1,0 +1,123 @@
+.skintumorsSection {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.mainTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #8b0000; /* Темно-червоний колір для заголовка */
+  text-align: left;
+}
+
+.twoColumnSection {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 2rem 0;
+  align-items: flex-start;
+}
+
+.textColumn {
+  flex: 1;
+}
+
+.imageColumn {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullWidthSection {
+  margin: 3rem 0;
+}
+
+.introText {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #333;
+  background-color: rgba(139, 0, 0, 0.1); /* Легкий фон для виділення тексту */
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.descriptionText {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #333;
+  text-align: center;
+  font-weight: 500;
+  padding: 1.5rem;
+  background-color: rgba(139, 0, 0, 0.05);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.bulletList {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.bulletList li {
+  margin-bottom: 0.7rem;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.imageWrapper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 0; /* Без рамки, як вказано в вимогах */
+}
+
+.mainImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Зображення не обрізається */
+  transition: transform 0.3s ease;
+}
+
+.mainImage:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 992px) {
+  .twoColumnSection {
+    flex-direction: column;
+  }
+
+  .mainTitle {
+    font-size: 2rem;
+  }
+
+  .imageColumn {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+
+  .introText,
+  .descriptionText {
+    font-size: 1.1rem;
+  }
+
+  .bulletList li {
+    font-size: 1rem;
+  }
+}
