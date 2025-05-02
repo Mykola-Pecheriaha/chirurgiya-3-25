@@ -1,0 +1,114 @@
+.procedureSection {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.mainTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #2a5885;
+}
+
+.contentBlock {
+  margin-bottom: 2rem;
+}
+
+.text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.twoColumnSection {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 2rem 0 3rem;
+}
+
+.textColumn {
+  flex: 1;
+}
+
+.galleryColumn {
+  flex: 1;
+}
+
+.collapsibleText {
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+/* .collapsibleText.expanded {
+  
+} */
+
+.expandButton {
+  display: block;
+  margin: 1rem 0;
+}
+
+.bulletList {
+  list-style-type: none;
+  padding-left: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.bulletList li {
+  margin-bottom: 0.7rem;
+  position: relative;
+  padding-left: 2rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.emoji {
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+.subTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2a5885;
+}
+
+@media (max-width: 992px) {
+  .twoColumnSection {
+    flex-direction: column;
+  }
+
+  .mainTitle {
+    font-size: 2rem;
+  }
+
+  .subTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+
+  .subTitle {
+    font-size: 1.3rem;
+  }
+
+  .text,
+  .bulletList li {
+    font-size: 1rem;
+  }
+}

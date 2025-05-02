@@ -33,7 +33,7 @@ const defaultSurgeryTypes: SurgeryCard[] = [
     title: 'Ендоскопічна хірургія',
     imageUrl: '/images/mininvasiveSurgery/mininvasiveSurgery1.jpg',
     imageAlt: 'Ендоскопічна хірургія',
-    link: '/services/endoscopic-surgery',
+    link: '/services/minimally-invasive/endoscopic-surgery',
   },
 ];
 
