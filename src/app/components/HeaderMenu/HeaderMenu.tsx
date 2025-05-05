@@ -183,7 +183,10 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({
                     <Link href="/services/urology" className={styles.navLink}>
                       Урологія
                     </Link>
-                    <Link href="/services/oncology" className={styles.navLink}>
+                    <Link
+                      href="/services/skintumors"
+                      className={styles.navLink}
+                    >
                       Онкохірургія
                     </Link>
                   </div>

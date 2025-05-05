@@ -125,6 +125,13 @@ const plasticSurgeryServices: ServiceCard[] = [
     imageAlt: 'Видалення шийного горба',
     link: '/services/plastic-surgery/liposuction',
   },
+  {
+    id: 'carpal-syndrome',
+    title: 'Карпальний синдром',
+    imageUrl: '/images/plastic-list/carpalSyndrome2.jpg',
+    imageAlt: 'Корекція карпального синдрому',
+    link: '/services/plastic-surgery/carpal-syndrome',
+  },
 ];
 
 const PlasticSurgery: React.FC<PlasticSurgeryProps> = ({

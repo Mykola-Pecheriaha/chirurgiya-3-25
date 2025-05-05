@@ -1,0 +1,122 @@
+.container {
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.innerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.segment {
+  padding: 2rem 0;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.textContent {
+  flex: 1;
+}
+
+.galleryContainer {
+  flex: 1;
+  min-width: 300px;
+}
+
+.segmentTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.subTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #34495e;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.bulletList {
+  list-style-type: none;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.bulletList li {
+  position: relative;
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.bulletList li::before {
+  content: '•';
+  color: #3498db;
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
+}
+
+.infoBlock {
+  margin-bottom: 1.5rem;
+}
+
+.introText {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.conclusion {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2c3e50;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #f1f9ff;
+  border-left: 4px solid #3498db;
+  border-radius: 0 4px 4px 0;
+}
+
+.divider {
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dividerLine {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #3498db, transparent);
+}
+
+/* Адаптивний дизайн */
+@media (min-width: 768px) {
+  .contentWrapper {
+    flex-direction: row;
+  }
+
+  .textContent {
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .segmentTitle {
+    font-size: 1.75rem;
+  }
+
+  .subTitle {
+    font-size: 1.1rem;
+  }
+}

@@ -3,7 +3,7 @@
 import type React from 'react';
 import { useState, useCallback, useEffect } from 'react';
 import Image from 'next/image';
-import type { BeforeAfterImage } from '@/data/before-after-gallery-data';
+import type { BeforeAfterImage } from '@/types/gallery';
 import styles from './SideBySideGallery.module.css';
 
 interface SideBySideGalleryProps {
@@ -23,6 +23,7 @@ const SideBySideGallery: React.FC<SideBySideGalleryProps> = ({
 }) => {
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [showThumbnails, setShowThumbnails] = useState(false);
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -43,6 +44,13 @@ const SideBySideGallery: React.FC<SideBySideGalleryProps> = ({
 
   const toggleFullscreen = () => {
     setIsFullscreen((prev) => !prev);
+    if (!isFullscreen) {
+      setShowThumbnails(false);
+    }
+  };
+
+  const toggleThumbnails = () => {
+    setShowThumbnails((prev) => !prev);
   };
 
   if (!isClient || images.length === 0) {
@@ -59,13 +67,24 @@ const SideBySideGallery: React.FC<SideBySideGalleryProps> = ({
         className={`${styles.gallery} ${isFullscreen ? styles.fullscreen : ''}`}
       >
         {isFullscreen && (
-          <button
-            onClick={toggleFullscreen}
-            className={styles.closeButton}
-            aria-label="Закрити повноекранний режим"
-          >
-            ✕
-          </button>
+          <>
+            <button
+              onClick={toggleFullscreen}
+              className={styles.closeButton}
+              aria-label="Закрити повноекранний режим"
+            >
+              ✕
+            </button>
+            <button
+              onClick={toggleThumbnails}
+              className={styles.thumbnailsToggleButton}
+              aria-label={
+                showThumbnails ? 'Сховати мініатюри' : 'Показати мініатюри'
+              }
+            >
+              ⋮
+            </button>
+          </>
         )}
 
         <div className={styles.mainContent}>
@@ -118,9 +137,11 @@ const SideBySideGallery: React.FC<SideBySideGalleryProps> = ({
               </div>
             </div>
 
-            <div className={styles.patientInfo}>
-              Пацієнт №{currentIndex + 1}
-            </div>
+            {!isFullscreen && (
+              <div className={styles.patientInfo}>
+                Пацієнт №{currentIndex + 1}
+              </div>
+            )}
           </div>
 
           <button
@@ -132,51 +153,62 @@ const SideBySideGallery: React.FC<SideBySideGalleryProps> = ({
           </button>
         </div>
 
+        {/* Індикатори та кнопка розгортання */}
         <div className={styles.controls}>
+          <div className={styles.indicators}>
+            {images.map((_, index) => (
+              <span
+                key={index}
+                className={`${styles.indicator} ${index === currentIndex ? styles.activeIndicator : ''}`}
+                onClick={() => setCurrentIndex(index)}
+              />
+            ))}
+          </div>
+
           {!isFullscreen && (
             <button
               onClick={toggleFullscreen}
               className={styles.fullscreenButton}
               aria-label="Повноекранний режим"
             >
-              <span className={styles.fullscreenIcon}>⤢</span>
+              +
             </button>
           )}
         </div>
 
-        <div className={styles.thumbnailsContainer}>
-          <div className={styles.thumbnailsScroll}>
-            {images.map((image, index) => (
-              <div
-                key={image.id}
-                className={`${styles.thumbnailPair} ${index === currentIndex ? styles.activeThumbnail : ''}`}
-                onClick={() => setCurrentIndex(index)}
-              >
-                <div className={styles.thumbnailWrapper}>
-                  <Image
-                    src={image.before.thumbnail || image.before.src}
-                    alt={`До: ${image.before.alt}`}
-                    width={80}
-                    height={100}
-                    className={styles.thumbnail}
-                  />
-                  <div className={styles.thumbnailLabel}>До</div>
+        {/* Мініатюри (показуються тільки в повноекранному режимі, якщо увімкнено) */}
+        {isFullscreen && showThumbnails && (
+          <div className={styles.thumbnailsContainer}>
+            <div className={styles.thumbnailsScroll}>
+              {images.map((image, index) => (
+                <div
+                  key={image.id}
+                  className={`${styles.thumbnailPair} ${index === currentIndex ? styles.activeThumbnail : ''}`}
+                  onClick={() => setCurrentIndex(index)}
+                >
+                  <div className={styles.thumbnailWrapper}>
+                    <Image
+                      src={image.before.thumbnail || image.before.src}
+                      alt={`До: ${image.before.alt}`}
+                      width={80}
+                      height={100}
+                      className={styles.thumbnail}
+                    />
+                  </div>
+                  <div className={styles.thumbnailWrapper}>
+                    <Image
+                      src={image.after.thumbnail || image.after.src}
+                      alt={`Після: ${image.after.alt}`}
+                      width={80}
+                      height={100}
+                      className={styles.thumbnail}
+                    />
+                  </div>
                 </div>
-                <div className={styles.thumbnailWrapper}>
-                  <Image
-                    src={image.after.thumbnail || image.after.src}
-                    alt={`Після: ${image.after.alt}`}
-                    width={80}
-                    height={100}
-                    className={styles.thumbnail}
-                  />
-                  <div className={styles.thumbnailLabel}>Після</div>
-                </div>
-                <div className={styles.thumbnailNumber}>№{index + 1}</div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );

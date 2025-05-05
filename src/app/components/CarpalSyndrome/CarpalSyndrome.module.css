@@ -1,0 +1,155 @@
+.carpalSection {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Перша секція: текст зліва, зображення справа */
+.topSection {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.leftColumn {
+  flex: 1;
+}
+
+.rightColumn {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.mainTitle {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #2a5885;
+}
+
+.subtitle {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: #4a8522;
+}
+
+.benefitsList {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.benefitsList li {
+  position: relative;
+  padding-left: 1.7rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.benefitsList li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #4a8522;
+  font-weight: bold;
+}
+
+.imageWrapper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.mainImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Друга секція: повний текст на всю ширину */
+.fullWidthSection {
+  margin-bottom: 3rem;
+}
+
+.descriptionText {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+/* Третя секція: текст зліва, галерея справа */
+.gallerySection {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #2a5885;
+}
+
+.anatomyText {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+/* Адаптивність для планшетів */
+@media (max-width: 992px) {
+  .topSection,
+  .gallerySection {
+    flex-direction: column;
+  }
+
+  .rightColumn {
+    margin-top: 2rem;
+  }
+
+  .mainTitle {
+    font-size: 2.2rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+}
+
+/* Адаптивність для мобільних */
+@media (max-width: 576px) {
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .descriptionText,
+  .anatomyText,
+  .benefitsList li {
+    font-size: 1rem;
+  }
+}
