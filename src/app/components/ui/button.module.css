@@ -16,7 +16,7 @@
 
   /* Форма */
   border-radius: 0.375rem;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
 
   /* Поведінка */
   cursor: pointer;
@@ -28,7 +28,7 @@
 
 /* Стани кнопки */
 .button:focus {
-  box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.5);
+  box-shadow: 0 0 0 2px rgba(23, 191, 233, 0.5);
 }
 
 .button:disabled {
@@ -48,7 +48,7 @@
 .default {
   background-color: #c2d5fa;
   color: #1f2937;
-  border-color: #a7c2fa;
+  border-color: #6e9efd;
 }
 
 .default:hover:not(:disabled) {
@@ -67,7 +67,7 @@
 
 .secondary {
   background-color: #7c3aed;
-  color: white;
+  color: rgb(29, 208, 231);
   border-color: transparent;
 }
 

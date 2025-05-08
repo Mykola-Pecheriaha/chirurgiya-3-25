@@ -1,0 +1,169 @@
+.proctologySection {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.mainTitle {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #2a5885;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #088546;
+  background-color: rgba(136, 174, 231, 0);
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+.subTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #2a5885;
+}
+
+.text {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.highlightText {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #2a5885;
+  font-weight: 500;
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: rgba(42, 88, 133, 0.1);
+  border-radius: 8px;
+}
+
+.twoColumnSection {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.textColumn {
+  flex: 1;
+}
+
+.imageColumn,
+.galleryColumn {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.mainImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.benefitsList {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 1.5rem 0;
+}
+
+.benefitsList li {
+  position: relative;
+  padding-left: 1.8rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.benefitsList li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #2a5885;
+  font-weight: bold;
+}
+
+.diseasesList {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 1.5rem 0;
+}
+
+.diseasesList li {
+  position: relative;
+  padding-left: 1.6rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #444;
+}
+
+.diseasesList li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #2a5885;
+  font-weight: bold;
+}
+
+.fullWidthSection {
+  margin: 3rem 0;
+}
+
+@media (max-width: 992px) {
+  .twoColumnSection {
+    flex-direction: column;
+  }
+
+  .mainTitle {
+    font-size: 2rem;
+  }
+
+  .subTitle {
+    font-size: 1.5rem;
+  }
+
+  .highlightText {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+
+  .subTitle {
+    font-size: 1.3rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .text,
+  .benefitsList li,
+  .diseasesList li {
+    font-size: 1rem;
+  }
+
+  .highlightText {
+    font-size: 1.1rem;
+  }
+}

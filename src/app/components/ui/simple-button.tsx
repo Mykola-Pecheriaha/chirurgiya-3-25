@@ -17,6 +17,8 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   leftIcon?: React.ReactNode;
   rightIcon?: React.ReactNode;
   ripple?: boolean;
+  backgroundColor?: string; // Додаємо новий проп
+  textColor?: string; // Додаємо новий проп
 }
 
 export const SimpleButton = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -31,6 +33,8 @@ export const SimpleButton = forwardRef<HTMLButtonElement, ButtonProps>(
       rightIcon,
       ripple = false,
       className = '',
+      backgroundColor,
+      textColor,
       ...props
     },
     ref
@@ -49,11 +53,24 @@ export const SimpleButton = forwardRef<HTMLButtonElement, ButtonProps>(
       .filter(Boolean)
       .join(' ');
 
+    // Створюємо об'єкт стилів для власних кольорів
+    const customStyle: React.CSSProperties = {};
+
+    // Застосовуємо власні кольори, якщо вони надані
+    if (backgroundColor) {
+      customStyle.backgroundColor = backgroundColor;
+    }
+
+    if (textColor) {
+      customStyle.color = textColor;
+    }
+
     return (
       <button
         className={buttonClasses}
         disabled={isLoading || props.disabled}
         ref={ref}
+        style={customStyle}
         {...props}
       >
         {leftIcon && <span className={styles.iconLeft}>{leftIcon}</span>}

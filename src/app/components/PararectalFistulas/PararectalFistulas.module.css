@@ -1,0 +1,177 @@
+.wrapper {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mainTitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.subTitle {
+  font-size: 22px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+.introSection {
+  margin-bottom: 40px;
+}
+
+.introText {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.warningBox {
+  background-color: #fff3cd;
+  border-left: 5px solid #ffc107;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+.warningTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #856404;
+  margin-bottom: 10px;
+}
+
+.warningText {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #856404;
+}
+
+.divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 40px 0;
+}
+
+.splitSection {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.textColumn {
+  flex: 1;
+}
+
+.galleryColumn {
+  flex: 1;
+}
+
+.expandableText {
+  position: relative;
+}
+
+.bulletList {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.bulletList li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.nestedList {
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+.numberedList {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.numberedList li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.categoryTitle {
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.expandButton {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.expandButton:hover {
+  background-color: #3a7bc8;
+}
+
+.fullWidthSection {
+  margin-bottom: 40px;
+}
+
+.fullWidthText {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.callToAction {
+  font-weight: 600;
+  color: #4a90e2;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .splitSection {
+    flex-direction: column;
+  }
+
+  .mainTitle {
+    font-size: 28px;
+  }
+
+  .sectionTitle {
+    font-size: 24px;
+  }
+
+  .subTitle {
+    font-size: 20px;
+  }
+
+  .introText,
+  .fullWidthText {
+    font-size: 16px;
+  }
+}

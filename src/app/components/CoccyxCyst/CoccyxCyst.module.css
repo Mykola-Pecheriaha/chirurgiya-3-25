@@ -1,0 +1,122 @@
+.wrapper {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mainTitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.introSection {
+  margin-bottom: 40px;
+}
+
+.introText {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.infoBlock {
+  margin-bottom: 30px;
+}
+
+.subTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2a5885;
+  margin-bottom: 15px;
+}
+
+.bulletList {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.bulletList li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.coloredList {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.coloredList li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-left: 5px;
+}
+
+.divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 40px 0;
+  width: 100%;
+}
+
+.twoColumnSection {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.textColumn {
+  flex: 1;
+}
+
+.galleryColumn {
+  flex: 1;
+}
+
+.fullWidthSection {
+  margin-bottom: 40px;
+}
+
+.expandButton {
+  background-color: #2a5885;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.expandButton:hover {
+  background-color: #1e4674;
+}
+
+@media (max-width: 768px) {
+  .twoColumnSection {
+    flex-direction: column;
+  }
+
+  .mainTitle {
+    font-size: 28px;
+  }
+
+  .subTitle {
+    font-size: 20px;
+  }
+}

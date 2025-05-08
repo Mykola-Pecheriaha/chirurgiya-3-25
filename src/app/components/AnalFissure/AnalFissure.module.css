@@ -1,0 +1,234 @@
+.analFissureSection {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.mainTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #2a5885;
+}
+
+.subTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #2a5885;
+}
+
+.subSubTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1.5rem 0 1rem;
+  color: #2a5885;
+}
+
+.listTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.8rem;
+  color: #333;
+}
+
+.text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.introText {
+  margin: 2rem 0;
+}
+
+.alertText {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #e74c3c;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: rgba(231, 76, 60, 0.1);
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.twoColumnSection {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.textColumn {
+  flex: 1;
+}
+
+.galleryColumn {
+  flex: 1;
+}
+
+.contentBlock {
+  margin-bottom: 2rem;
+}
+
+.treatmentHeader {
+  margin: 3rem 0 2rem;
+}
+
+.conclusionSection {
+  margin: 3rem 0 1rem;
+  padding: 1.5rem;
+  background-color: rgba(42, 88, 133, 0.1);
+  border-radius: 8px;
+}
+
+.collapsibleText {
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+/* Без обмеження висоти в розгорнутому стані */
+/* .collapsibleText.expanded {
+  
+} */
+
+.expandButton {
+  display: block;
+  margin: 1rem 0;
+}
+
+.bulletList {
+  list-style-type: none;
+  padding-left: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.bulletList li {
+  margin-bottom: 0.7rem;
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.bulletList li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #2a5885;
+  font-weight: bold;
+}
+
+.nestedList {
+  list-style-type: none;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.nestedList li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 1.05rem;
+  color: #555;
+}
+
+.nestedList li::before {
+  content: '○';
+  position: absolute;
+  left: 0;
+  color: #2a5885;
+}
+
+.arrowList {
+  list-style-type: none;
+  padding-left: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.arrowList li {
+  margin-bottom: 0.7rem;
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.emoji {
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(42, 88, 133, 0.5),
+    transparent
+  );
+  margin: 3rem 0;
+}
+
+@media (max-width: 992px) {
+  .twoColumnSection {
+    flex-direction: column;
+  }
+
+  .mainTitle {
+    font-size: 2rem;
+  }
+
+  .subTitle {
+    font-size: 1.5rem;
+  }
+
+  .subSubTitle {
+    font-size: 1.3rem;
+  }
+
+  .listTitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+
+  .subTitle {
+    font-size: 1.3rem;
+  }
+
+  .subSubTitle {
+    font-size: 1.2rem;
+  }
+
+  .listTitle {
+    font-size: 1.1rem;
+  }
+
+  .text,
+  .bulletList li,
+  .arrowList li {
+    font-size: 1rem;
+  }
+
+  .nestedList li {
+    font-size: 0.95rem;
+  }
+
+  .alertText {
+    font-size: 1.1rem;
+  }
+}
