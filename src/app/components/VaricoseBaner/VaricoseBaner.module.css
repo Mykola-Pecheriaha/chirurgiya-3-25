@@ -1,0 +1,182 @@
+.banerContainer {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.contentContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.topSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 2rem;
+}
+
+.leftContent {
+  flex: 1;
+}
+
+.rightContent {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e74c3c;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #0a6e31;
+  margin-bottom: 1.5rem;
+}
+
+.benefitsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefitItem {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.benefitItem::before {
+  content: '🔹';
+  margin-right: 0.5rem;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.bottomSection {
+  margin-top: 2rem;
+}
+
+.warningTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.warningText {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.complicationsList {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.complicationItem {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.complicationItem::before {
+  content: '🔸';
+  margin-right: 0.5rem;
+}
+
+.dangerItem {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.callToAction {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #d32f2f;
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.callToAction::before {
+  content: '❗';
+  margin-right: 0.5rem;
+}
+
+.conclusion {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.highlight {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .topSection {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .rightContent {
+    margin-top: 1.5rem;
+  }
+}

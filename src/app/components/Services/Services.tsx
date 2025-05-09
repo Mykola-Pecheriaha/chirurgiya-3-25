@@ -44,11 +44,11 @@ const defaultServices: ServiceCard[] = [
   },
 
   {
-    id: 'vascular-surgery',
+    id: 'varicose',
     title: 'Судинна хірургія',
     imageUrl: '/images/services/vascular.jpg',
     imageAlt: 'Судинна хірургія',
-    link: '/services/vascular-surgery',
+    link: '/services/varicose',
   },
   {
     id: 'skintumors',

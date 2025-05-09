@@ -1,0 +1,1 @@
+export { VaricoseBaner } from './VaricoseBaner';

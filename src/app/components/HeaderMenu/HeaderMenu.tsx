@@ -162,14 +162,11 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({
                     >
                       Млоінвазивна хірургія
                     </Link>
-                    <Link
-                      href="/services/vascularsurgery"
-                      className={styles.navLink}
-                    >
+                    <Link href="/services/varicose" className={styles.navLink}>
                       Судинна хірургія
                     </Link>
                     <Link
-                      href="/services/bariatricsurgery"
+                      href="/services/bariatrics"
                       className={styles.navLink}
                     >
                       Баріатрична хірургія
