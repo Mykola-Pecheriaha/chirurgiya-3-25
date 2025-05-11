@@ -131,7 +131,7 @@ const defaultSpecialists: Specialist[] = [
     position: 'Хірург',
     description:
       'Хірург першої категорії, стаж роботи 18 років. Сертифікований також як уролог',
-    imageUrl: '/images/ourSpecialists/placeholder.svg?height=300&width=300',
+    imageUrl: '/images/ourSpecialists/bilega1.jpg',
     profileUrl: '/specialists/bilega',
     buttonColor: '#3eccf3',
     objectFit: 'contain', // Змінює спосіб відображення зображення
@@ -171,7 +171,7 @@ const defaultSpecialists: Specialist[] = [
     name: 'Блискун Володимир',
     position: 'Уролог',
     description: 'Уролог першої категорії, стаж роботи 8 років.',
-    imageUrl: '/images/ourSpecialists/placeholder.svg?height=300&width=300',
+    imageUrl: '/images/ourSpecialists/icon7.jpg',
     profileUrl: '/specialists/blyskun',
     buttonColor: '#3eccf3',
     objectFit: 'contain', // Змінює спосіб відображення зображення
@@ -185,7 +185,7 @@ const defaultSpecialists: Specialist[] = [
     position: 'Хірург',
     description:
       'Хірург-онколог першої категорії, стаж роботи 12 років. Спеціалізується на малоінвазивних та баріатричеих операціях',
-    imageUrl: '/images/ourSpecialists/placeholder.svg?height=300&width=300',
+    imageUrl: '/images/ourSpecialists/icon7.jpg',
     profileUrl: '/specialists/hrudetskyi',
     buttonColor: '#3eccf3',
     objectFit: 'contain', // Змінює спосіб відображення зображення

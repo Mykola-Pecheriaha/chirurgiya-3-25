@@ -1,223 +1,227 @@
-.skintumorsSection {
+.container {
   width: 100%;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
-.container {
+.innerContainer {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-.sectionsContainer {
-  margin-bottom: 3rem;
+.mainTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #072199;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
 }
 
-.sectionItem {
+.mainTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: #4a90e2;
+}
+
+.tumorSection {
   margin-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.twoColumnSection {
+.tumorContent {
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  align-items: flex-start;
 }
 
 .textColumn {
-  flex: 2; /* 2/3 ширини */
+  flex: 2;
+  font-size: 1.3rem;
 }
 
 .imageColumn {
-  flex: 1; /* 1/3 ширини */
+  flex: 1;
   display: flex;
-  justify-content: center;
   align-items: flex-start;
+  justify-content: center;
 }
 
-.sectionTitle {
-  font-size: 1.3rem;
+.tumorTitle {
+  font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 1rem;
   color: #333;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
-.titleHighlight {
-  color: #8b0000; /* Темно-червоний колір */
-  font-weight: 700;
-}
-
-.expandButton {
-  margin-left: 1rem;
-  font-size: 0.9rem;
-  padding: 0.25rem 0.75rem;
-  background-color: #f0f0f0;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+.expandButton,
+.collapseButton {
+  background-color: transparent;
+  border: none;
+  color: #4a90e2;
   cursor: pointer;
-  transition: all 0.2s ease;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-left: 0.5rem;
 }
 
-.expandButton:hover {
-  background-color: #e0e0e0;
+.expandButton:hover,
+.collapseButton:hover {
+  background-color: rgba(74, 144, 226, 0.1);
 }
 
-.expandedContent {
-  margin-top: 1rem;
-  animation: fadeIn 0.3s ease-in-out;
+.fullText {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.expandedText {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #444;
-  margin-bottom: 1rem;
-}
-
-.bulletList {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.bulletList li {
-  margin-bottom: 0.7rem;
-  font-size: 1.1rem;
-  color: #444;
-  line-height: 1.6;
-}
-
-.imageWrapper {
+.tumorImageContainer {
   width: 100%;
   height: auto;
-  overflow: hidden;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
-.sectionImage {
+.tumorImage {
   width: 100%;
   height: auto;
-  object-fit: contain; /* Зображення не обрізається */
+  object-fit: cover;
+  border-radius: 8px;
   transition: transform 0.3s ease;
 }
 
-.sectionImage:hover {
-  transform: scale(1.05);
+.tumorImage:hover {
+  transform: scale(1.03);
 }
 
-/* Стилі для другої частини */
-.additionalInfoSection {
+.divider {
+  height: 1px;
+  background-color: #eaeaea;
+  margin: 1.5rem 0;
+}
+
+.infoSection {
   margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 2px solid rgba(139, 0, 0, 0.2);
 }
 
-.infoBlock {
-  margin-bottom: 2rem;
-  background-color: rgba(0, 0, 0, 0.02);
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-.infoTitle {
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: #333;
+.contentRow {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.warningIcon {
-  color: #e74c3c;
-  margin-right: 0.5rem;
-}
-
-.checkIcon {
-  color: #2ecc71;
-  margin-right: 0.5rem;
-}
-
-.labIcon {
-  margin-right: 0.5rem;
-}
-
-.blueIcon {
-  color: #3498db;
-  margin-right: 0.5rem;
+  flex-direction: row;
+  gap: 2rem;
 }
 
 .galleryColumn {
   flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.warningSection {
+  background-color: #fff3cd;
+  border-left: 4px solid #ffc107;
   padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.02);
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-.galleryTitle {
-  font-size: 1.4rem;
-  font-weight: 600;
   margin-bottom: 1.5rem;
-  color: #8b0000;
-  text-align: center;
+  border-radius: 4px;
 }
 
-@media (max-width: 992px) {
-  .twoColumnSection {
+.warningTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #856404;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.warningTitle::before {
+  content: '⚠️';
+  margin-right: 0.5rem;
+}
+
+.preventionSection {
+  background-color: #d4edda;
+  border-left: 4px solid #28a745;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+}
+
+.preventionTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #155724;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.preventionTitle::before {
+  content: '✅';
+  margin-right: 0.5rem;
+}
+
+.dermatoscopySection {
+  background-color: #d1ecf1;
+  border-left: 4px solid #17a2b8;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+}
+
+.dermatoscopyTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0c5460;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.dermatoscopyTitle::before {
+  content: '🧪';
+  margin-right: 0.5rem;
+}
+
+.list {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.listItem {
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  color: #4a90e2;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .tumorContent {
     flex-direction: column;
   }
 
-  .textColumn,
-  .imageColumn,
+  .contentRow {
+    flex-direction: column;
+  }
+
   .galleryColumn {
-    flex: 1;
     width: 100%;
   }
 
-  .imageColumn {
-    margin-top: 1rem;
-  }
-
-  .galleryColumn {
-    margin-top: 2rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .sectionTitle,
-  .infoTitle {
-    font-size: 1.3rem;
-  }
-
-  .expandedText,
-  .bulletList li {
-    font-size: 1rem;
-  }
-
-  .expandButton {
-    margin-left: 0;
-    margin-top: 0.5rem;
+  .mainTitle {
+    font-size: 2rem;
   }
 }

@@ -120,8 +120,6 @@ const UrgentSurgery: React.FC<UrgentSurgeryProps> = ({
   return (
     <div className={styles.wrapper} style={{ backgroundColor }}>
       <div className={styles.container}>
-        <div className={styles.topText}>Ми працюємо в next.js I ts</div>
-
         <h2 className={styles.title}>Ургентна хірургія</h2>
 
         <div className={styles.description}>

@@ -52,7 +52,7 @@
 
 /* Стилі для вступної картки (по центру) */
 .introCard {
-  background-color: white;
+  background-color: rgb(136, 245, 253);
   border-radius: 10px;
   padding: 30px;
   margin: 0 auto 50px;
@@ -85,10 +85,10 @@
 /* Стилі для карток умов з зображеннями */
 .conditionCard {
   display: flex;
-  background-color: white;
+  background-color: rgb(173, 255, 248);
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.08);
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;

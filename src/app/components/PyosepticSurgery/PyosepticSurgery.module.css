@@ -1,0 +1,131 @@
+.wrapper {
+  width: 100%;
+  padding: 60px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: #4a6da7;
+}
+
+.servicesGrid {
+  display: grid;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.threePerRow {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.fourPerRow {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.serviceCardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.serviceCard {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.serviceCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.imageContainer {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.serviceImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.serviceCard:hover .serviceImage {
+  transform: scale(1.1);
+}
+
+.serviceTitle {
+  padding: 20px;
+  font-size: 1.25rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Адаптивність для планшетів */
+@media (max-width: 992px) {
+  .threePerRow,
+  .fourPerRow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
+/* Адаптивність для мобільних */
+@media (max-width: 576px) {
+  .threePerRow,
+  .fourPerRow {
+    grid-template-columns: 1fr;
+  }
+
+  .wrapper {
+    padding: 40px 0;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .serviceTitle {
+    font-size: 1.1rem;
+  }
+}

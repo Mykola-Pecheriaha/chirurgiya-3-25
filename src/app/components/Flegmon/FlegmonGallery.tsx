@@ -4,67 +4,46 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import styles from './Gallery.module.css';
 
-interface GalleryImage {
-  src: string;
-  alt: string;
-  width: number;
-  height: number;
-  title?: string;
-}
-
-interface SkintumorsGalleryProps {
-  images?: GalleryImage[];
-}
-
-// Масив зображень за замовчуванням
-const defaultImages: GalleryImage[] = [
+// Визначаємо зображення безпосередньо в компоненті галереї
+const galleryImages = [
   {
-    src: '/images/skintumors/skintumors2.jpg',
-    alt: 'Невус',
+    src: '/images/flegmon/flegmon9.jpg',
+    alt: 'Флегмона - запальний процес',
     width: 800,
     height: 600,
-    title: 'Невус (родимка)',
+    title: 'Почервоніння шкіри',
   },
   {
-    src: '/images/skintumors/skintumors3.jpg',
-    alt: 'Папілома',
+    src: '/images/flegmon/flegmon13.jpg',
+    alt: 'Флегмона - запальний процес',
     width: 800,
     height: 600,
-    title: 'Папілома',
+    title: 'Набряк',
   },
   {
-    src: '/images/skintumors/skintumors4.jpg',
-    alt: 'Атерома',
+    src: '/images/flegmon/flegmon14.jpg',
+    alt: 'Флегмона шиї',
     width: 800,
     height: 600,
-    title: 'Атерома',
+    title: 'Сильна біль',
   },
   {
-    src: '/images/skintumors/skintumors1.jpg',
-    alt: 'Гемангіома',
+    src: '/images/flegmon/flegmon12.jpg',
+    alt: 'Флегмона кисті',
     width: 800,
     height: 600,
-    title: 'Гемангіома',
+    title: 'Гарячка, слабкість, головний біль',
   },
   {
-    src: '/images/skintumors/dermatoskop.jpg',
-    alt: 'Дермоскопія',
+    src: '/images/flegmon/flegmon10.jpg',
+    alt: 'Збільшення лімфовузлів',
     width: 800,
     height: 600,
-    title: 'Дермоскопія',
-  },
-  {
-    src: '/images/skintumors/skintumors5.jpg',
-    alt: 'Дермоскопія',
-    width: 800,
-    height: 600,
-    title: 'Дермоскопія',
+    title: 'Збільшення лімфовузлів',
   },
 ];
 
-export function SkintumorsGallery({
-  images = defaultImages,
-}: SkintumorsGalleryProps) {
+export function FlegmonGallery() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fullscreen, setFullscreen] = useState(false);
   const [showThumbnails, setShowThumbnails] = useState(false);
@@ -72,8 +51,8 @@ export function SkintumorsGallery({
 
   useEffect(() => {
     // Ініціалізуємо масив завантажених зображень
-    setImagesLoaded(new Array(images.length).fill(false));
-  }, [images]);
+    setImagesLoaded(new Array(galleryImages.length).fill(false));
+  }, []);
 
   useEffect(() => {
     // Додаємо обробник клавіші Escape для закриття повноекранного режиму
@@ -87,12 +66,13 @@ export function SkintumorsGallery({
   }, [fullscreen]);
 
   const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % galleryImages.length);
   };
 
   const prevImage = () => {
     setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+      (prevIndex) =>
+        (prevIndex - 1 + galleryImages.length) % galleryImages.length
     );
   };
 
@@ -120,11 +100,11 @@ export function SkintumorsGallery({
   };
 
   // Перевіряємо наявність зображень
-  if (!images || images.length === 0) {
+  if (!galleryImages || galleryImages.length === 0) {
     return <div className={styles.noImages}>Зображення недоступні</div>;
   }
 
-  const currentImage = images[currentIndex];
+  const currentImage = galleryImages[currentIndex];
 
   return (
     <div className={styles.galleryContainer}>
@@ -141,7 +121,10 @@ export function SkintumorsGallery({
             <div className={styles.imageLoader}>Завантаження...</div>
           )}
           <Image
-            src={currentImage.src || '/placeholder.svg'}
+            src={
+              currentImage.src ||
+              '/placeholder.svg?height=600&width=800&query=flegmon'
+            }
             alt={currentImage.alt}
             width={currentImage.width}
             height={currentImage.height}
@@ -167,7 +150,7 @@ export function SkintumorsGallery({
         </button>
       </div>
       <div className={styles.indicators}>
-        {images.map((_, index) => (
+        {galleryImages.map((_, index) => (
           <span
             key={index}
             className={`${styles.indicator} ${index === currentIndex ? styles.activeIndicator : ''}`}
@@ -204,7 +187,10 @@ export function SkintumorsGallery({
             </button>
             <div className={styles.fullscreenImageContainer}>
               <Image
-                src={currentImage.src || '/placeholder.svg'}
+                src={
+                  currentImage.src ||
+                  '/placeholder.svg?height=600&width=800&query=flegmon'
+                }
                 alt={currentImage.alt}
                 width={currentImage.width}
                 height={currentImage.height}
@@ -225,14 +211,17 @@ export function SkintumorsGallery({
             </button>
             {showThumbnails && (
               <div className={styles.thumbnailsContainer}>
-                {images.map((image, index) => (
+                {galleryImages.map((image, index) => (
                   <div
                     key={index}
                     className={`${styles.thumbnail} ${index === currentIndex ? styles.activeThumbnail : ''}`}
                     onClick={() => selectImage(index)}
                   >
                     <Image
-                      src={image.src || '/placeholder.svg'}
+                      src={
+                        image.src ||
+                        '/placeholder.svg?height=75&width=100&query=flegmon thumbnail'
+                      }
                       alt={image.alt}
                       width={100}
                       height={75}
@@ -245,7 +234,7 @@ export function SkintumorsGallery({
               </div>
             )}
             <div className={styles.fullscreenIndicators}>
-              {images.map((_, index) => (
+              {galleryImages.map((_, index) => (
                 <span
                   key={index}
                   className={`${styles.fullscreenIndicator} ${index === currentIndex ? styles.activeFullscreenIndicator : ''}`}
@@ -260,4 +249,4 @@ export function SkintumorsGallery({
   );
 }
 
-export default SkintumorsGallery;
+export default FlegmonGallery;

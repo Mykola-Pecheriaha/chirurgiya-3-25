@@ -186,6 +186,12 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({
                     >
                       Онкохірургія
                     </Link>
+                    <Link
+                      href="/services/pyoseptic-surgery"
+                      className={styles.navLink}
+                    >
+                      Гнійно-септична хірургія
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -323,6 +329,78 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({
               </span>
               {activeSubMenu === 'services' && (
                 <div className={styles.burgerSubMenu}>
+                  <Link
+                    href="/services/traditional-surgery"
+                    onClick={handleMenuItemClick}
+                    className={styles.navLink}
+                  >
+                    Хірургічні хвороби
+                  </Link>
+                  <Link
+                    href="/services/emergencysurgery"
+                    onClick={handleMenuItemClick}
+                    className={styles.navLink}
+                  >
+                    Ургентна хірургія
+                  </Link>
+
+                  <Link
+                    href="/services/plastic-surgery"
+                    onClick={handleMenuItemClick}
+                    className={styles.navLink}
+                  >
+                    Пластична хірургія
+                  </Link>
+                  <Link
+                    href="/services/varicose"
+                    onClick={handleMenuItemClick}
+                    className={styles.navLink}
+                  >
+                    Судинна хірургія
+                  </Link>
+                  <Link
+                    href="/services/skintumors"
+                    onClick={handleMenuItemClick}
+                    className={styles.navLink}
+                  >
+                    Пухлини шкіри
+                  </Link>
+                  <Link
+                    href="/services/minimally-invasive"
+                    onClick={handleMenuItemClick}
+                    className={styles.navLink}
+                  >
+                    Малоінвазивна хірургія
+                  </Link>
+
+                  <Link
+                    href="/services/bariatrics"
+                    onClick={handleMenuItemClick}
+                    className={styles.navLink}
+                  >
+                    Баріатрична хірургія
+                  </Link>
+                  <Link
+                    href="/services/proctology"
+                    onClick={handleMenuItemClick}
+                    className={styles.navLink}
+                  >
+                    Проктологія
+                  </Link>
+                  <Link
+                    href="/services/urolog"
+                    onClick={handleMenuItemClick}
+                    className={styles.navLink}
+                  >
+                    Урологія
+                  </Link>
+                  <Link
+                    href="/services/pyoseptic-surgery"
+                    onClick={handleMenuItemClick}
+                    className={styles.navLink}
+                  >
+                    Гнійно-септична хірургія
+                  </Link>
                   <Link
                     href="/services/face-surgery/face-lift"
                     onClick={handleMenuItemClick}

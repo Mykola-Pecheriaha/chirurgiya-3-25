@@ -85,6 +85,13 @@ const defaultServices: ServiceCard[] = [
     imageAlt: 'Урологія',
     link: '/services/emergency-surgery',
   },
+  {
+    id: 'pyoseptic-surgery',
+    title: 'Гнійно-септичні захворювання в хірургії',
+    imageUrl: '/images/services/flegmon6.jpg',
+    imageAlt: 'Гнійно-септичні захворювання в хірургії',
+    link: '/services/pyoseptic-surgery',
+  },
 ];
 
 const Services: React.FC<ServicesProps> = ({
