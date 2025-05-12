@@ -1,0 +1,1 @@
+export { OperatingRoom } from './OperatingRoom';

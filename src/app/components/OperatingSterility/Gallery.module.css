@@ -1,0 +1,342 @@
+.galleryContainer {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer {
+  position: relative;
+  flex-grow: 1;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.imageLoader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(245, 245, 245, 0.8);
+  z-index: 1;
+  font-size: 1rem;
+  color: #666;
+}
+
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 1.5rem;
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+
+.navButton:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.navButton:first-child {
+  left: 10px;
+}
+
+.navButton:last-of-type {
+  right: 10px;
+}
+
+.fullscreenButton {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 1.5rem;
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+
+.fullscreenButton:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 8px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.activeIndicator {
+  background-color: #3b82f6;
+}
+
+/* Повноекранний режим */
+.fullscreenOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullscreenContent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullscreenImageContainer {
+  position: relative;
+  max-width: 90%;
+  max-height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fullscreenImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.imageTitle {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.closeButton,
+.thumbnailsButton {
+  position: absolute;
+  top: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+  transition: background-color 0.2s ease;
+  z-index: 10;
+}
+
+.closeButton {
+  right: 20px;
+}
+
+.thumbnailsButton {
+  right: 70px;
+}
+
+.closeButton:hover,
+.thumbnailsButton:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.fullscreenNavButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 2rem;
+  color: white;
+  transition: background-color 0.2s ease;
+  z-index: 5;
+}
+
+.fullscreenNavButton:first-of-type {
+  left: 20px;
+}
+
+.fullscreenNavButton:last-of-type {
+  right: 20px;
+}
+
+.fullscreenNavButton:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.thumbnailsContainer {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-x: auto;
+}
+
+.thumbnail {
+  position: relative;
+  width: 100px;
+  height: 75px;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.7;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.thumbnail:hover {
+  opacity: 0.9;
+}
+
+.activeThumbnail {
+  opacity: 1;
+  border: 2px solid #3b82f6;
+  transform: scale(1.05);
+}
+
+.thumbnailImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fullscreenIndicators {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.fullscreenIndicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.activeFullscreenIndicator {
+  background-color: #3b82f6;
+}
+
+.noImages {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .imageContainer {
+    height: 300px;
+  }
+
+  .navButton {
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
+  }
+
+  .fullscreenButton {
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+  }
+
+  .thumbnailsContainer {
+    padding: 5px;
+  }
+
+  .thumbnail {
+    width: 80px;
+    height: 60px;
+  }
+
+  .fullscreenNavButton {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+}

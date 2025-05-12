@@ -1,0 +1,148 @@
+.container {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.innerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #333;
+  position: relative;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    rgba(59, 130, 246, 0.2),
+    rgba(59, 130, 246, 0.8),
+    rgba(59, 130, 246, 0.2)
+  );
+}
+
+.contentContainer {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.textColumn {
+  flex: 1;
+  min-width: 0;
+}
+
+.galleryColumn {
+  flex: 1;
+  min-width: 0;
+}
+
+.textContent {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.expandButton {
+  background: none;
+  border: none;
+  color: #3b82f6;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: color 0.2s ease;
+}
+
+.expandButton:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.textContainer {
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.textSection {
+  margin-bottom: 1.5rem;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sectionContent {
+  padding-left: 1.5rem;
+}
+
+.listItem {
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.listItem::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #3b82f6;
+}
+
+.highlight {
+  font-weight: 600;
+  color: #333;
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 0.5rem;
+  color: #3b82f6;
+}
+
+.warningIcon {
+  color: #f59e0b;
+}
+
+.accessIcon {
+  color: #ef4444;
+}
+
+@media (max-width: 768px) {
+  .contentContainer {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .textColumn,
+  .galleryColumn {
+    width: 100%;
+  }
+}

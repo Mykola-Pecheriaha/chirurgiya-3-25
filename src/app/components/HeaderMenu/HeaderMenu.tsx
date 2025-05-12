@@ -220,28 +220,28 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({
 
           <div
             className={styles.menuItem}
-            onMouseEnter={() => handleSubMenuToggle('operative')}
+            onMouseEnter={() => handleSubMenuToggle('department')}
             onMouseLeave={() => handleSubMenuToggle(null)}
           >
-            <Link href="/operative" className={styles.navLink}>
+            <Link href="/department" className={styles.navLink}>
               Відділення ↓
             </Link>
-            {activeSubMenu === 'operative' && (
+            {activeSubMenu === 'department' && (
               <div className={`${styles.subMenu} ${styles.columnSubMenu}`}>
                 <Link
-                  href="/operative/operative-room"
+                  href="/department/operative-room"
                   className={styles.navLink}
                 >
                   Операційна
                 </Link>
                 <Link
-                  href="/operative/preparation-surgery"
+                  href="/department/preparation-surgery"
                   className={styles.navLink}
                 >
                   Підготовка до операції
                 </Link>
                 <Link
-                  href="/operative/rehabilitation"
+                  href="/department/rehabilitation"
                   className={styles.navLink}
                 >
                   Реабілітація
@@ -399,7 +399,7 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({
                     onClick={handleMenuItemClick}
                     className={styles.navLink}
                   >
-                    Гнійно-септична хірургія
+                    Гнійно септична хірургія
                   </Link>
                   <Link
                     href="/services/face-surgery/face-lift"

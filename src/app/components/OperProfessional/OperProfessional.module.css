@@ -1,0 +1,144 @@
+.container {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.innerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #333;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    rgba(59, 130, 246, 0.2),
+    rgba(59, 130, 246, 0.8),
+    rgba(59, 130, 246, 0.2)
+  );
+  border-radius: 3px;
+}
+
+.contentContainer {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.textContainer {
+  flex: 1;
+  position: relative;
+}
+
+.textContent {
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  position: relative;
+}
+
+.textCollapsed {
+  max-height: 200px;
+}
+
+.textExpanded {
+  max-height: 2000px;
+}
+
+.fadeOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.expandButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.expandButton:hover {
+  background-color: #e0e0e0;
+}
+
+.expandIcon {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.rotateIcon {
+  transform: rotate(180deg);
+}
+
+.galleryContainer {
+  flex: 1;
+}
+
+.paragraph {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.highlight {
+  font-weight: 600;
+  color: #333;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  color: #3b82f6;
+}
+
+.checkIcon {
+  color: #10b981;
+}
+
+@media (max-width: 768px) {
+  .contentContainer {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .textCollapsed {
+    max-height: 150px;
+  }
+}

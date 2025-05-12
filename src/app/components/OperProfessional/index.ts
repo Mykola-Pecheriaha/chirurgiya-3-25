@@ -1,0 +1,1 @@
+export { OperProfessional } from './OperProfessional';
