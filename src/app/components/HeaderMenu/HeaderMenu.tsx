@@ -235,16 +235,11 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({
                   Операційна
                 </Link>
                 <Link
-                  href="/department/preparation-surgery"
+                  href="/department/surgical-department"
+                  surgical-department="true"
                   className={styles.navLink}
                 >
-                  Підготовка до операції
-                </Link>
-                <Link
-                  href="/department/rehabilitation"
-                  className={styles.navLink}
-                >
-                  Реабілітація
+                  Хірургічне відділення №1
                 </Link>
               </div>
             )}

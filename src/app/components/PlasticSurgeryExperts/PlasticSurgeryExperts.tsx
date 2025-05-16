@@ -44,8 +44,7 @@ const defaultSpecialists: Specialist[] = [
     id: 'specialist2',
     name: 'Андрушкова Юлія Анатолієвна',
     position: 'Хірург-онколог',
-    description:
-      'Хірург-онколог, стаж роботи 4 роки. Спеціалізується на пластичних операціях та операціях при утвореннях шкіри',
+    description: 'Хірург-онколог, стаж роботи ...',
     imageUrl: '/images/ourSpecialists/andrushkova.JPG',
     profileUrl: '/specialists/andrushkova',
     buttonColor: '#3eccf3',

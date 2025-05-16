@@ -7,10 +7,10 @@ import ImplantBreastRecoveryReabilit from '../../../components/ImplantBreastReco
 const ImplantRevisionPage: React.FC = () => {
   return (
     <div>
-      <ImplantRevision backgroundColor="#f0f7ff" />
-      <BreastImplantRevision backgroundColor="#D6E8FCFF" />
-      <ImplantReplacementProcedure backgroundColor="#f0f7ff" />
-      <ImplantBreastRecoveryReabilit backgroundColor="#D6E8FCFF" />
+      <ImplantRevision backgroundColor="#BEDAFAFF" />
+      <BreastImplantRevision backgroundColor="#EFF6FDFF" />
+      <ImplantReplacementProcedure backgroundColor="#BEDAFAFF" />
+      <ImplantBreastRecoveryReabilit backgroundColor="#EFF6FDFF" />
     </div>
   );
 };

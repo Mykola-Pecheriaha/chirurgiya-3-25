@@ -11,32 +11,32 @@ const Home: React.FC = () => {
     <div>
       <BigBord />
       <ExpertiseBanner
-        backgroundColor="#e6f7ff"
+        backgroundColor="#B0E0FFFF"
         imageUrl="/images/profession/proff2.bmp"
         imageAlt="Команда хірургів"
       />
       <ModernEquipment
-        backgroundColor="#f0f7ff"
+        backgroundColor="#E5F4FFFF"
         imageUrl="/images/modernEquipment/equipment.bmp"
         imageAlt="Сучасне медичне обладнання"
       />
       <ComfortableRooms
-        backgroundColor="#f9f9f9"
+        backgroundColor="#B0E0FFFF"
         imageUrl="/images/comfortableRooms/terapі3.jpg"
         imageAlt="Комфортні палати"
       />
       <FullMedicationSupply
-        backgroundColor="#f0f7ff"
+        backgroundColor="#E5F4FFFF"
         imageUrl="/images/fullMedicationSupply/medicament1.bmp"
         imageAlt="Медикаментозне забезпечення"
       />
       <AnesthesiaCare
-        backgroundColor="#f9f9f9"
+        backgroundColor="#B0E0FFFF"
         imageUrl="/images/modernEquipment/medicfmtnt2.bmp"
         imageAlt="Наркозне забезпечення"
       />
       <SurgeryDepartmentInfo
-        backgroundColor="#f0f7ff"
+        backgroundColor="##E5F4FFFF"
         textColor="#333333"
         headingColor="#1eaaf1"
         accentColor="#7b68ee"

@@ -8,6 +8,9 @@ import BreastQuestion from '../../../components/BreastQuestion/BreastQuestion';
 import { beforeAfterImages } from '../../../../data/before-after-gallery-data';
 import SideBySideGallery from '../../../components/SideBySideGallery';
 
+// import { BeforeAfterSlider } from '@/app/components/BeforeAfterSlider';
+import { beforeAfterImages1 } from '@/data/before-after-images';
+
 const PlasticSurgeryPage: React.FC = () => {
   return (
     <div>
@@ -23,6 +26,11 @@ const PlasticSurgeryPage: React.FC = () => {
         showTitle={true}
         title='Приклади робіт "до і після"'
       />
+      {/* <BeforeAfterSlider
+        images={beforeAfterImages1}
+        title="Порівняння результатів до і після"
+        backgroundColor="#f5f5f5"
+      /> */}
     </div>
   );
 };

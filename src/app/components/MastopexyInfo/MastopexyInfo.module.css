@@ -47,13 +47,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 16px 20px;
-  background-color: rgb(209, 247, 123);
+  background-color: rgb(148, 240, 247);
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .accordionHeader:hover {
-  background-color: rgb(211, 247, 127);
+  background-color: rgb(20, 235, 250);
 }
 
 .accordionTitle {
@@ -76,7 +76,7 @@
   display: flex;
   flex-direction: row;
   padding: 20px;
-  background-color: rgb(222, 248, 162);
+  background-color: rgb(179, 244, 248);
 }
 
 .textContent {

@@ -4,7 +4,7 @@ import OurSpecialists from '../components/OurSpecialists/OurSpecialists';
 const SpecialistPage: React.FC = () => {
   return (
     <div>
-      <OurSpecialists backgroundColor="#f0f7ff" />
+      <OurSpecialists backgroundColor="#DAEBFFFF" />
     </div>
   );
 };

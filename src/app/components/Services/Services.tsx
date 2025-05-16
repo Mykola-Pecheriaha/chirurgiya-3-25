@@ -1,26 +1,23 @@
-'use client';
-
 import type React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './Services.module.css';
 
-interface ServiceCard {
+interface Service {
   id: string;
   title: string;
-  imageUrl: string;
+  imageUrl?: string;
   imageAlt: string;
   link: string;
 }
 
 interface ServicesProps {
   backgroundColor?: string;
-  services?: ServiceCard[];
-  cardsPerRow?: 3 | 4;
+  services?: Service[];
+  cardsPerRow?: number;
 }
 
-// Дані про послуги хірургічного відділення
-const defaultServices: ServiceCard[] = [
+const defaultServices: Service[] = [
   {
     id: 'generalsurgery',
     title: 'Хірургічні хвороби',
@@ -42,7 +39,6 @@ const defaultServices: ServiceCard[] = [
     imageAlt: 'Пластична хірургія',
     link: '/services/plastic-surgery',
   },
-
   {
     id: 'varicose',
     title: 'Судинна хірургія',
@@ -97,16 +93,14 @@ const defaultServices: ServiceCard[] = [
 const Services: React.FC<ServicesProps> = ({
   backgroundColor = '#f8f9fa',
   services = defaultServices,
-  cardsPerRow = 4,
+  cardsPerRow = 3, // Змінено з 4 на 3
 }) => {
   return (
     <div className={styles.wrapper} style={{ backgroundColor }}>
       <div className={styles.container}>
         <h2 className={styles.title}>Послуги хірургічного відділення</h2>
 
-        <div
-          className={`${styles.servicesGrid} ${cardsPerRow === 3 ? styles.threePerRow : styles.fourPerRow}`}
-        >
+        <div className={styles.servicesRow}>
           {services.map((service) => (
             <Link
               href={service.link}

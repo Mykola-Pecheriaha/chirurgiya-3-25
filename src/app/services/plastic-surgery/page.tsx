@@ -4,7 +4,7 @@ import PlasticSurgery from '../../components/PlasticSurgery';
 const PlasticSurgeryPage: React.FC = () => {
   return (
     <div>
-      <PlasticSurgery backgroundColor="#f0f7ff" cardsPerRow={4} />
+      <PlasticSurgery backgroundColor="#C6DEF8FF" cardsPerRow={4} />
     </div>
   );
 };

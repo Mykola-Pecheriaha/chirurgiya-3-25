@@ -29,7 +29,7 @@ const defaultSpecialists: Specialist[] = [
     name: 'Горбатенко Едуард Олександрович',
     position: 'Хірург',
     description:
-      'Хірург вищої категорії, Заступник медичного директора по хірургії Стаж роботи 22 роки. В 1997 році',
+      'Хірург вищої категорії, Заступник медичного директора по хірургії Стаж ...',
     imageUrl: '/images/ourSpecialists/gorbatenko.jpg',
     profileUrl: '/specialists/gorbatenko',
     buttonColor: '#1eaaf1',
@@ -43,7 +43,7 @@ const defaultSpecialists: Specialist[] = [
     name: 'Пижик Валентин Анатолійович',
     position: 'Хірург',
     description:
-      'Хірург вищої категорії, Завідувач хірургічного відділення №2.    Стаж роботи 28 років. ',
+      'Хірург вищої категорії, Завідувач хірургічного відділення №2.    Стаж роботи ... ',
     imageUrl:
       '/images/ourSpecialists/pyzhyk.JPG?height=200pyzhyk.JPG00&width=300',
     profileUrl: '/specialists/pyzhyk',
@@ -73,8 +73,7 @@ const defaultSpecialists: Specialist[] = [
     id: 'specialist4',
     name: 'Бамбизов Леонід Михайлович',
     position: 'Хірург',
-    description:
-      'Хірург вищої категорії, стаж роботи 30 років. Стаж роботи 30 років. Спеціалізується на малоінвазивних операціях, на операціях біліодегестивної ділянки і ендоскопічних операціях жовчевивідних шляхах',
+    description: 'Хірург вищої категорії, стаж роботи ...',
     imageUrl: '/images/ourSpecialists/bambizov.jpg',
     profileUrl: '/specialists/bambizov',
     buttonColor: '#3eccf3',
@@ -87,8 +86,7 @@ const defaultSpecialists: Specialist[] = [
     id: 'specialist5',
     name: 'Карпенко Олександир Вікторович',
     position: 'Хірург',
-    description:
-      'Хірург вищої категорії, стаж роботи 30 років. Стаж роботи 20 років. Спеціалізується на малоінвазивних баріатричеих операціях.',
+    description: 'Хірург вищої категорії, стаж роботи ...',
     imageUrl: '/images/ourSpecialists/karpenko.jpg',
     profileUrl: '/specialists/karpenko',
     buttonColor: '#3eccf3',
@@ -101,8 +99,7 @@ const defaultSpecialists: Specialist[] = [
     id: 'specialist6',
     name: 'Андрушкова Юлія Анатолієвна',
     position: 'Хірург-онколог',
-    description:
-      'Хірург-онколог , стаж роботи 4 роки. Спеціалізується на пластчих операціях та операціях при утвореннях шкіри',
+    description: 'Хірург-онколог , стаж роботи ...',
     imageUrl: '/images/ourSpecialists/andrushkova.JPG',
     profileUrl: '/specialists/andrushkova',
     buttonColor: '#3eccf3',
@@ -115,8 +112,7 @@ const defaultSpecialists: Specialist[] = [
     id: 'specialist7',
     name: 'Фомін Андрій ',
     position: 'Хірург',
-    description:
-      'Хірург першої категорії, стаж роботи 18 років. Спеціалізується по судинні хірургії, а також на операціях при варикозному розширенні вен',
+    description: 'Хірург першої категорії, стаж роботи ...',
     imageUrl: '/images/ourSpecialists/fomin.jpg',
     profileUrl: '/specialists/fomin',
     buttonColor: '#3eccf3',
@@ -129,8 +125,7 @@ const defaultSpecialists: Specialist[] = [
     id: 'specialist8',
     name: 'Білега Богдан ',
     position: 'Хірург',
-    description:
-      'Хірург першої категорії, стаж роботи 18 років. Сертифікований також як уролог',
+    description: 'Хірург першої категорії, стаж роботи ...',
     imageUrl: '/images/ourSpecialists/bilega1.jpg',
     profileUrl: '/specialists/bilega',
     buttonColor: '#3eccf3',
@@ -143,7 +138,7 @@ const defaultSpecialists: Specialist[] = [
     id: 'specialist9',
     name: 'Кубеєв Сергій Германович',
     position: 'Уролог',
-    description: 'Уролог першої категорії, стаж роботи 28 років. ',
+    description: 'Уролог першої категорії, стаж роботи ... ',
     imageUrl: '/images/ourSpecialists/kubeyev.JPG',
     profileUrl: '/specialists/kubeyev',
     buttonColor: '#3eccf3',
@@ -156,8 +151,7 @@ const defaultSpecialists: Specialist[] = [
     id: 'specialist10',
     name: 'Курій Микола Іванович',
     position: 'Уролог',
-    description:
-      'Уролог першої категорії, стаж роботи 8 років. Спеціалізується на малоінвазивних та ендоскопічних урологічних операціях.',
+    description: 'Уролог першої категорії, стаж роботи ...',
     imageUrl: '/images/ourSpecialists/kurii.JPG',
     profileUrl: '/specialists/kurii',
     buttonColor: '#3eccf3',
@@ -170,7 +164,7 @@ const defaultSpecialists: Specialist[] = [
     id: 'specialist11',
     name: 'Блискун Володимир',
     position: 'Уролог',
-    description: 'Уролог першої категорії, стаж роботи 8 років.',
+    description: 'Уролог першої категорії, стаж роботи ...',
     imageUrl: '/images/ourSpecialists/icon7.jpg',
     profileUrl: '/specialists/blyskun',
     buttonColor: '#3eccf3',
@@ -183,8 +177,7 @@ const defaultSpecialists: Specialist[] = [
     id: 'specialist12',
     name: 'Грудецький Віталій Віталійович',
     position: 'Хірург',
-    description:
-      'Хірург-онколог першої категорії, стаж роботи 12 років. Спеціалізується на малоінвазивних та баріатричеих операціях',
+    description: 'Хірург-онколог першої категорії, стаж роботи ...',
     imageUrl: '/images/ourSpecialists/icon7.jpg',
     profileUrl: '/specialists/hrudetskyi',
     buttonColor: '#3eccf3',

@@ -157,35 +157,35 @@ const BlepharoplastytDetails: React.FC<BlepharoplastytDetailsProps> = ({
             </h3>
             <ul className={styles.bulletList}>
               <li>
-                <span className={styles.emojiInline}>🫀</span> Хронічних
+                <span className={styles.emojiInline}></span> Хронічних
                 захворювань серцево-судинної системи або інших важливих органів;
               </li>
               <li>
-                <span className={styles.emojiInline}>🧬</span> Онкологічних
+                <span className={styles.emojiInline}></span> Онкологічних
                 захворювань будь-якого типу;
               </li>
               <li>
-                <span className={styles.emojiInline}>🧪</span> Цукрового діабету
-                у стадії декомпенсації;
+                <span className={styles.emojiInline}></span> Цукрового діабету у
+                стадії декомпенсації;
               </li>
               <li>
-                <span className={styles.emojiInline}>🧫</span> Гострих
-                інфекційних процесів (грип, ГРВІ, тощо);
+                <span className={styles.emojiInline}></span> Гострих інфекційних
+                процесів (грип, ГРВІ, тощо);
               </li>
               <li>
-                <span className={styles.emojiInline}>🩸</span> Порушення
-                згортання крові;
+                <span className={styles.emojiInline}></span> Порушення згортання
+                крові;
               </li>
               <li>
-                <span className={styles.emojiInline}>🧠</span> Інфаркту або
+                <span className={styles.emojiInline}></span> Інфаркту або
                 інсульту в анамнезі;
               </li>
               <li>
-                <span className={styles.emojiInline}>🧍‍♀️</span> Вагітності та
+                <span className={styles.emojiInline}></span> Вагітності та
                 періоду грудного вигодовування;
               </li>
               <li>
-                <span className={styles.emojiInline}>🧾</span> Хронічної
+                <span className={styles.emojiInline}></span> Хронічної
                 недостатності печінки або нирок.
               </li>
             </ul>

@@ -77,7 +77,7 @@ const pyosepticServices: ServiceCard[] = [
 ];
 
 export function PyosepticSurgery({
-  backgroundColor = '#f8f9fa',
+  backgroundColor = '#BEDCFAFF',
   cardsPerRow = 4,
 }: PyosepticSurgeryProps) {
   return (

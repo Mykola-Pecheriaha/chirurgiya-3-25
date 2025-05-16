@@ -4,7 +4,7 @@ import PlasticSurgeryExperts from '../../components/PlasticSurgeryExperts';
 const PlasticSurgeryPage: React.FC = () => {
   return (
     <div>
-      <PlasticSurgeryExperts backgroundColor="#f9f9f9" />
+      <PlasticSurgeryExperts backgroundColor="#D7F4FFFF" />
     </div>
   );
 };

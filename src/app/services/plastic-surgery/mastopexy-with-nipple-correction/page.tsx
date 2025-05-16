@@ -9,12 +9,12 @@ import BreastLiftFAQ from '../../../components/BreastLiftFAQ/BreastLiftFAQ';
 const MastopexyWithNippleCorrectionPage: React.FC = () => {
   return (
     <div>
-      <MastopexyWithNippleCorrection backgroundColor="#E6F8BCFF" />
-      <BreastLiftIndications backgroundColor="#F3FCDDFF" />
-      <BreastLiftContraIndications backgroundColor="#E6F8BCFF" />
-      <BreastLiftPreparation backgroundColor="#F3FCDDFF" />
-      <MastopexyInfo backgroundColor="#E6F8BCFF" />
-      <BreastLiftFAQ backgroundColor="#F3FCDDFF" />
+      <MastopexyWithNippleCorrection backgroundColor="#BEDAFAFF" />
+      <BreastLiftIndications backgroundColor="#DFECFCFF" />
+      <BreastLiftContraIndications backgroundColor="#BEDAFAFF" />
+      <BreastLiftPreparation backgroundColor="#DFECFCFF" />
+      <MastopexyInfo backgroundColor="#BEDAFAFF" />
+      <BreastLiftFAQ backgroundColor="#DFECFCFF" />
     </div>
   );
 };

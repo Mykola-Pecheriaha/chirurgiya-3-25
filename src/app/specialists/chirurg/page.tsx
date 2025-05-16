@@ -5,7 +5,7 @@ const ChirurgPage: React.FC = () => {
   return (
     <div>
       {' '}
-      <SurgeryExperts backgroundColor="#f0f7ff" />
+      <SurgeryExperts backgroundColor="#D2E4F8FF" />
     </div>
   );
 };

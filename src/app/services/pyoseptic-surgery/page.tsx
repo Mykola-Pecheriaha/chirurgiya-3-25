@@ -4,7 +4,7 @@ import { PyosepticSurgery } from '@/app/components/PyosepticSurgery';
 const PyosepticSurgeryPage: React.FC = () => {
   return (
     <div>
-      <PyosepticSurgery backgroundColor="#f5f8fa" />
+      <PyosepticSurgery backgroundColor="#A1E4F8FF" />
     </div>
   );
 };
