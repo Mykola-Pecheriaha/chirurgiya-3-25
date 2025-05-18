@@ -7,8 +7,8 @@ import CarpaltReabil from '@/app/components/CarpaltReabil';
 const CarpalSyndromePage: React.FC = () => {
   return (
     <div>
-      <CarpalSyndrome backgroundColor="#C5E1F5FF" />
-      <CarpalDetails backgroundColor="#EAF7FFFF" />
+      <CarpalSyndrome backgroundColor="#C8E8FFFF" />
+      <CarpalDetails backgroundColor="#F4FBFFFF" />
       <CarpalTerapi backgroundColor="#C5E1F5FF" />
       <CarpaltReabil backgroundColor="#EAF7FFFF" />
     </div>

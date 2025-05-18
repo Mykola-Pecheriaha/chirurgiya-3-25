@@ -18,7 +18,7 @@ const PlasticSurgeryPage: React.FC = () => {
       <BreastProblem backgroundColor="#f0f7ff" />
       <AugmentationConsultation backgroundColor="#CFF1FFFF" />
       <BreastAugmentationPreparation backgroundColor="#f5f5f5" />
-      <BreastQuestion backgroundColor="#f0f7ff" />
+      <BreastQuestion backgroundColor="#CFF1FFFF" />
 
       <SideBySideGallery
         images={beforeAfterImages}

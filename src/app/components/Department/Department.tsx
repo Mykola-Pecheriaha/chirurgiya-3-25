@@ -22,18 +22,19 @@ interface DepartmentProps {
 // Дані про послуги хірургічного відділення
 const defaultDepartments: DepartmentCard[] = [
   {
-    id: 'operative-room',
-    title: 'Операційна',
-    imageUrl: '/images/department/operation.jpg',
-    imageAlt: 'Операційна',
-    link: '/department/operative-room',
-  },
-  {
     id: 'surgical-department',
     title: 'Хірургічне відділення №1',
-    imageUrl: '/images/department/department2.jpg',
+    imageUrl: '/images/department/department4.jpg',
     imageAlt: 'Хірургічне відділення №1',
     link: '/department/surgical-department',
+  },
+
+  {
+    id: 'operative-room',
+    title: 'Операційна',
+    imageUrl: '/images/department/department8.jpg',
+    imageAlt: 'Операційна',
+    link: '/department/operative-room',
   },
 ];
 

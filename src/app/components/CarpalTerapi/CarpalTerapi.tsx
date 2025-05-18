@@ -19,23 +19,23 @@ export function CarpalTerapi({
 
         {/* Перший сегмент - Консервативне лікування */}
         <div className={styles.segment}>
-          <h2 className={styles.segmentTitle}>💊 Лікування</h2>
+          <h2 className={styles.segmentTitle}>Лікування</h2>
           <div className={styles.twoColumnSection}>
             <div className={styles.textColumn}>
               <p className={styles.text}>Ваш лікар може порадити наступне:</p>
               <ul className={styles.bulletList}>
                 <li>
-                  <span className={styles.emoji}>🧤</span>{' '}
+                  <span className={styles.emoji}></span>{' '}
                   <strong>Носіння шини на зап'ястя вночі</strong> протягом
                   кількох тижнів. Якщо не дає результату — шину можна носити і
                   вдень.
                 </li>
                 <li>
-                  <span className={styles.emoji}>🛌</span>{' '}
+                  <span className={styles.emoji}></span>{' '}
                   <strong>Уникайте сну з зігнутими зап'ястками.</strong>
                 </li>
                 <li>
-                  <span className={styles.emoji}>🧊</span>{' '}
+                  <span className={styles.emoji}></span>{' '}
                   <strong>Компреси</strong> — чергуйте теплі та холодні на
                   уражену ділянку для зменшення болю та запалення.
                 </li>
@@ -46,13 +46,13 @@ export function CarpalTerapi({
               </h3>
               <ul className={styles.bulletList}>
                 <li>
-                  <span className={styles.emoji}>⌨️</span>{' '}
+                  <span className={styles.emoji}>⌨</span>{' '}
                   <strong>Використовуйте ергономічні пристрої:</strong>{' '}
                   спеціальні клавіатури, мишки, м'які килимки, полиці для
                   клавіатури.
                 </li>
                 <li>
-                  <span className={styles.emoji}>👀</span>{' '}
+                  <span className={styles.emoji}></span>{' '}
                   <strong>
                     Попросіть когось оцінити вашу позу під час роботи
                   </strong>{' '}
@@ -60,13 +60,13 @@ export function CarpalTerapi({
                   зап'ястя залишалися рівними.
                 </li>
                 <li>
-                  <span className={styles.emoji}>👨‍⚕️</span>{' '}
+                  <span className={styles.emoji}></span>{' '}
                   <strong>
                     За потреби лікар може порекомендувати ерготерапевта.
                   </strong>
                 </li>
                 <li>
-                  <span className={styles.emoji}>🏃‍♂️</span>{' '}
+                  <span className={styles.emoji}></span>{' '}
                   <strong>
                     Змініть або обмежте домашні та спортивні активності,
                   </strong>{' '}
@@ -75,10 +75,10 @@ export function CarpalTerapi({
                 </li>
               </ul>
 
-              <h3 className={styles.subTitle}>💊 Медикаментозне лікування:</h3>
+              <h3 className={styles.subTitle}> Медикаментозне лікування:</h3>
               <ul className={styles.bulletList}>
                 <li>
-                  <span className={styles.emoji}>💊</span> <strong>НПЗП</strong>{' '}
+                  <span className={styles.emoji}></span> <strong>НПЗП</strong>{' '}
                   (нестероїдні протизапальні препарати) — такі як ібупрофен або
                   напроксен, для зменшення болю та набряку.
                 </li>
@@ -100,7 +100,7 @@ export function CarpalTerapi({
 
         {/* Другий сегмент - Хірургічне лікування */}
         <div className={styles.segment}>
-          <h2 className={styles.segmentTitle}>🔪 Хірургічне лікування</h2>
+          <h2 className={styles.segmentTitle}> Хірургічне лікування</h2>
           <div className={styles.twoColumnSection}>
             <div className={styles.textColumn}>
               <p className={styles.text}>
@@ -109,14 +109,14 @@ export function CarpalTerapi({
                 проводять під місцевим або загальним наркозом.
               </p>
 
-              <h3 className={styles.subTitle}>👨‍⚕️ Існує два основні методи:</h3>
+              <h3 className={styles.subTitle}> Існує два основні методи:</h3>
               <ul className={styles.bulletList}>
                 <li>
-                  <span className={styles.emoji}>🔪</span>{' '}
+                  <span className={styles.emoji}></span>{' '}
                   <strong>Відкрита операція</strong>
                 </li>
                 <li>
-                  <span className={styles.emoji}>🔬</span>{' '}
+                  <span className={styles.emoji}></span>{' '}
                   <strong>Ендоскопічна хірургія</strong>
                 </li>
               </ul>
@@ -127,53 +127,51 @@ export function CarpalTerapi({
               </p>
 
               <h3 className={styles.subTitle}>
-                🔍 Відкрите вивільнення карпального тунелю
+                Відкрите вивільнення карпального тунелю
               </h3>
-              <p className={styles.text}>
-                ✂️ Під час відкритої операції хірург:
-              </p>
+              <p className={styles.text}>Під час відкритої операції хірург:</p>
               <ul className={styles.bulletList}>
                 <li>
-                  <span className={styles.emoji}>✂️</span>{' '}
+                  <span className={styles.emoji}></span>{' '}
                   <strong>Робить невеликий розріз</strong> на долоні.
                 </li>
                 <li>
-                  <span className={styles.emoji}>👁️</span>{' '}
+                  <span className={styles.emoji}></span>{' '}
                   <strong>
                     Отримує доступ до поперечної карпальної зв'язки
                   </strong>{' '}
                   (даху тунелю).
                 </li>
                 <li>
-                  <span className={styles.emoji}>✂️</span>{' '}
+                  <span className={styles.emoji}></span>{' '}
                   <strong>Розсікає зв'язку,</strong> що збільшує простір
                   усередині тунелю та зменшує тиск на серединний нерв.
                 </li>
               </ul>
               <p className={styles.text}>
-                📈 Після операції зв'язка може зростись, але тиск у каналі вже
-                не повертається до попереднього рівня, що забезпечує
-                довготривале полегшення симптомів.
+                Після операції зв'язка може зростись, але тиск у каналі вже не
+                повертається до попереднього рівня, що забезпечує довготривале
+                полегшення симптомів.
               </p>
 
               <h3 className={styles.subTitle}>
-                🎥 Ендоскопічне вивільнення карпального тунелю
+                Ендоскопічне вивільнення карпального тунелю
               </h3>
               <p className={styles.text}>
-                🔧 Під час цієї менш інвазивної процедури:
+                Під час цієї менш інвазивної процедури:
               </p>
               <ul className={styles.bulletList}>
                 <li>
-                  <span className={styles.emoji}>✂️</span>{' '}
+                  <span className={styles.emoji}></span>{' '}
                   <strong>Хірург робить 1–2 маленькі розрізи.</strong>
                 </li>
                 <li>
-                  <span className={styles.emoji}>🎥</span>{' '}
+                  <span className={styles.emoji}></span>{' '}
                   <strong>Вводить ендоскоп</strong> — крихітну камеру, що
                   дозволяє бачити структури зап'ястя зсередини.
                 </li>
                 <li>
-                  <span className={styles.emoji}>✂️</span>{' '}
+                  <span className={styles.emoji}></span>{' '}
                   <strong>
                     Через ендоскопічні інструменти розсікає поперечну зв'язку,
                   </strong>{' '}
@@ -184,7 +182,7 @@ export function CarpalTerapi({
               <p className={styles.text}>✅ Цей метод часто дозволяє:</p>
               <ul className={styles.bulletList}>
                 <li>
-                  <span className={styles.emoji}>⏱️</span>{' '}
+                  <span className={styles.emoji}></span>{' '}
                   <strong>Скоротити час відновлення</strong>
                 </li>
               </ul>

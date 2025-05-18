@@ -71,7 +71,7 @@ const AbdominoDetails: React.FC<AbdominoDetailsProps> = ({
         {/* Перша секція: показання */}
         <div className={styles.section}>
           <div className={styles.textColumn}>
-            <div className={styles.doctorIcon}>🧑‍⚕️</div>
+            <div className={styles.doctorIcon}></div>
             <p className={styles.sectionText}>
               Абдомінопластика живота рекомендована у випадках:
             </p>
@@ -121,7 +121,7 @@ const AbdominoDetails: React.FC<AbdominoDetailsProps> = ({
         {/* Середня секція: додаткова інформація */}
         <div className={styles.fullWidthSection}>
           <div className={styles.infoBlock}>
-            <h3 className={styles.infoTitle}>👩‍🍼 Після пологів</h3>
+            <h3 className={styles.infoTitle}> Після пологів</h3>
             <p className={styles.infoText}>
               Операція часто виконується після народження дітей, коли жінка вже
               не планує вагітність. Повторні пологи можуть вплинути на
@@ -137,7 +137,7 @@ const AbdominoDetails: React.FC<AbdominoDetailsProps> = ({
           </div>
 
           <div className={styles.infoBlock}>
-            <h3 className={styles.infoTitle}>🤱 Комбіновані операції</h3>
+            <h3 className={styles.infoTitle}> Комбіновані операції</h3>
             <p className={styles.infoText}>
               Абдомінопластику часто поєднують з:
             </p>
@@ -152,7 +152,7 @@ const AbdominoDetails: React.FC<AbdominoDetailsProps> = ({
           </div>
 
           <div className={styles.infoBlock}>
-            <h3 className={styles.infoTitle}>🧔 Пластика живота у чоловіків</h3>
+            <h3 className={styles.infoTitle}> Пластика живота у чоловіків</h3>
             <p className={styles.infoText}>
               Сучасна абдомінопластика затребувана і серед чоловіків, які
               прагнуть покращити контури тіла після інтенсивного схуднення або
@@ -198,9 +198,8 @@ const AbdominoDetails: React.FC<AbdominoDetailsProps> = ({
                     <li>захворювання щитовидної залози</li>
                   </ul>
                   <p className={styles.note}>
-                    👉 У таких випадках необхідно стабілізувати стан пацієнта
-                    або вилікувати супутнє захворювання перед плануванням
-                    операції.
+                    У таких випадках необхідно стабілізувати стан пацієнта або
+                    вилікувати супутнє захворювання перед плануванням операції.
                   </p>
                 </li>
                 <li>
@@ -222,9 +221,7 @@ const AbdominoDetails: React.FC<AbdominoDetailsProps> = ({
               </ul>
 
               <div className={styles.individualApproach}>
-                <h3 className={styles.approachTitle}>
-                  🩺 Індивідуальний підхід
-                </h3>
+                <h3 className={styles.approachTitle}>Індивідуальний підхід</h3>
                 <p className={styles.approachText}>
                   Остаточне рішення щодо можливості проведення абдомінопластики
                   приймає лікар, враховуючи:

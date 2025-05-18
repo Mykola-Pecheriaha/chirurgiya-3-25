@@ -41,9 +41,9 @@ const defaultServices: Service[] = [
   },
   {
     id: 'varicose',
-    title: 'Судинна хірургія',
+    title: 'Хірургія варикозу',
     imageUrl: '/images/services/vascular.jpg',
-    imageAlt: 'Судинна хірургія',
+    imageAlt: 'Хірургія варикозу',
     link: '/services/varicose',
   },
   {
@@ -121,6 +121,19 @@ const Services: React.FC<ServicesProps> = ({
               </div>
             </Link>
           ))}
+        </div>
+
+        {/* Заклик до дії */}
+        <div className={styles.ctaSection}>
+          <p className={styles.ctaText}>
+            Маєте додаткові запитання? Наші спеціалісти готові надати вам
+            детальну консультацію.
+          </p>
+          <Link href="/about-doctor/contacts">
+            <button className={styles.contactButton}>
+              Зв&apos;язатися з нами
+            </button>
+          </Link>
         </div>
       </div>
     </div>

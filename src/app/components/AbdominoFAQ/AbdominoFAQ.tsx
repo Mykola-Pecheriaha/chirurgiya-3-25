@@ -75,7 +75,7 @@ const AbdominoFAQ: React.FC<AbdominoFAQProps> = ({
       <div className={styles.container}>
         {/* Заголовок */}
         <h2 className={styles.title}>
-          <span className={styles.icon}>🧷</span> Поширені запитання
+          <span className={styles.icon}></span> Поширені запитання
         </h2>
 
         {/* Вступний текст на всю ширину */}
@@ -136,7 +136,7 @@ const AbdominoFAQ: React.FC<AbdominoFAQProps> = ({
                     </p>
 
                     <p className={styles.answerSubtitle}>
-                      <span className={styles.bulletPoint}>✂️</span> Хірургічний
+                      <span className={styles.bulletPoint}></span> Хірургічний
                       процес включає:
                     </p>
                     <ul className={styles.answerList}>
@@ -171,7 +171,7 @@ const AbdominoFAQ: React.FC<AbdominoFAQProps> = ({
                     </ul>
 
                     <p className={styles.answerSubtitle}>
-                      <span className={styles.bulletPoint}>🔄</span> Робота з
+                      <span className={styles.bulletPoint}></span> Робота з
                       пупком:
                     </p>
                     <p className={styles.answerText}>
@@ -186,7 +186,7 @@ const AbdominoFAQ: React.FC<AbdominoFAQProps> = ({
                     </ul>
 
                     <p className={styles.answerSubtitle}>
-                      <span className={styles.bulletPoint}>🧵</span> Ушивання
+                      <span className={styles.bulletPoint}></span> Ушивання
                       рани:
                     </p>
                     <ul className={styles.answerList}>
@@ -227,7 +227,7 @@ const AbdominoFAQ: React.FC<AbdominoFAQProps> = ({
                 <div className={styles.answerTextColumn}>
                   <div className={styles.answerContent}>
                     <p className={styles.answerSubtitle}>
-                      <span className={styles.bulletPoint}>🛌</span>{' '}
+                      <span className={styles.bulletPoint}></span>{' '}
                       Госпіталізація:
                     </p>
                     <p className={styles.answerText}>
@@ -236,12 +236,12 @@ const AbdominoFAQ: React.FC<AbdominoFAQProps> = ({
                       персоналу. Призначаються знеболювальні та антибіотики.
                     </p>
                     <p className={styles.answerText}>
-                      <strong>📋 Наступного дня — виписка додому</strong> з
+                      <strong> Наступного дня — виписка додому</strong> з
                       індивідуальними рекомендаціями щодо подальшого догляду.
                     </p>
 
                     <p className={styles.answerSubtitle}>
-                      <span className={styles.bulletPoint}>⏳</span> Перші дні
+                      <span className={styles.bulletPoint}></span> Перші дні
                       після операції:
                     </p>
                     <ul className={styles.answerList}>
@@ -258,8 +258,8 @@ const AbdominoFAQ: React.FC<AbdominoFAQProps> = ({
                     </ul>
 
                     <p className={styles.answerSubtitle}>
-                      <span className={styles.bulletPoint}>🩺</span> Компресія
-                      та догляд:
+                      <span className={styles.bulletPoint}></span> Компресія та
+                      догляд:
                     </p>
                     <ul className={styles.answerList}>
                       <li>
@@ -273,8 +273,8 @@ const AbdominoFAQ: React.FC<AbdominoFAQProps> = ({
                     </ul>
 
                     <p className={styles.answerSubtitle}>
-                      <span className={styles.bulletPoint}>✂️</span> Рубець
-                      після операції:
+                      <span className={styles.bulletPoint}></span> Рубець після
+                      операції:
                     </p>
                     <ul className={styles.answerList}>
                       <li>Залежить від обраної методики</li>
@@ -288,7 +288,7 @@ const AbdominoFAQ: React.FC<AbdominoFAQProps> = ({
                     </ul>
 
                     <p className={styles.answerSubtitle}>
-                      <span className={styles.bulletPoint}>🔍</span> Результат:
+                      <span className={styles.bulletPoint}></span> Результат:
                     </p>
                     <p className={styles.answerText}>
                       Повну естетичну оцінку результату можна зробити{' '}

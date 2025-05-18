@@ -173,7 +173,7 @@ export const AbdominoPreparation: React.FC<AbdominoPreparationProps> = ({
       <div className={styles.contentWrapper}>
         {/* Заголовок */}
         <h2 className={styles.mainTitle}>
-          🧷 Абдомінопластика: підготовка до операції
+          Абдомінопластика: підготовка до операції
         </h2>
 
         {/* Вступний текст */}
@@ -190,7 +190,7 @@ export const AbdominoPreparation: React.FC<AbdominoPreparationProps> = ({
           <div className={styles.textColumn}>
             <div className={styles.consultationSection}>
               <h3 className={styles.sectionTitle}>
-                <span className={styles.icon}>🧑‍⚕️</span>
+                <span className={styles.icon}></span>
               </h3>
 
               <h4 className={styles.subTitle}>📋 На консультації в клініці:</h4>
@@ -216,24 +216,24 @@ export const AbdominoPreparation: React.FC<AbdominoPreparationProps> = ({
               </h4>
               <ul className={styles.bulletList}>
                 <li>
-                  <span className={styles.redText}>❌</span> За 10 днів —
+                  <span className={styles.redText}></span> За 10 днів —
                   припинити прийом медикаментів, які розріджують кров
                 </li>
                 <li>
-                  <span className={styles.redText}>🚭</span> За 10 днів до
+                  <span className={styles.redText}></span> За 10 днів до
                   операції — утриматися від куріння
                 </li>
                 <li>
-                  <span className={styles.redText}>🚭</span> Після операції — не
+                  <span className={styles.redText}></span> Після операції — не
                   палити щонайменше 1–1,5 місяці
                 </li>
                 <li>
-                  <span className={styles.redText}>🍽️</span> За 2 дні до
-                  операції — обмежити калорійність їжі, пити більше води
+                  <span className={styles.redText}></span> За 2 дні до операції
+                  — обмежити калорійність їжі, пити більше води
                 </li>
                 <li>
-                  <span className={styles.redText}>🚫</span> У день операції —
-                  не можна їсти та пити
+                  <span className={styles.redText}></span> У день операції — не
+                  можна їсти та пити
                 </li>
               </ul>
             </div>
@@ -253,7 +253,7 @@ export const AbdominoPreparation: React.FC<AbdominoPreparationProps> = ({
 
           <div className={styles.divider}></div>
 
-          <h3 className={styles.typesTitle}>✂️ Види абдомінопластики</h3>
+          <h3 className={styles.typesTitle}> Види абдомінопластики</h3>
           <p className={styles.typesDescription}>
             Сучасна абдомінопластика має кілька варіантів, що підбираються
             індивідуально залежно від стану тканин та естетичних побажань

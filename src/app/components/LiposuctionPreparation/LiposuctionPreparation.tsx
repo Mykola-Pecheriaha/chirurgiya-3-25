@@ -139,15 +139,13 @@ export function LiposuctionPreparation({
   return (
     <div className={styles.container} style={{ backgroundColor }}>
       <div className={styles.content}>
-        <h2 className={styles.mainTitle}>
-          🧷 Ліпосакція: підготовка до операції
-        </h2>
+        <h2 className={styles.mainTitle}>Ліпосакція: підготовка до операції</h2>
 
         {/* Перший сегмент */}
         <div className={styles.segment}>
           <div className={styles.textColumn}>
             <h3 className={styles.sectionTitle}>
-              🩺 Консультація перед ліпосакцією
+              Консультація перед ліпосакцією
             </h3>
             <p className={styles.text}>
               Чи рекомендована операція у конкретному випадку? На це запитання
@@ -156,13 +154,13 @@ export function LiposuctionPreparation({
             </p>
             <p className={styles.text}>
               <span className={styles.highlight}>
-                👩‍⚕️ Фахівець із 25-річним досвідом у естетичній хірургії
+                Фахівець із 25-річним досвідом у естетичній хірургії
               </span>{' '}
               щодня допомагає дівчатам набувати форм мрії!
             </p>
             <p className={styles.text}>
-              <span className={styles.highlight}>🌍 Микола Печеряга</span>{' '}
-              приймає пацієнтів з різних регіонів України і не тільки України.
+              <span className={styles.highlight}>Микола Печеряга</span> приймає
+              пацієнтів з різних регіонів України і не тільки України.
             </p>
             <p className={styles.text}>
               <span className={styles.highlight}>
@@ -180,7 +178,7 @@ export function LiposuctionPreparation({
         <div className={styles.segment}>
           <div className={styles.textColumn}>
             <h3 className={styles.sectionTitle}>
-              🛡️ Ліпосакція: підготовка до операції
+              Ліпосакція: підготовка до операції
             </h3>
             <p className={styles.text}>
               Методика зменшення жирових відкладень відрізняється
@@ -188,45 +186,41 @@ export function LiposuctionPreparation({
               обов'язковою умовою.
             </p>
             <div className={styles.listContainer}>
-              <h4 className={styles.listTitle}>
-                ⏳ Передопераційна підготовка:
-              </h4>
+              <h4 className={styles.listTitle}>Передопераційна підготовка:</h4>
               <ul className={styles.list}>
                 <li>
-                  <span className={styles.highlight}>❌ За 10 днів</span> —
+                  <span className={styles.highlight}>За 10 днів</span> —
                   припинити прийом медикаментів, які розріджують кров
                 </li>
                 <li>
                   <span className={styles.highlight}>
-                    🚭 За 10 днів до операції
+                    За 10 днів до операції
                   </span>{' '}
                   — припинити або суттєво зменшити тютюнопаління.
                 </li>
                 <li>
                   <span className={styles.highlight}>
-                    🚭 За 2 тижні до операції
+                    За 2 тижні до операції
                   </span>{' '}
                   – відмовитися від алкоголю;
                 </li>
                 <li>
-                  <span className={styles.highlight}>🚭 Після операції</span> —
-                  не палити щонайменше 1–1,5 місяці
+                  <span className={styles.highlight}>Після операції</span> — не
+                  палити щонайменше 1–1,5 місяці
                 </li>
                 <li>
-                  <span className={styles.highlight}>
-                    🍽️ За 2 дні до операції
-                  </span>{' '}
+                  <span className={styles.highlight}>За 2 дні до операції</span>{' '}
                   — обмежити калорійність їжі, пити більше води
                 </li>
                 <li>
-                  <span className={styles.highlight}>🚫 У день операції</span> —
-                  не можна їсти та пити
+                  <span className={styles.highlight}>У день операції</span> — не
+                  можна їсти та пити
                 </li>
               </ul>
             </div>
             <p className={styles.text}>
-              <span className={styles.highlight}>🩺 Перед втручанням</span>{' '}
-              пацієнт проходить швидке обстеження та здає аналізи у клініці.
+              <span className={styles.highlight}>Перед втручанням</span> пацієнт
+              проходить швидке обстеження та здає аналізи у клініці.
             </p>
             <p className={styles.text}>
               На основі результатів пластичний хірург Микола Печеряга ухвалює
@@ -242,7 +236,7 @@ export function LiposuctionPreparation({
         <div className={styles.segment}>
           <div className={styles.textColumn}>
             <h3 className={styles.sectionTitle}>
-              🔥 Ліпосакція: проведення операції
+              Ліпосакція: проведення операції
             </h3>
             <p className={styles.text}>
               У клініці застосовується найефективніший метод видалення жиру —{' '}
@@ -265,7 +259,7 @@ export function LiposuctionPreparation({
               </li>
             </ul>
 
-            <h4 className={styles.subTitle}>🔥 Ліпосакцію можна проводити:</h4>
+            <h4 className={styles.subTitle}>Ліпосакцію можна проводити:</h4>
             <ul className={styles.dotList}>
               <li>
                 <span className={styles.dot}>🔹</span> під місцевою анестезією;
@@ -276,7 +270,7 @@ export function LiposuctionPreparation({
               </li>
             </ul>
 
-            <h4 className={styles.subTitle}>🔥 Процедура може бути:</h4>
+            <h4 className={styles.subTitle}>Процедура може бути:</h4>
             <ul className={styles.dotList}>
               <li>
                 <span className={styles.dot}>🔹</span> самостійною;
@@ -289,7 +283,7 @@ export function LiposuctionPreparation({
             </ul>
 
             <h4 className={styles.subTitle}>
-              📈 Якість результату залежить від стану шкіри:
+              Якість результату залежить від стану шкіри:
             </h4>
             <ul className={styles.dashList}>
               <li>
@@ -311,11 +305,11 @@ export function LiposuctionPreparation({
         <div className={styles.segment}>
           <div className={styles.textColumn}>
             <h3 className={styles.sectionTitle}>
-              💬 Ліпосакція: реабілітація після операції
+              Ліпосакція: реабілітація після операції
             </h3>
 
             <div className={styles.subsection}>
-              <h4 className={styles.subTitle}>🩹 При місцевій анестезії:</h4>
+              <h4 className={styles.subTitle}>При місцевій анестезії:</h4>
               <ul className={styles.dotList}>
                 <li>
                   <span className={styles.dot}>🔹</span> пацієнт перебуває у
@@ -329,7 +323,7 @@ export function LiposuctionPreparation({
             </div>
 
             <div className={styles.subsection}>
-              <h4 className={styles.subTitle}>🛌 При загальному наркозі:</h4>
+              <h4 className={styles.subTitle}>При загальному наркозі:</h4>
               <ul className={styles.dotList}>
                 <li>
                   <span className={styles.dot}>🔹</span> виписка з клініки —
@@ -339,9 +333,7 @@ export function LiposuctionPreparation({
             </div>
 
             <div className={styles.subsection}>
-              <h4 className={styles.subTitle}>
-                ✨ Протягом перших днів можливі:
-              </h4>
+              <h4 className={styles.subTitle}>Протягом перших днів можливі:</h4>
               <ul className={styles.dotList}>
                 <li>
                   <span className={styles.dot}>🔹</span> оніміння прооперованої
@@ -358,7 +350,7 @@ export function LiposuctionPreparation({
             </div>
 
             <p className={styles.text}>
-              <span className={styles.highlight}>✨ Чутливість шкіри</span>{' '}
+              <span className={styles.highlight}>Чутливість шкіри</span>{' '}
               повністю відновлюється за кілька тижнів.
             </p>
             <ul className={styles.dotList}>
@@ -374,7 +366,7 @@ export function LiposuctionPreparation({
             </ul>
 
             <div className={styles.subsection}>
-              <h4 className={styles.subTitle}>✨ Коли видно результат?</h4>
+              <h4 className={styles.subTitle}>Коли видно результат?</h4>
               <ul className={styles.dotList}>
                 <li>
                   <span className={styles.dot}>🔸</span> Перші результати можна
@@ -405,7 +397,7 @@ export function LiposuctionPreparation({
             </ul>
 
             <div className={styles.subsection}>
-              <h4 className={styles.subTitle}>📋 На консультації в клініці:</h4>
+              <h4 className={styles.subTitle}>На консультації в клініці:</h4>
               <ul className={styles.list}>
                 <li>
                   Обговорюються побажання пацієнта і пояснюємо "за" і "протів"
@@ -418,16 +410,14 @@ export function LiposuctionPreparation({
 
             <p className={styles.text}>
               <span className={styles.highlight}>
-                🧳 Для пацієнтів з інших міст
+                Для пацієнтів з інших міст
               </span>{' '}
               пропонується максимально зручний формат: Консультація + обстеження
               + операція — в 1 візит!
             </p>
 
             <div className={styles.subsection}>
-              <h4 className={styles.subTitle}>
-                ⏳ Передопераційна підготовка:
-              </h4>
+              <h4 className={styles.subTitle}>Передопераційна підготовка:</h4>
               <ul className={styles.list}>
                 <li>
                   <span className={styles.highlight}>❌ За 10 днів</span> —
@@ -435,22 +425,20 @@ export function LiposuctionPreparation({
                 </li>
                 <li>
                   <span className={styles.highlight}>
-                    🚭 За 10 днів до операції
+                    ❌ За 10 днів до операції
                   </span>{' '}
                   — утриматися від куріння
                 </li>
                 <li>
-                  <span className={styles.highlight}>🚭 Після операції</span> —
+                  <span className={styles.highlight}>❌ Після операції</span> —
                   не палити щонайменше 1–1,5 місяці
                 </li>
                 <li>
-                  <span className={styles.highlight}>
-                    🍽️ За 2 дні до операції
-                  </span>{' '}
+                  <span className={styles.highlight}>За 2 дні до операції</span>{' '}
                   — обмежити калорійність їжі, пити більше води
                 </li>
                 <li>
-                  <span className={styles.highlight}>🚫 У день операції</span> —
+                  <span className={styles.highlight}>❌ У день операції</span> —
                   не можна їсти та пити
                 </li>
               </ul>
@@ -464,7 +452,7 @@ export function LiposuctionPreparation({
         {/* Нижній блок на всю ширину */}
         <div className={styles.fullWidthBlock}>
           <p className={styles.importantNote}>
-            🔔 Правильна підготовка — запорука швидкої реабілітації та чудового
+            Правильна підготовка — запорука швидкої реабілітації та чудового
             результату.
           </p>
         </div>

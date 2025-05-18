@@ -4,6 +4,7 @@ import type React from 'react';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import styles from './ImplantBreastRecoveryReabilit.module.css';
+import Link from 'next/link';
 
 interface ImplantBreastRecoveryReabilitProps {
   backgroundColor?: string;
@@ -82,6 +83,18 @@ const ImplantBreastRecoveryReabilit: React.FC<
               />
             </div>
           </div>
+        </div>
+        {/* Заклик до дії */}
+        <div className={styles.ctaSection}>
+          <p className={styles.ctaText}>
+            Маєте додаткові запитання? Наші спеціалісти готові надати вам
+            детальну консультацію.
+          </p>
+          <Link href="/about-doctor/contacts">
+            <button className={styles.contactButton}>
+              Зв&apos;язатися з нами
+            </button>
+          </Link>
         </div>
       </div>
     </div>

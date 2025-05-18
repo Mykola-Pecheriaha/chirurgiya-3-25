@@ -3,6 +3,7 @@
 import type React from 'react';
 import Image from 'next/image';
 import styles from './UrgentSurgery.module.css';
+import Link from 'next/link';
 
 interface UrgentCondition {
   id: string;
@@ -178,6 +179,19 @@ const UrgentSurgery: React.FC<UrgentSurgeryProps> = ({
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Заклик до дії */}
+        <div className={styles.ctaSection}>
+          <p className={styles.ctaText}>
+            Маєте додаткові запитання? Наші спеціалісти готові надати вам
+            детальну консультацію.
+          </p>
+          <Link href="/about-doctor/contacts">
+            <button className={styles.contactButton}>
+              Зв&apos;язатися з нами
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -70,7 +70,7 @@ const Footer: React.FC<FooterProps> = ({ backgroundColor = '#1e3a8a' }) => {
                 <Link href="/reviews">Відгуки</Link>
               </li>
               <li>
-                <Link href="/contacts">Контакти</Link>
+                <Link href="/about-doctor/contacts">Контакти</Link>
               </li>
             </ul>
           </div>
@@ -81,11 +81,14 @@ const Footer: React.FC<FooterProps> = ({ backgroundColor = '#1e3a8a' }) => {
             <ul className={styles.contactList}>
               <li>
                 <MapPin size={18} className={styles.icon} />
-                <span>м. Чернівці, вул. Головна, 137</span>
+                <span>
+                  м. Чернівці, вул. Героїв Майдану, 226 (вхід з вулиці
+                  Рівенська)
+                </span>
               </li>
               <li>
                 <Phone size={18} className={styles.icon} />
-                <span>+380 (372) 55-37-00</span>
+                <span>+380 (66) 010-01-03</span>
               </li>
               <li>
                 <Mail size={18} className={styles.icon} />

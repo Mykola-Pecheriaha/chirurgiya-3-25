@@ -9,10 +9,10 @@ const LiposuctionPage: React.FC = () => {
   return (
     <div>
       <Liposuction backgroundColor="#C4DFFCFF" />
-      <LiposuctionDetails backgroundColor="#E2EEFDFF" />
+      <LiposuctionDetails backgroundColor="#f8f9fa" />
       <LiposuctionIndicatio backgroundColor="#C4DFFCFF" />
       <LiposuctionPreparation backgroundColor="#f8f9fa" />
-      <LiposuctionFAQ backgroundColor="#f8f9fa" />
+      <LiposuctionFAQ backgroundColor="#C4DFFCFF" />
     </div>
   );
 };

@@ -134,7 +134,7 @@ const GerniotomiyaDetails: React.FC<GerniotomiyaDetailsProps> = ({
 
             <div className={styles.segment}>
               <h3 className={styles.subtitle}>
-                💡 Оптимальне рішення — операція з вживлення алогенного імпланта
+                Оптимальне рішення — операція з вживлення алогенного імпланта
                 (сітки)
               </h3>
               <p className={styles.paragraph}>

@@ -9,7 +9,7 @@ const FaceliftSectionPage: React.FC = () => {
     <div>
       <FaceliftSection backgroundColor="#E6DDF7FF" />
       <FaceliftDetails backgroundColor="#f8f4ff" />
-      <FaceLiftPreparation backgroundColor="#f8f4ff" />
+      <FaceLiftPreparation backgroundColor="#E6DDF7FF" />
       <FaceliftFAQ backgroundColor="#f8f4ff" />
     </div>
   );

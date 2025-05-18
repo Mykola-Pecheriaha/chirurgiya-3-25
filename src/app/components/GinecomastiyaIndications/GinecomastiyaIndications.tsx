@@ -41,11 +41,6 @@ const GinecomastiyaIndications: React.FC<GinecomastiyaIndicationsProps> = ({
   // Зображення для другої галереї з розмірами
   const galleryImages2: ImageType[] = [
     {
-      src: '/images/GinecomastiyaIndications/ginecomas6.jpg',
-      width: 600,
-      height: 600,
-    },
-    {
       src: '/images/GinecomastiyaIndications/ginecomas9.jpg',
       width: 600,
       height: 700,

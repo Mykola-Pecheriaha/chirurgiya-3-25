@@ -80,6 +80,48 @@
   justify-content: center;
 }
 
+.ctaSection {
+  margin-top: 20px;
+  text-align: center;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+.ctaText {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+.ctaButton {
+  padding: 12px 30px;
+  background-color: #4a6fa5;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.ctaButton:hover {
+  background-color: #3a5a8a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+.contactButton {
+  background-color: #1e88e5; /* Синій колір кнопки */
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 /* Адаптивність для планшетів */
 @media (max-width: 992px) {
   .serviceCardLink {

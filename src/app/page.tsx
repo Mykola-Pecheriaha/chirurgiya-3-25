@@ -36,7 +36,7 @@ const Home: React.FC = () => {
         imageAlt="Наркозне забезпечення"
       />
       <SurgeryDepartmentInfo
-        backgroundColor="##E5F4FFFF"
+        backgroundColor="##C2E6FFFF"
         textColor="#333333"
         headingColor="#1eaaf1"
         accentColor="#7b68ee"

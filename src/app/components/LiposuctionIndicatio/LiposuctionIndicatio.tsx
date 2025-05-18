@@ -92,7 +92,7 @@ export function LiposuctionIndicatio({
       <div className={styles.container}>
         {/* Заголовок */}
         <h2 className={styles.mainTitle}>
-          <span className={styles.icon}>📌</span> Ліпосакція: показання до
+          <span className={styles.icon}></span> Ліпосакція: показання до
           проведення
         </h2>
 
@@ -150,7 +150,7 @@ export function LiposuctionIndicatio({
         {/* Другий сегмент */}
         <div className={styles.segment}>
           <h2 className={styles.fullWidthTitle}>
-            <span className={styles.icon}>🚫</span> Протипоказання до ліпосакції
+            <span className={styles.icon}></span> Протипоказання до ліпосакції
           </h2>
           <p className={styles.fullWidthText}>
             Ліпосакція, як і будь-яке інше хірургічне втручання, має ряд
@@ -162,7 +162,7 @@ export function LiposuctionIndicatio({
             <div className={styles.textColumn}>
               <div className={styles.textContent}>
                 <p className={styles.text}>
-                  <span className={styles.bullet}>🔍</span> До основних
+                  <span className={styles.bullet}></span> До основних
                   протипоказань належать:
                 </p>
                 <ul className={styles.list}>
@@ -195,7 +195,7 @@ export function LiposuctionIndicatio({
                   </li>
                 </ul>
                 <p className={styles.note}>
-                  <span className={styles.noteBullet}>👉</span> У таких випадках
+                  <span className={styles.noteBullet}></span> У таких випадках
                   необхідно стабілізувати стан пацієнта або вилікувати супутнє
                   захворювання перед плануванням операції.
                 </p>
@@ -220,8 +220,7 @@ export function LiposuctionIndicatio({
                   стану.
                 </p>
                 <p className={styles.text}>
-                  <span className={styles.bullet}>🩺</span> Індивідуальний
-                  підхід
+                  <span className={styles.bullet}></span> Індивідуальний підхід
                 </p>
                 <p className={styles.text}>
                   Остаточне рішення щодо можливості проведення абдомінопластики

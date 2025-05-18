@@ -7,9 +7,9 @@ import BlepharoFAQ from '../../../components/BlepharoFAQ/BlepharoFAQ';
 const BlefaroplasticPage: React.FC = () => {
   return (
     <div>
-      <Blefaroplastic backgroundColor="#f8f4ff" />
+      <Blefaroplastic backgroundColor="#E6D8FDFF" />
       <BlepharoplastytDetails backgroundColor="#f8f4ff" />
-      <BlepharoPreparation backgroundColor="#f8f4ff" />
+      <BlepharoPreparation backgroundColor="#E5D7FCFF" />
       <BlepharoFAQ backgroundColor="#f5f8ff" />
     </div>
   );

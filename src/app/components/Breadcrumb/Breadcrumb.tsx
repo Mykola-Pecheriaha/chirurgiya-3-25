@@ -4,6 +4,8 @@ import type React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import styles from './Breadcrumb.module.css';
+import GastroDuodeno from '../GastroDuodeno';
+import TraditionalSurgery from '../TraditionalSurgery';
 
 const routeNameMap: { [key: string]: string } = {
   '': 'Головна',
@@ -28,6 +30,25 @@ const routeNameMap: { [key: string]: string } = {
   kuriia: 'Курія',
   blyskun: 'Блискун',
   hrudetskyi: 'Грудетський',
+  blepharoplasty: 'Блефаропластика',
+  services: 'Послуги',
+  traditionalsurgery: 'традиційна хірургія',
+  liver: 'печінка',
+  gallbladder: 'жовчний міхур',
+  pancreas: 'підшлункова залоза',
+  stomach: 'шлунка',
+  intestines: 'кишечника',
+  hernia: 'грижі',
+  GastroDuodeno: 'Гастродуоденоскопія',
+  gastroscopy: 'Гастроскопія',
+  TraditionalSurgery: 'Традиційна хірургія',
+  laparoscopic: 'Лапароскопічна хірургія',
+  emergencysurgery: 'ургентна хірургія',
+  varicose: 'варикоз',
+  skintumors: 'пухлини шкіри',
+  bariatrics: 'бариатрична хірургія',
+  proctology: 'проктологія',
+  urology: 'урологія',
 };
 
 const Breadcrumb: React.FC = () => {

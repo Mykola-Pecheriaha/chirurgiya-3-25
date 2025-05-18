@@ -63,7 +63,7 @@ const OttoPreparation: React.FC<OttoPreparationProps> = ({
     <div className={styles.container} style={{ backgroundColor }}>
       <div className={styles.content}>
         {/* Заголовок */}
-        <h2 className={styles.title}>👂 Пластика вух: консультація</h2>
+        <h2 className={styles.title}> Пластика вух: консультація</h2>
 
         {/* Вступний текст */}
         <div className={styles.introText}>

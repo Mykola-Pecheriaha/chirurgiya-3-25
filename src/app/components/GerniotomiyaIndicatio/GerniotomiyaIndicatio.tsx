@@ -75,7 +75,7 @@ const GerniotomiyaIndicatio: FC<GerniotomiyaIndicatioProps> = ({
     >
       <div className={styles.container}>
         <h2 className={styles.mainTitle}>
-          📌 Покази до операції грижесічення (герніотомія)
+          Покази до операції грижесічення (герніотомія)
         </h2>
 
         {/* Перший сектор - Покази */}
@@ -86,9 +86,7 @@ const GerniotomiyaIndicatio: FC<GerniotomiyaIndicatioProps> = ({
             </p>
 
             <div className={styles.subsection}>
-              <h3 className={styles.subtitle}>
-                📅 Покази до планової операції
-              </h3>
+              <h3 className={styles.subtitle}>Покази до планової операції</h3>
               <p className={styles.point}>
                 <span className={styles.checkmark}>✅</span> Наявність грижі є
                 показом до планової операції
@@ -97,7 +95,7 @@ const GerniotomiyaIndicatio: FC<GerniotomiyaIndicatioProps> = ({
 
             <div className={styles.subsection}>
               <h3 className={styles.subtitle}>
-                🚨 Покази до ургентної (невідкладної) операції
+                Покази до ургентної (невідкладної) операції
               </h3>
               <p className={styles.point}>
                 <span className={styles.alert}>❗</span> Наявність защемленої
@@ -126,15 +124,15 @@ const GerniotomiyaIndicatio: FC<GerniotomiyaIndicatioProps> = ({
         <div className={styles.sector}>
           <div className={styles.textContent}>
             <h3 className={styles.contraTitle}>
-              ❌ Протипокази до операції грижесічення (герніотомія)
+              Протипокази до операції грижесічення (герніотомія)
             </h3>
 
             <div className={styles.subsection}>
               <h3 className={styles.subtitle}>
-                ⏳ Протипокази до планової операції
+                Протипокази до планової операції
               </h3>
               <p className={styles.warning}>
-                ⚠️ Усі хронічні захворювання в стадії декомпенсації, зокрема:
+                Усі хронічні захворювання в стадії декомпенсації, зокрема:
               </p>
               <ul className={styles.contraindicationsList}>
                 <li>
@@ -150,7 +148,7 @@ const GerniotomiyaIndicatio: FC<GerniotomiyaIndicatioProps> = ({
 
             <div className={styles.subsection}>
               <h3 className={styles.subtitle}>
-                🚫 Протипокази до ургентної операції
+                Протипокази до ургентної операції
               </h3>
               <ul className={styles.urgentContraindicationsList}>
                 <li>Агонуючий стан хворого</li>

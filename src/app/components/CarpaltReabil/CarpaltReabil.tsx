@@ -4,6 +4,7 @@ import type React from 'react';
 import styles from './CarpaltReabil.module.css';
 import CarpalReabilGallery from './CarpalReabilGallery';
 import CarpalResultGallery from './CarpalResultGallery';
+import Link from 'next/link';
 
 interface CarpaltReabilProps {
   backgroundColor?: string;
@@ -20,7 +21,7 @@ const CarpaltReabil: React.FC<CarpaltReabilProps> = ({
           <div className={styles.contentWrapper}>
             <div className={styles.textContent}>
               <h2 className={styles.segmentTitle}>
-                🛌 Відновлення після операції
+                Відновлення після операції
               </h2>
 
               <div className={styles.infoBlock}>
@@ -35,7 +36,7 @@ const CarpaltReabil: React.FC<CarpaltReabilProps> = ({
 
               <div className={styles.infoBlock}>
                 <h3 className={styles.subTitle}>
-                  🩺 Що очікувати після операції:
+                  Що очікувати після операції:
                 </h3>
                 <ul className={styles.bulletList}>
                   <li>
@@ -54,7 +55,7 @@ const CarpaltReabil: React.FC<CarpaltReabilProps> = ({
               </div>
 
               <div className={styles.infoBlock}>
-                <h3 className={styles.subTitle}>🖐️ Додаткові рекомендації:</h3>
+                <h3 className={styles.subTitle}>Додаткові рекомендації:</h3>
                 <ul className={styles.bulletList}>
                   <li>
                     Можливо, доведеться носити шину або бандаж упродовж кількох
@@ -68,9 +69,8 @@ const CarpaltReabil: React.FC<CarpaltReabilProps> = ({
               </div>
 
               <p className={styles.conclusion}>
-                🧘‍♀️ Терпіння та регулярне спостереження допоможуть вам
-                повернутися до звичного ритму життя максимально комфортно та
-                безпечно.
+                Терпіння та регулярне спостереження допоможуть вам повернутися
+                до звичного ритму життя максимально комфортно та безпечно.
               </p>
             </div>
 
@@ -113,7 +113,7 @@ const CarpaltReabil: React.FC<CarpaltReabilProps> = ({
 
               <div className={styles.infoBlock}>
                 <h3 className={styles.subTitle}>
-                  🩺 Фактори, що можуть уповільнити одужання:
+                  Фактори, що можуть уповільнити одужання:
                 </h3>
                 <ul className={styles.bulletList}>
                   <li>Важкий або занедбаний синдром зап'ястного каналу.</li>
@@ -126,7 +126,7 @@ const CarpaltReabil: React.FC<CarpaltReabilProps> = ({
 
               <div className={styles.infoBlock}>
                 <h3 className={styles.subTitle}>
-                  🔁 Рецидив синдрому — рідкісний, але можливий.
+                  Рецидив синдрому — рідкісний, але можливий.
                 </h3>
                 <p>
                   У таких випадках може знадобитися додаткове лікування або
@@ -139,6 +139,19 @@ const CarpaltReabil: React.FC<CarpaltReabilProps> = ({
               <CarpalResultGallery />
             </div>
           </div>
+        </div>
+
+        {/* Заклик до дії */}
+        <div className={styles.ctaSection}>
+          <p className={styles.ctaText}>
+            Маєте додаткові запитання? Наші спеціалісти готові надати вам
+            детальну консультацію.
+          </p>
+          <Link href="/about-doctor/contacts">
+            <button className={styles.contactButton}>
+              Зв&apos;язатися з нами
+            </button>
+          </Link>
         </div>
       </div>
     </div>

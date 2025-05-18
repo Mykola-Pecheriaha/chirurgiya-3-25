@@ -103,7 +103,7 @@ const HepaticIssues: React.FC<HepaticIssuesProps> = ({
             </p>
 
             <h4 style={heading4Style}>Види кіст печінки</h4>
-            <ul className={styles.bulletList}>
+            <ul>
               <li style={listItemStyle}>
                 <strong>Істинними</strong> — вроджені, формуються через
                 патологічні зміни жовчних проток під час внутрішньоутробного
@@ -130,7 +130,7 @@ const HepaticIssues: React.FC<HepaticIssuesProps> = ({
             <h4 style={heading4Style}>
               Симптоми, які свідчать про наявність кісти печінки
             </h4>
-            <ul className={styles.bulletList}>
+            <ul>
               <li style={listItemStyle}>
                 Симптоми наявності кисти печінки досить загальні і різноманітні.
                 Настороження про захворювання печінки може викликати такий
@@ -147,7 +147,7 @@ const HepaticIssues: React.FC<HepaticIssuesProps> = ({
             </ul>
 
             <h4 style={heading4Style}>Які ускладнення дає кіста в печінці</h4>
-            <ul className={styles.bulletList}>
+            <ul>
               <li style={listItemStyle}>
                 Субкапсулярні кісти невеликого розміру не становлять небезпеки
                 для здоровя і не викликають дискомфорту, проте зі збільшенням
@@ -183,7 +183,7 @@ const HepaticIssues: React.FC<HepaticIssuesProps> = ({
             <h4 style={heading4Style}>
               Розпізнати розвиток ускладнень можна за такими симптомами:
             </h4>
-            <ul className={styles.bulletList}>
+            <ul>
               <li style={listItemStyle}>гострий біль у правому підреберї;</li>
               <li style={listItemStyle}>
                 підвищення температури тіла, що супроводжується слабкістю та

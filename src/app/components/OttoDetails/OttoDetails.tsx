@@ -56,7 +56,7 @@ const OttoDetails: React.FC<OttoDetailsProps> = ({
   return (
     <div className={styles.ottoDetails} style={{ backgroundColor }}>
       <div className={styles.container}>
-        <h2 className={styles.title}>👂 Показання до пластики вух</h2>
+        <h2 className={styles.title}> Показання до пластики вух</h2>
 
         <div className={styles.fullWidthText}>
           <p>
@@ -73,15 +73,15 @@ const OttoDetails: React.FC<OttoDetailsProps> = ({
             </h3>
             <ul className={styles.bulletList}>
               <li>
-                <span className={styles.emoji}>👶</span> Вроджена клаповухість
+                <span className={styles.emoji}>🔹</span> Вроджена клаповухість
                 (з одного або обох боків);
               </li>
               <li>
-                <span className={styles.emoji}>🎧</span> Інші деформації вушної
+                <span className={styles.emoji}>🔹</span> Інші деформації вушної
                 раковини, що мають вроджене походження;
               </li>
               <li>
-                <span className={styles.emoji}>📐</span> Надмірне прилягання
+                <span className={styles.emoji}>🔹</span> Надмірне прилягання
                 вушної раковини до голови, яке порушує симетрію обличчя;
               </li>
               <li>
@@ -118,36 +118,36 @@ const OttoDetails: React.FC<OttoDetailsProps> = ({
             </h3>
             <ul className={styles.bulletList}>
               <li>
-                <span className={styles.emoji}>🧒</span> Дитині ще не
+                <span className={styles.emoji}>🔹</span> Дитині ще не
                 виповнилося 6 років;
               </li>
               <li>
-                <span className={styles.emoji}>🍬</span> Є тяжка форма цукрового
+                <span className={styles.emoji}>🔹</span> Є тяжка форма цукрового
                 діабету;
               </li>
               <li>
-                <span className={styles.emoji}>🩸</span> Спостерігаються
+                <span className={styles.emoji}>🔹</span> Спостерігаються
                 порушення згортання крові;
               </li>
               <li>
-                <span className={styles.emoji}>🧬</span> Діагностовано
+                <span className={styles.emoji}>🔹</span> Діагностовано
                 онкологічне захворювання;
               </li>
               <li>
-                <span className={styles.emoji}>🌡️</span> Є захворювання шкіри в
+                <span className={styles.emoji}>🔹</span> Є захворювання шкіри в
                 зоні втручання;
               </li>
               <li>
-                <span className={styles.emoji}>🤒</span> Присутні гострі
+                <span className={styles.emoji}>🔹</span> Присутні гострі
                 інфекційні або вірусні стани;
               </li>
               <li>
-                <span className={styles.emoji}>🤰</span> Жінка перебуває у
+                <span className={styles.emoji}>🔹</span> Жінка перебуває у
                 періоді вагітності чи лактації.
               </li>
             </ul>
             <p className={styles.note}>
-              <span className={styles.emoji}>💡</span> Зверніть увагу: частина
+              <span className={styles.emoji}>🔹</span> Зверніть увагу: частина
               протипоказань є тимчасовими. Наприклад, після перенесеної інфекції
               операцію можна провести вже після повного відновлення.
             </p>

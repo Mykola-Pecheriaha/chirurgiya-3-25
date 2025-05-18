@@ -2,6 +2,7 @@ import type React from 'react';
 import ImageGallery from '../../components/ImageGallery/ImageGallery';
 import { galleryImages } from '@/data/gallery-images';
 import styles from './SurgeryDepartmentInfo.module.css';
+import Link from 'next/link';
 
 interface SurgeryDepartmentInfoProps {
   backgroundColor?: string;
@@ -11,7 +12,7 @@ interface SurgeryDepartmentInfoProps {
 }
 
 const SurgeryDepartmentInfo: React.FC<SurgeryDepartmentInfoProps> = ({
-  backgroundColor = '#f8f9fa',
+  backgroundColor = '#C2E1FFFF',
   textColor = '#333333',
   headingColor = '#1eaaf1',
   accentColor = '#7b68ee',
@@ -110,6 +111,19 @@ const SurgeryDepartmentInfo: React.FC<SurgeryDepartmentInfoProps> = ({
               ✨
             </span>{' '}
             Ми тут, щоб подбати про ваше здоровя!
+          </div>
+
+          {/* Заклик до дії */}
+          <div className={styles.ctaSection}>
+            <p className={styles.ctaText}>
+              Маєте додаткові запитання? Наші спеціалісти готові надати вам
+              детальну консультацію.
+            </p>
+            <Link href="/about-doctor/contacts">
+              <button className={styles.contactButton}>
+                Зв&apos;язатися з нами
+              </button>
+            </Link>
           </div>
         </div>
 

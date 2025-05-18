@@ -61,7 +61,7 @@ const defaultSpecialists: Specialist[] = [
     description:
       'Хірург вищої категорії, стаж роботи 30 років. Спеціалізується на пластичних, естетичних та малоінвазивних операціях, а також на проктології',
 
-    imageUrl: '/images/ourSpecialists/pecheriaha.jpg',
+    imageUrl: '/images/ourSpecialists/pecheriaha.JPG',
     profileUrl: '/specialists/pecheriaha',
     buttonColor: '#3eccf3',
     objectFit: 'contain', // Змінює спосіб відображення зображення
@@ -243,6 +243,19 @@ const OurSpecialists: React.FC<OurSpecialistsProps> = ({
               </Link>
             </div>
           ))}
+        </div>
+
+        {/* Заклик до дії */}
+        <div className={styles.ctaSection}>
+          <p className={styles.ctaText}>
+            Маєте додаткові запитання? Наші спеціалісти готові надати вам
+            детальну консультацію.
+          </p>
+          <Link href="/about-doctor/contacts">
+            <button className={styles.contactButton}>
+              Зв&apos;язатися з нами
+            </button>
+          </Link>
         </div>
       </div>
     </div>
