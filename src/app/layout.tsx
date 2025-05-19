@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
-export const etadata: Metadata = {
+export const metadata: Metadata = {
   title: 'chirurgiya-3-25',
   description: 'Хірургічне відділення ЦМКЛ м. Чернівці',
 };

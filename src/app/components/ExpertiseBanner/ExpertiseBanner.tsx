@@ -17,7 +17,7 @@ const ExpertiseBanner: React.FC<ExpertiseBannerProps> = ({
     <div className={styles.bannerWrapper} style={{ backgroundColor }}>
       <div className={styles.container}>
         <h2 className={styles.title}>
-          Хірургія, де професіоналізм поєднується з турботою
+          Хірургія - там, де професіоналізм поєднується з турботою
         </h2>
 
         <div className={styles.content}>
@@ -25,7 +25,7 @@ const ExpertiseBanner: React.FC<ExpertiseBannerProps> = ({
             <p className={styles.text}>
               Відділення хірургії — це поєднання передових технологій і досвіду.
               Наші хірурги — висококваліфіковані фахівці, які дбають про ваше
-              здоровя та гарантовано забезпечують найкращий результат.
+              здоров`я та гарантовано забезпечують найкращий результат.
             </p>
           </div>
 

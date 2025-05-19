@@ -250,6 +250,7 @@ export const Contacts: React.FC<ContactsProps> = ({
                   width={300}
                   height={400}
                   className={styles.contactImage}
+                  style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                 />
               </div>
 
